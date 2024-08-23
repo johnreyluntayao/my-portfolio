@@ -3,6 +3,7 @@ import { Spotlight } from './ui/spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import GlowingButton from './ui/GlowingButton'
 import { HiArrowNarrowDown } from "react-icons/hi";
+import OutlineButton from './ui/OutlineButton';
 
 
 
@@ -32,17 +33,26 @@ const Hero = () => {
       words="Hello, my name is Johnrey!"
       />
 
-      <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
+      <p className='text-center text-science-blue-950 md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
         And I&apos;m a UI/UX Designer, Front-End Developer, and Graphic Designer!
       </p>
-
-      <a href="#about">
+      <div className='gap-20'>
+      <a href="#about" className=''>
         <GlowingButton 
           title="Know More"
           icon={<HiArrowNarrowDown />}
           position='right'
         />
       </a>
+      <a href="#contact">
+        <OutlineButton 
+          title="Hire Me"
+          icon={<HiArrowNarrowDown />}
+          position='right'
+        />
+      </a>
+      </div>
+     
   </div>
 </div>
 

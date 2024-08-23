@@ -215,3 +215,48 @@ export const socialMedia = [
     img: "/link.svg",
   },
 ];
+
+interface TabDataType {
+  title: string;
+  id: string;
+  content: JSX.Element;
+}
+
+export const tabData: TabDataType[] = [
+  {
+    title: "Skills",
+    id: "skills",
+    content: (
+      <ul className="list-disc pl-5">
+        <li>HTML/CSS</li>
+        <li>JavaScript</li>
+        <li>ReactJS</li>
+        <li>Figma</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Experiences",
+    id: "experiences",
+    content: (
+      <ul className="list-disc pl-5">
+        <li>HTML/CSS</li>
+        <li>JavaScript</li>
+        <li>ReactJS</li>
+        <li>Figma</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Certifications",
+    id: "certifications",
+    content: (
+      <ul className="list-disc pl-5">
+        <li>HTML/CSS</li>
+        <li>JavaScript</li>
+        <li>ReactJS</li>
+        <li>Figma</li>
+      </ul>
+    ),
+  },
+];
