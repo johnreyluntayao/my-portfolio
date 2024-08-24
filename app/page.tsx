@@ -2,6 +2,7 @@ import About from "@/components/About";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { navItems } from "@/data";
 import Image from "next/image";
@@ -14,7 +15,9 @@ export default function Home() {
       <FloatingNav navItems={navItems}/>
       <Hero />
       <About />
+      <Skills />
       <Projects />
+
     </div>
    </main>
   );
