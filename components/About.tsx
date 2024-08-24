@@ -15,7 +15,7 @@ const About = () => {
     });
 };
   return (
-    <section className="pt-3" id='about'>
+    <section className="relative" id='about'>
         <div className='lg:grid lg:grid-cols-2 md:grid md:grid-cols-1 grid grid-cols-1 gap-8 py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
         <div className='border-t-science-blue-500 border-t-[5vh] border-t-p-2 bg-science-blue-500 rounded-2xl'>
             <img src="/Johnrey.png" alt="bg-img" height={500} width={500} className='rounded-2xl'/>
