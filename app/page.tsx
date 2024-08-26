@@ -18,9 +18,10 @@ export default function Home() {
       <About />
       <Skills />
       <Projects />
-      <Footer />
+       
 
     </div>
+    <Footer />
    </main>
   );
 }

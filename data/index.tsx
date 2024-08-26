@@ -74,7 +74,7 @@ export const projects = [
     id: 1,
     title: "3D Solar System Planets to Explore",
     des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
+    img: "/johnrey.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "/ui.earth.com",
   },
@@ -260,3 +260,43 @@ export const tabData: TabDataType[] = [
     ),
   },
 ];
+
+
+export const projectDetails = [
+  {
+    id: 1,
+    title: "Project 1",
+    desc: "Description",
+    features: [
+      {
+        name: "Name1",
+        desc: "Descrition1",
+      },
+      {
+        name2: "Name1",
+        desc2: "Descrition1",
+      },
+      {
+        name3: "Name1",
+        desc2: "Descrition1",
+      },
+    ],
+    contributions: [
+      "Yes", "Contri2",
+    ],
+  }
+
+  
+
+];
+
+export const sample =[
+  {
+    id:1,
+    text: "Mamamo",
+  },
+  {
+    id:2,
+    text: "papamo",
+  }
+]

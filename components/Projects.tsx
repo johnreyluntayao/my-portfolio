@@ -14,7 +14,7 @@ const Projects = () => {
         <div className='flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10'>
             {projects.map(({id, title, des, img, iconLists, link}) => (
                 <div key={id} className='sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]'>
-                    <PinContainer title={link} href={link}>
+                    <PinContainer title={link} href={`projects/${id}`}>
                         <div className='relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10'>
                             <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-science-blue-500'>
                                 <img src="/bg.png" alt="bg-img" />
