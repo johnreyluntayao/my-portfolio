@@ -53,8 +53,6 @@ const config = {
     },
     
 
-
-    
         blue: {
           "100": "#E4ECFF",
         },

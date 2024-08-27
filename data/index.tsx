@@ -260,3 +260,33 @@ export const tabData: TabDataType[] = [
     ),
   },
 ];
+
+
+export const projectDetails = [
+  {
+    id: 1,
+    title: "Project 1",
+    desc: "Description",
+    features: [
+      {
+        name: "Name1",
+        desc: "Descrition1",
+      },
+      {
+        name2: "Name1",
+        desc2: "Descrition1",
+      },
+      {
+        name3: "Name1",
+        desc2: "Descrition1",
+      },
+    ],
+    contributions: [
+      "Yes", "Contri2",
+    ],
+  }
+
+  
+
+];
+
