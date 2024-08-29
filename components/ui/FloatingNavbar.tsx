@@ -8,6 +8,7 @@ import {
 } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export const FloatingNav = ({
   navItems,
@@ -41,6 +42,8 @@ export const FloatingNav = ({
     }
   });
 
+  const router = useRouter();
+
   return (
     <AnimatePresence mode="wait">
       <motion.div
@@ -56,7 +59,7 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex max-w-fit  fixed top-10 inset-x-0 mx-auto border bg-white  rounded-full dark:bg-black shadow-[0_8px_16px_#e0effe] border-science-blue-500/0.5 z-[5000] px-10 py-5 items-center justify-center space-x-4",
+          "flex max-w-fit  fixed top-10 inset-x-0 mx-auto border bg-white  rounded-full dark:bg-black shadow-[0_8px_16px_rgb(0_0_0/0.4)] z-[5000] px-10 py-5 items-center justify-center space-x-4",
           className
         )}
       >
@@ -65,11 +68,29 @@ export const FloatingNav = ({
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+              "relative dark:text-neutral-50 items-center flex space-x-1 text-science-blue-950 dark:hover:text-neutral-300 hover:text-neutral-500 text-sm md:text-base lg:text-lg"
             )}
+
+            onClick={(e) => {
+              e.preventDefault(); // Prevent the default behavior of Link
+          
+              // Extract the section id from the nav link (e.g., #home, #about)
+              const sectionId = navItem.link.replace('#', '');
+          
+              // Check if the section exists on the current page
+              const targetSection = document.getElementById(sectionId);
+          
+              if (targetSection) {
+                // If the section exists, scroll to it
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+              } else {
+                // If the section doesn't exist (meaning we're on another page), redirect to the main page with the hash
+                router.push(`http://localhost:3000/#${sectionId}`);
+              }
+            }}
           >
             <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="hidden sm:block text-sm">{navItem.name}</span>
+            <span className="">{navItem.name}</span>
           </Link>
         ))}
         
