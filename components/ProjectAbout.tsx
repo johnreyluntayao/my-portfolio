@@ -1,4 +1,4 @@
-import { workExperience } from '@/data'
+
 import React from 'react'
 import { Button } from './ui/MovingBorders'
 import { projects } from '@/data'
@@ -10,11 +10,11 @@ const ProjectAbout = ({id}: {id: number}) => {
 
   return (
 
-    <div className='flex justify-center items-center' id="projectAbout">
+    <div className='flex justify-center items-center pb-36' id="projectAbout">
         
         <div className='w-[85vw] lg:w-[55vw] md:w-[65vw]'>
             {project ? (
-                <Button key={project.id} duration={Math.floor(Math.random() * 10000)} className='grid border-science-blue-500 border-2 bg-science-blue-50 text-science-blue-950'>
+                <Button key={project.id} duration={Math.floor(Math.random() * 10000)} className='grid border-science-blue-500 border-2 bg-white text-science-blue-950'>
                     <h1 className='heading pt-3 md:pt-5 lg:pt-10'>
                         Project {' '} 
                         <span className='text-science-blue-600'>Description</span>
