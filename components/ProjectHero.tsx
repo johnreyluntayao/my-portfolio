@@ -12,7 +12,7 @@ const ProjectHero = ({id}: {id: number}) => {
 
             {project ? (
 
-                <div className='lg:grid lg:grid-cols-2 md:grid md:grid-cols-1 grid grid-cols-1 gap-8 py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
+                <div className='lg:grid lg:grid-cols-2 md:grid md:grid-cols-1 grid grid-cols-1 gap-16 py-8 px-4 lg:gap-24 sm:py-16 lg:px-24'>
                     <div className='flex flex-col ml-10'>
                         <TextGenerateEffect 
                             className='text-center lg:text-start text-[40px] md:text-4xl lg:text-5xl'
@@ -23,7 +23,7 @@ const ProjectHero = ({id}: {id: number}) => {
                         </p>
                     </div>
         
-                    <div className='relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10'>
+                    <div className='relative flex items-center justify-center sm:w-[500px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10 rounded-2xl shadow-[16px_16px_0px_0px_#0d91ea]'>
                         <img 
                         src={project.img}
                         alt={project.title}

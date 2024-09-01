@@ -20,9 +20,9 @@ export default function Home() {
       <About />
       <Skills />
       <Projects />
-   \
+
     </div>
-    <Footer />
+      <Footer />
    </main>
   );
 }
