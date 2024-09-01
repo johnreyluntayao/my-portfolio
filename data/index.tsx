@@ -105,38 +105,6 @@ export const projects = [
   },
 ];
 
-export const testimonials = [
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-];
 
 export const companies = [
   {
@@ -241,10 +209,10 @@ export const tabData: TabDataType[] = [
     id: "experiences",
     content: (
       <ul className="list-disc pl-5">
-        <li>HTML/CSS</li>
-        <li>JavaScript</li>
-        <li>ReactJS</li>
-        <li>Figma</li>
+        <li>HTML/CSS1</li>
+        <li>JavaScript1</li>
+        <li>ReactJS1</li>
+        <li>Figma1</li>
       </ul>
     ),
   },
@@ -253,10 +221,10 @@ export const tabData: TabDataType[] = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-5">
-        <li>HTML/CSS</li>
-        <li>JavaScript</li>
-        <li>ReactJS</li>
-        <li>Figma</li>
+        <li>HTML/CSS2</li>
+        <li>JavaScript2</li>
+        <li>ReactJS2</li>
+        <li>Figma2</li>
       </ul>
     ),
   },
@@ -286,8 +254,37 @@ export const projectDetails = [
       "Yes", "Contri2",
     ],
   }
-
-  
-
 ];
+
+export const about = 
+  {
+    desc:" Lorem ipsum dolor sit amet. Vel amet rerum est quaerat repellendus aut enim inventore eum aliquid eveniet non culpa esse. A temporibus delectus At dolore corrupti id omnis mollitia ut autem quia. Sit perspiciatis recusandae qui earum molestias At iste minus vel blanditiis dolorum. Et quasi repellendus vel consequatur dolor aut rerum facilis. Quo maxime error et sunt ducimus ex deleniti galisum ut consequatur temporibus ab quaerat totam sit facere sequi. Sit amet consequatur qui doloribus maiores a odit quidem hic sunt molestiae est sapiente soluta.",
+  };
+
+export const mainSkills = [
+  {
+    id: 1,
+    logo: "http://www.w3.org/2000/svg",
+    title: "Title 1",
+    desc: "Lorem ipsum dolor sit amet. Vel amet rerum est quaerat repellendus aut enim inventore eum aliquid eveniet non culpa esse. A temporibus delectus At dolore corrupti id omnis mollitia ut autem quia. "
+  },
+  {
+    id: 2,
+    logo: "http://www.w3.org/2000/svg",
+    title: "Title 2",
+    desc: "Lorem ipsum dolor sit amet. Vel amet rerum est quaerat repellendus aut enim inventore eum aliquid eveniet non culpa esse. A temporibus delectus At dolore corrupti id omnis mollitia ut autem quia. "
+  },
+  {
+    id: 3,
+    logo: "http://www.w3.org/2000/svg",
+    title: "Title 3",
+    desc: "Lorem ipsum dolor sit amet. Vel amet rerum est quaerat repellendus aut enim inventore eum aliquid eveniet non culpa esse. A temporibus delectus At dolore corrupti id omnis mollitia ut autem quia."
+  },
+  {
+    id: 4,
+    logo: "http://www.w3.org/2000/svg",
+    title: "Title 4",
+    desc: "Lorem ipsum dolor sit amet. Vel amet rerum est quaerat repellendus aut enim inventore eum aliquid eveniet non culpa esse. A temporibus delectus At dolore corrupti id omnis mollitia ut autem quia."
+  },
+]
 

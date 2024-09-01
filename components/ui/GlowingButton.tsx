@@ -9,17 +9,6 @@ const GlowingButton = ({title, icon, position, functionClick, moreClasses}: {
 }) => {
 
 
-
-        // Button code
-      
-      
-
-
-
-
-
-
-
   return (
     
     <button className="inline-flex lg:h-14 h-12 w-48 animate-shimmer items-center justify-center rounded-full border border-science-blue-500 bg-[linear-gradient(110deg,#0d91ea,45%,#7cc7fd,55%,#0d91ea)] bg-[length:200%_100%] px-6 gap-2 font-base text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-white">
