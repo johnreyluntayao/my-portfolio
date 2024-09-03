@@ -10,7 +10,7 @@ const ProjectAbout = ({id}: {id: number}) => {
 
   return (
 
-    <div className='flex justify-center items-center pb-36' id="projectAbout">
+    <div className='flex justify-center items-center pb-36' id="project-about">
         
         <div className='w-[85vw] lg:w-[55vw] md:w-[65vw]'>
             {project ? (
