@@ -10,9 +10,9 @@ const ProjectHero = ({id}: {id: number}) => {
         <div className="h-full w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-science-blue-500/[0.6] relative flex items-center justify-center">
             <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
-            {project ? (
+            {project ? ( 
 
-                <div className='lg:grid lg:grid-cols-2 md:grid md:grid-cols-1 grid grid-cols-1 gap-16 py-8 px-4 lg:gap-24 sm:py-16 lg:px-24'>
+                <div className='relative lg:grid lg:grid-cols-2 md:grid md:grid-cols-1 grid grid-cols-1 gap-16 py-8 px-4 lg:gap-24 sm:py-16 lg:px-24'>
                     <div className='flex flex-col ml-10'>
                         <TextGenerateEffect 
                             className='text-center lg:text-start text-[40px] md:text-4xl lg:text-5xl'
