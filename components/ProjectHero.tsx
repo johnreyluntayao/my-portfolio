@@ -6,7 +6,7 @@ const ProjectHero = ({id}: {id: number}) => {
     const project = projects.find((p) => p.id === id)
 
   return (
-    <div className='pb-20 pt-36'>
+    <div className='pb-20 pt-36' id='project-hero'>
         <div className="h-full w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-science-blue-500/[0.6] relative flex items-center justify-center">
             <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
