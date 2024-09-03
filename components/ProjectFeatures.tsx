@@ -3,7 +3,7 @@ import { projects } from '@/data'
 
 const ProjectFeatures = () => {
   return (
-    <section className='bg-science-blue-100 grid justify-center' id='project-features'>
+    <section className='!max-w-full bg-science-blue-100 grid justify-center' id='project-features'>
         <h1 className='heading pt-3 md:pt-5 lg:pt-10'>
             Project {' '} 
             <span className='text-science-blue-600'>Features</span>
