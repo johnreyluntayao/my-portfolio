@@ -13,7 +13,7 @@ const ProjectHero = ({id}: {id: number}) => {
             {project ? ( 
 
                 <div className='relative lg:grid lg:grid-cols-2 md:grid md:grid-cols-1 grid grid-cols-1 gap-16 py-8 px-4 lg:gap-24 sm:py-16 lg:px-24'>
-                    <div className='flex flex-col ml-10'>
+                    <div className='flex flex-col mx-4'>
                         <TextGenerateEffect 
                             className='text-center lg:text-start text-[40px] md:text-4xl lg:text-5xl'
                             words={project.title}
