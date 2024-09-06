@@ -16,13 +16,13 @@ const Projects = () => {
                 <div key={id} className='sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]'>
                     <PinContainer title={link} href={`projects/${id}`}>
                         <div className='relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden md:h-[40vh] h-[30vh] mb-10'>
-                            <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-science-blue-500'>
+                            <div className='relative w-full h-full overflow-hidden rounded-t-lg bg-science-blue-500'>
                                 <img src="/bg.png" alt="bg-img" />
                             </div>
                             <img 
                                 src={img}
                                 alt={title}
-                                className='z-10 absolute bottom-0 '
+                                className='z-10 absolute bottom-0 h-full rounded-lg transform skew-y-6 -skew-x-6'
                             />
                         </div>
                         <h1 className='font-bold text-science-blue-950 lg:text-2xl md:text-xl text-base line-clamp-1'>

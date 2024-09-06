@@ -1,23 +1,23 @@
 
 import React from 'react'
-import { projects } from '@/data'
+import { detailedProjects } from '@/data'
 import GradientCard from './ui/GradientCard'
 
 
 const ProjectAbout = ({id}: {id: number}) => {
 
-    const project = projects.find((p) => p.id === id)
+    const project = detailedProjects.find((p) => p.id === id)
 
   return (
 
     <div className='flex justify-center items-center pb-36' id="project-about">
         
-        <div className='w-[85vw] lg:w-[55vw] md:w-[65vw]'>
+        <div className='w-full lg:w-[55vw] md:w-[65vw]'>
             {project ? (
 
                     <GradientCard
                         key={project.id}
-                        description={project.des}
+                        description={project.desc}
                     />
                 // <Button key={project.id} duration={Math.floor(Math.random() * 10000)} className='grid border-science-blue-500 border-2 bg-white text-science-blue-950'>
                 //     <h1 className='heading pt-3 md:pt-5 lg:pt-10'>

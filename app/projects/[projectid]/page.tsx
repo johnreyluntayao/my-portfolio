@@ -17,8 +17,8 @@ const page = ({params} : {
 
 
   return (
-    <>
-    <div className="relative bg-white flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+    <main className=''>
+    <div className=" bg-white flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
         <FloatingNav navItems={navItems}/>
         <ProjectHero id={id}/>
@@ -27,10 +27,10 @@ const page = ({params} : {
     </div>
 
     <div>
-      <ProjectFeatures />
+      <ProjectFeatures id={id}/>
     </div>
 
-    <div className="relative bg-white flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+    <div className=" bg-white flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
         <ProjectContribution />  
     </div>
@@ -38,7 +38,7 @@ const page = ({params} : {
       <Footer />
   </div>
 
-  </>
+  </main>
   )
 }
 

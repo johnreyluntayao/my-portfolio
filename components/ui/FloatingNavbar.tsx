@@ -80,7 +80,7 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex max-w-fit fixed top-10 inset-x-0 mx-auto border bg-white rounded-full dark:bg-black shadow-[0_8px_16px_rgb(0_0_0/0.4)] z-[5000] px-10 py-5 items-center justify-center space-x-4",
+          "flex max-w-fit fixed top-10 inset-x-0 mx-auto border border-white/20 bg-white/30 backdrop-blur-sm rounded-full dark:bg-black shadow-[0_8px_16px_rgb(0_0_0/0.4)] z-[5000] px-10 py-5 items-center justify-center space-x-4",
           className
         )}
       >
@@ -90,7 +90,7 @@ export const FloatingNav = ({
             href={navItem.link}
             className={cn(
               "relative dark:text-neutral-50 items-center flex space-x-1 text-science-blue-950 dark:hover:text-neutral-300 hover:text-science-blue-500 hover:font-semibold text-sm md:text-base lg:text-lg",
-              activeSection === navItem.link ? "text-blue-600 font-semibold" : ""
+              activeSection === navItem.link ? "text-blue-500 font-semibold" : ""
             )}
             onClick={(e) => {
               e.preventDefault();

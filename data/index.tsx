@@ -72,11 +72,11 @@ export const items = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/projects/1",
+    title: "Web-based Reservation Management System",
+    des: "A centralized platform for making resort reservation, information, and virtual experience.",
+    img: "/reservation1.png",
+    iconLists: ["/html.svg", "/css.svg", "/javascript.svg", "/figma.svg", "/hostinger.svg"],
+    link: "Go to the project",
   },
   {
     id: 2,
@@ -104,6 +104,58 @@ export const projects = [
   },
 ];
 
+
+export const detailedProjects = [
+  {
+    id: 1,
+    title: "Web-based Reservation Management System",
+    desc: "The system provides a user-friendly interface website that contains information about the resort, a fast and convenient reservation management system, and a virtual tour of the resort. The system was develop order to changing the reservation process of the resort from a manual to a system and enhancing the quality and satisfaction of the resort's services.",
+    features: [
+      {
+        id: 1,
+        title: "Reservation Management System",
+        img: "",
+        desc: "",
+      },
+      {
+        id: 2,
+        title: "Website",
+        img: "",
+        desc: "With the ",
+      },
+      {
+        id: 3,
+        title: "3D Virtual Tour",
+        img: "",
+        desc: "",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Yoom - Video Conferencing App",
+    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    img: "/p2.svg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    link: "/projects/2",
+  },
+  {
+    id: 3,
+    title: "AI Image SaaS - Canva Application",
+    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    img: "/p3.svg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    link: "/projects/3",
+  },
+  {
+    id: 4,
+    title: "Animated Apple Iphone 3D Website",
+    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    img: "/p4.svg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "/projects/4",
+  },
+];
 
 export const companies = [
   {
@@ -197,9 +249,17 @@ export const tabData: TabDataType[] = [
     content: (
       <ul className="list-disc pl-5">
         <li>HTML/CSS</li>
+        <li>PHP</li>
         <li>JavaScript</li>
-        <li>ReactJS</li>
+        <li>TypeScript</li>
+        <li>React Native</li>
+        <li>React JS</li>
+        <li>MySQL</li>
         <li>Figma</li>
+        <li>Canva</li>
+        <li>Vbnet</li>
+        <li>3DSmax</li>
+        <li>Adobe Premiere Pro</li>
       </ul>
     ),
   },
@@ -220,10 +280,12 @@ export const tabData: TabDataType[] = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-5">
-        <li>HTML/CSS2</li>
-        <li>JavaScript2</li>
-        <li>ReactJS2</li>
-        <li>Figma2</li>
+        <li>Academic Distinction Award, 2024</li>
+        <li>TOPCIT (Test for Practical Competency in IT), Level 2, 2023</li>
+        <li>BYCT (Bicol Youth Congress in Information Technology), Certificate of Participation, 2023</li>
+        <li>DICT Graphics Design using Adobe Express Webinar, Certificate of Participation, 2023</li>
+        <li>Dean's List Award, 2022</li>
+        <li>CSS Computer System Servicing, NCII Passer, 2017</li>
       </ul>
     ),
   },
@@ -257,32 +319,32 @@ export const projectDetails = [
 
 export const about = 
   {
-    desc:" Lorem ipsum dolor sit amet. Vel amet rerum est quaerat repellendus aut enim inventore eum aliquid eveniet non culpa esse. A temporibus delectus At dolore corrupti id omnis mollitia ut autem quia. Sit perspiciatis recusandae qui earum molestias At iste minus vel blanditiis dolorum. Et quasi repellendus vel consequatur dolor aut rerum facilis. Quo maxime error et sunt ducimus ex deleniti galisum ut consequatur temporibus ab quaerat totam sit facere sequi. Sit amet consequatur qui doloribus maiores a odit quidem hic sunt molestiae est sapiente soluta.",
+    desc:"I'm a developer & designer based from the Philippines. I specialize in UI/UX designing, focusing on creating simple but high quality designs.",
   };
 
 export const mainSkills = [
   {
     id: 1,
     logo: "http://www.w3.org/2000/svg",
-    title: "Title 1",
+    title: "UI/UX Design",
     desc: "Lorem ipsum dolor sit amet. Vel amet rerum est quaerat repellendus aut enim inventore eum aliquid eveniet non culpa esse. A temporibus delectus At dolore corrupti id omnis mollitia ut autem quia. "
   },
   {
     id: 2,
     logo: "http://www.w3.org/2000/svg",
-    title: "Title 2",
+    title: "Front-end Development",
     desc: "Lorem ipsum dolor sit amet. Vel amet rerum est quaerat repellendus aut enim inventore eum aliquid eveniet non culpa esse. A temporibus delectus At dolore corrupti id omnis mollitia ut autem quia. "
   },
   {
     id: 3,
     logo: "http://www.w3.org/2000/svg",
-    title: "Title 3",
+    title: "Database Management",
     desc: "Lorem ipsum dolor sit amet. Vel amet rerum est quaerat repellendus aut enim inventore eum aliquid eveniet non culpa esse. A temporibus delectus At dolore corrupti id omnis mollitia ut autem quia."
   },
   {
     id: 4,
     logo: "http://www.w3.org/2000/svg",
-    title: "Title 4",
+    title: "Graphic Design",
     desc: "Lorem ipsum dolor sit amet. Vel amet rerum est quaerat repellendus aut enim inventore eum aliquid eveniet non culpa esse. A temporibus delectus At dolore corrupti id omnis mollitia ut autem quia."
   },
 ]

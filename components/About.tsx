@@ -31,7 +31,7 @@ const About = () => {
         <p className='text-base lg:text-lg text-science-blue-950'>
             {about.desc}
         </p>
-        <div className='flex flex-row mt-8'>
+        <div className='flex flex-row mt-8 border-b-2'>
             <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>
                 {" "}
                 Skills{" "}
