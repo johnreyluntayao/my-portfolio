@@ -114,20 +114,20 @@ export const detailedProjects = [
       {
         id: 1,
         title: "Reservation Management System",
-        img: "",
-        desc: "",
+        img: "/reserve-feat3.png",
+        desc: "Allows users to select deferent packages, date & time, payment methods, with conversational experience.",
       },
       {
         id: 2,
         title: "Website",
-        img: "",
-        desc: "With the ",
+        img: "/reserve-feat1.png",
+        desc: "With the homepage a video introduction showcasing the resort and the resort's Facebook page plugin, gallery that showcases facilities, and other information about the resort.",
       },
       {
         id: 3,
         title: "3D Virtual Tour",
-        img: "",
-        desc: "",
+        img: "/reserve-feat2.png",
+        desc: "Introducing the website's virtual tour feature, enabling users to explore the resort remotely and navigate through various rooms.",
       },
     ],
   },
@@ -154,6 +154,33 @@ export const detailedProjects = [
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "/projects/4",
+  },
+];
+
+
+export const contributions = [
+  {
+    id: 1,
+    conntributions: [
+      {
+        id: 1,
+        logo: "",
+        title: "Back-end Developer",
+        desc: "",
+      },
+      {
+        id: 2,
+        logo: "",
+        title: "Front-end Developer",
+        desc: "",
+      },
+      {
+        id: 3,
+        logo: "",
+        title: "UX Designer",
+        desc: "",
+      },
+    ],
   },
 ];
 
@@ -348,4 +375,69 @@ export const mainSkills = [
     desc: "Lorem ipsum dolor sit amet. Vel amet rerum est quaerat repellendus aut enim inventore eum aliquid eveniet non culpa esse. A temporibus delectus At dolore corrupti id omnis mollitia ut autem quia."
   },
 ]
+
+export const ProjectRole = [
+  {
+    id: 1,
+    title: "Web-based Reservation Management System",
+    roles: [
+      {
+        quote:
+          "Implemented the design using HTML/CSS and functions using JavaScript focusing especially on the reservation management system.",
+        title: "Front-end Developer",
+      },
+      {
+        quote:
+          "Created the scheme of the database and its implementation to the system using PHP,and I also implemented the payment gateway.",
+        title: "Back-end Developer",
+      },
+      {
+        quote: "Created and implemented ways in order to improve better user-experience with user-friendly design, ease of transactions, and information access.",
+        title: "UX Designer",
+      },
+    ]
+  },
+  {
+    id: 2,
+    title: "Web-based Reservation Management System",
+    roles: [
+      {
+        quote:
+          "Implemented the design using HTML/CSS and functions using JavaScript focusing especially on the reservation management system.",
+        title: "Front-end Developer",
+      },
+      {
+        quote:
+          "Created the scheme of the database and its implementation to the system using PHP,and I also implemented the payment gateway.",
+        title: "Back-end Developer",
+      },
+      {
+        quote: "Created and implemented ways in order to improve better user-experience with user-friendly design, ease of transactions, and information access.",
+        title: "UX Designer",
+      },
+    ]
+  },
+  {
+    id: 3,
+    title: "Web-based Reservation Management System",
+    roles: [
+      {
+        quote:
+          "Implemented the design using HTML/CSS and functions using JavaScript focusing especially on the reservation management system.",
+        title: "Front-end Developer",
+      },
+      {
+        quote:
+          "Created the scheme of the database and its implementation to the system using PHP,and I also implemented the payment gateway.",
+        title: "Back-end Developer",
+      },
+      {
+        quote: "Created and implemented ways in order to improve better user-experience with user-friendly design, ease of transactions, and information access.",
+        title: "UX Designer",
+      },
+    ]
+  },
+  
+];
+
 

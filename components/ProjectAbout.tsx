@@ -4,7 +4,7 @@ import { detailedProjects } from '@/data'
 import GradientCard from './ui/GradientCard'
 
 
-const ProjectAbout = ({id}: {id: number}) => {
+const ProjectAbout = ({id}: {id: number}) => { 
 
     const project = detailedProjects.find((p) => p.id === id)
 

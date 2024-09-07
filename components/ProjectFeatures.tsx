@@ -6,7 +6,7 @@ const ProjectFeatures = ({ id }: { id: number }) => {
 
   return (
     <div
-      className='!max-w-full bg-science-blue-200 grid justify-center pb-10 mb-36'
+      className='!max-w-full bg-science-blue-200 grid justify-center items-center pb-10 mb-36'
       id='project-features'
     >
       <h1 className='heading p-10 md:pt-10 lg:pt-16'>
@@ -14,23 +14,23 @@ const ProjectFeatures = ({ id }: { id: number }) => {
       </h1>
 
       {projectDetail ? (
-        <div className='grid justify-center text-center lg:grid-cols-3 gap-10 pt-3 md:pt-5 lg:pt-10 max-w-7xl w-full sm:px-10 px-5 mb-5'>
+        <div className='grid justify-center text-center md:grid-cols-2 lg:grid-cols-3 gap-10 pt-3 md:pt-5 lg:pt-10 max-w-7xl w-full sm:px-10 px-5 mb-5'>
           {projectDetail.features?.map((feat, idx) => (
             <div
               key={idx}
               className={`${
                 idx % 2 === 0 ? 'bg-science-blue-800' : 'bg-science-blue-500'
-              } p-8 rounded-lg flex flex-col items-center`}
+              } pb-8 rounded-lg flex flex-col`}
             >
               <img
-                src={feat.img || '/path/to/default-image.jpg'} // Provide a fallback if img is empty
+                src={feat.img} 
                 alt={feat.title}
-                className='flex justify-center items-center'
+                className='flex justify-center items-center rounded-t-lg w-full h-52'
               />
-              <h1 className='py-5 font-bold lg:text-2xl md:text-xl text-lg text-gray-200'>
+              <h1 className='px-8 py-5 font-bold lg:text-2xl md:text-xl text-lg text-gray-200'>
                 {feat.title}
               </h1>
-              <p className='text-gray-200 lg:text-xl lg:font-normal font-light text-sm'>
+              <p className='text-gray-200 lg:text-xl lg:font-normal font-light text-sm px-10'>
                 {feat.desc}
               </p>
             </div>
