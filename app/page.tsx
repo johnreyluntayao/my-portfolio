@@ -1,4 +1,4 @@
-import About from "@/components/About";
+import About2 from "@/components/About";
 import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
@@ -13,12 +13,12 @@ import { FaHome } from "react-icons/fa";
 
 export default function Home() {
   return (
-   <main className="relative bg-white flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+   <main className="relative bg-science-blue-50/25 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
     <div className="max-w-7xl w-full">
       <FloatingNav navItems={navItems}/>
       <Hero />
-      <About />
       <Skills />
+      <About2 />
       <Projects />
 
     </div>
