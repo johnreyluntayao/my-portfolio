@@ -105,6 +105,7 @@ export const projects = [
 ];
 
 
+
 export const detailedProjects = [
   {
     id: 1,
@@ -187,34 +188,71 @@ export const contributions = [
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    name: "HTML",
+    img: "/html-2.svg",
   },
   {
     id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
+    name: "CSS",
+    img: "/css-2.svg",
   },
   {
     id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
+    name: "JavaScript",
+    img: "/javascript2.svg",
   },
   {
     id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
+    name: "TypeScript",
+    img: "/typescript.svg",
+
   },
   {
     id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    name: "PHP",
+    img: "/php2.svg",
   },
+  {
+    id: 6,
+    name: "Next JS",
+    img: "/nextjs.svg",
+  },
+  {
+    id: 7,
+    name: "React Native",
+    img: "/react.svg",
+  },
+  {
+    id: 8,
+    name: "MySQL",
+    img: "/mysql2.png",
+  },
+  {
+    id: 9,
+    name: "VbNet",
+    img: "/vbnet.png",
+  },
+  {
+    id: 10,
+    name: "Figma",
+    img: "/figma.svg",
+  },
+  {
+    id: 11,
+    name: "Canva",
+    img: "/canva.svg",
+  },
+  {
+    id: 12,
+    name: "3DSMax",
+    img: "/3dsmax.svg",
+  },
+  {
+    id: 13,
+    name: "Adobe Premiere",
+    img: "/adobe.svg",
+  },
+
 ];
 
 export const workExperience = [
@@ -352,27 +390,27 @@ export const about =
 export const mainSkills = [
   {
     id: 1,
-    logo: "http://www.w3.org/2000/svg",
+    logo: "/ui-designer.svg",
     title: "UI/UX Design",
-    desc: "Lorem ipsum dolor sit amet. Vel amet rerum est quaerat repellendus aut enim inventore eum aliquid eveniet non culpa esse. A temporibus delectus At dolore corrupti id omnis mollitia ut autem quia. "
+    desc: "UI/UX designer with experience in diverse projects from school and internship, focusing on creating user-friendly interfaces. Skilled in designing solutions that enhance user experience, with a primary focus on Figma for design execution."
   },
   {
     id: 2,
-    logo: "http://www.w3.org/2000/svg",
+    logo: "/front-end.svg",
     title: "Front-end Development",
-    desc: "Lorem ipsum dolor sit amet. Vel amet rerum est quaerat repellendus aut enim inventore eum aliquid eveniet non culpa esse. A temporibus delectus At dolore corrupti id omnis mollitia ut autem quia. "
+    desc: "Front-end developer with experience gained during school, having worked on various projects using multiple programming languages and effectively implementing client requirements."
   },
   {
     id: 3,
-    logo: "http://www.w3.org/2000/svg",
-    title: "Database Management",
-    desc: "Lorem ipsum dolor sit amet. Vel amet rerum est quaerat repellendus aut enim inventore eum aliquid eveniet non culpa esse. A temporibus delectus At dolore corrupti id omnis mollitia ut autem quia."
+    logo: "/back-end.svg",
+    title: "Back-end Development",
+    desc: "Experienced in designing database schemas, connecting databases to applications, handling CRUD operations, data manipulation, and implementing payment gateways to optimize backend processes."
   },
   {
     id: 4,
-    logo: "http://www.w3.org/2000/svg",
+    logo: "/graphic-design.svg",
     title: "Graphic Design",
-    desc: "Lorem ipsum dolor sit amet. Vel amet rerum est quaerat repellendus aut enim inventore eum aliquid eveniet non culpa esse. A temporibus delectus At dolore corrupti id omnis mollitia ut autem quia."
+    desc: "Acquired extensive experience as a graphic designer during my internship, where I created diverse promotional materials and utilized video editing skills to produce engaging videos."
   },
 ]
 

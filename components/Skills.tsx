@@ -6,33 +6,31 @@ const Skills = () => {
   return (
 
 
-    <div className='pt-24' id="skills">
+    <div className='relative pt-32' id="skills">
 
         <h1 className='heading text-science-blue-950'>
              My {' '} 
              <span className='text-science-blue-600'>Main Skills</span>
          </h1>
 
-         <div className='w-full mt-32 grid lg:grid-cols-4 grid-cols-2 gap-10 gap-y-20 lg:gap-10'>
+         <div className='w-full mt-32 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 gap-y-20 lg:gap-10'>
             {mainSkills.map((skill) => (
                  <div key={skill.id} className="relative flex flex-col items-center p-4 bg-white shadow-lg border border-slate-100 rounded-lg h-full">
                  {/* Icon Container */}
                  <div className="absolute -top-12 flex items-center justify-center w-20 h-20 bg-science-blue-100 rounded-full">
                    {/* Icon */}
-                   <svg
-                     xmlns={skill.logo}
-                     fill="none"
-                     viewBox="0 0 24 24"
-                     strokeWidth="2"
-                     stroke="currentColor"
-                     className="w-12 h-12 text-science-blue-500"
-                   >
-                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                   </svg>
+                   <img
+                  src={skill.logo}
+                  alt={skill.title}
+                  className="w-12 h-12 text-science-blue-500"
+                    />
+
                  </div>
                  {/* Card Content */}
-                 <h3 className="mt-8 text-lg lg:text-2xl md:text-xl font-bold text-science-blue-950">{skill.title}</h3>
-                 <p className="lg:text-lg md:text-base text-sm text-science-blue-950 font-light text-center">{skill.desc}</p>
+                 
+                 <h3 className="mt-8 mb-2 text-center text-lg lg:text-2xl md:text-xl font-bold text-science-blue-950">{skill.title}</h3>
+                 <p className="lg:text-base md:text-base text-sm text-science-blue-950 font-light text-center m-2">{skill.desc}</p>
+                 
                </div>
 
             ))}
