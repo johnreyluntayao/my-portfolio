@@ -17,25 +17,24 @@ const page = ({params} : {
 
 
   return (
-    <main className='bg-science-blue-50'>
-    <div className=" bg-science-blue-50 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+    <main className=''>
+      <FloatingNav navItems={navItems}/>
+      <ProjectHero id={id}/>
+    <div className=" flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
-        <FloatingNav navItems={navItems}/>
-        <ProjectHero id={id}/>
         <ProjectAbout id={id}/>   
       </div>
     </div>
-
-    <div className='bg-science-blue-50'>
+    <div className=''>
       <ProjectFeatures id={id}/>
     </div>
 
-    <div className=" bg-science-blue-50 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+    <div className=" flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
         <ProjectContribution id={id}/>  
     </div>
   
-      <Footer />
+      
   </div>
 
   </main>

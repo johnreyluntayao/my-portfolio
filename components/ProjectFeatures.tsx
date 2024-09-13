@@ -5,39 +5,38 @@ const ProjectFeatures = ({ id }: { id: number }) => {
   const projectDetail = detailedProjects.find((p) => p.id === id);
 
   return (
-    <div
-      className='!max-w-full bg-science-blue-200 grid justify-center items-center pb-10 mb-36'
-      id='project-features'
-    >
-      <h1 className='heading p-10 md:pt-10 lg:pt-16'>
-        Project <span className='text-science-blue-600'>Features</span>
+    <div className="bg-gradient-to-b from-[#0c416e] to-[#0d91ea] flex flex-col items-center py-16 mb-36" id="project-features">
+      <h1 className="text-5xl font-extrabold text-white mb-12">
+        Project <span className="text-[#a1d1f2]">Features</span>
       </h1>
 
       {projectDetail ? (
-        <div className='grid justify-center text-center md:grid-cols-2 lg:grid-cols-3 gap-10 pt-3 md:pt-5 lg:pt-10 max-w-7xl w-full sm:px-10 px-5 mb-5'>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl w-full px-6 sm:px-10">
           {projectDetail.features?.map((feat, idx) => (
             <div
               key={idx}
-              className={`${
-                idx % 2 === 0 ? 'bg-science-blue-800' : 'bg-science-blue-500'
-              } pb-8 rounded-lg flex flex-col`}
+              className="relative bg-white/90 shadow-lg rounded-xl transition-transform transform hover:scale-105 hover:shadow-2xl backdrop-blur-md"
+              style={{
+                backgroundColor: idx % 2 === 0 ? '#0b3555' : '#0b5875',
+                color: '#f1f9ff',
+              }}
             >
               <img
-                src={feat.img} 
+                src={feat.img}
                 alt={feat.title}
-                className='flex justify-center items-center rounded-t-lg w-full h-52'
+                className="w-full h-48 object-cover rounded-t-xl"
               />
-              <h1 className='px-8 py-5 font-bold lg:text-2xl md:text-xl text-lg text-gray-200'>
-                {feat.title}
-              </h1>
-              <p className='text-gray-200 lg:text-xl lg:font-normal font-light text-sm px-10'>
-                {feat.desc}
-              </p>
+              <div className="p-6">
+                <h2 className="text-xl lg:text-2xl font-semibold mb-3">{feat.title}</h2>
+                <p className="text-sm lg:text-lg font-light leading-relaxed">{feat.desc}</p>
+              </div>
+              {/* Optional: Gradient overlay to enhance readability over images */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black opacity-30 rounded-t-xl pointer-events-none"></div>
             </div>
           ))}
         </div>
       ) : (
-        <div>Not found</div>
+        <div className="text-center text-gray-300">Not found</div>
       )}
     </div>
   );
