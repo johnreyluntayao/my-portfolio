@@ -7,7 +7,7 @@ const TechnicalSkills = () => {
       <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-12 p-4">
         {companies.map((company) => (
           <React.Fragment key={company.id}>
-            <div className="flex items-center gap-2 sm:gap-3 bg-white/20 rounded-full p-2 sm:p-3 shadow-md hover:bg-white/30 transition duration-300">
+            <div className="flex items-center gap-2 sm:gap-3 bg-white/20 rounded-lg p-2 sm:p-3 shadow-md hover:bg-white/30 transition duration-300">
               <img
                 src={company.img}
                 alt={company.name}
