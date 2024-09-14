@@ -8,7 +8,7 @@ const ProjectAbout = ({ id }: { id: number }) => {
     <div className="flex justify-center items-center pb-36" id="project-about">
       <div className="w-full lg:w-[55vw] md:w-[65vw]">
         {project ? (
-          <div className="relative bg-gradient-to-r from-white to-blue-50 border border-science-blue-500 rounded-lg shadow-xl transition hover:shadow-2xl">
+          <div className="relative pt-24">
             <h1 className="heading pt-6 text-center text-3xl md:text-4xl lg:text-5xl text-science-blue-950 font-bold">
               Project <span className="text-science-blue-600">Description</span>
             </h1>
