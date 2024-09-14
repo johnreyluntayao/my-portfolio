@@ -5,6 +5,7 @@ import ProjectAbout from '@/components/ProjectAbout'
 import ProjectContribution from '@/components/ProjectContribution'
 import ProjectFeatures from '@/components/ProjectFeatures'
 import ProjectHero from '@/components/ProjectHero'
+import ProjectFeature2 from '@/components/ProjectFeature2'
 import { FloatingNav } from '@/components/ui/FloatingNavbar'
 import { navItems } from '@/data'
 import React from 'react'
@@ -22,11 +23,12 @@ const page = ({params} : {
       <ProjectHero id={id}/>
     <div className=" flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
+      
         <ProjectAbout id={id}/>   
       </div>
     </div>
     <div className=''>
-      <ProjectFeatures id={id}/>
+    <ProjectFeature2 id={id}/>
     </div>
 
     <div className=" flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
