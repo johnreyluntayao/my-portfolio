@@ -76,33 +76,34 @@ export const projects = [
     des: "A centralized platform for making resort reservation, information, and virtual experience.",
     img: "/reservation1.png",
     iconLists: ["/html.svg", "/css.svg", "/javascript.svg", "/figma.svg", "/hostinger.svg"],
-    link: "Go to the project",
+    link: "Wanna know more?",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/projects/2",
+    title: " “Where to Look”: Your Health Companion",
+    des: "Read, learn, and talk with others about health-related topics. This website will help you become more mindful of your health.",
+    img: "/w2lookhome.png",
+    iconLists: ["/figma.svg", "/wordpress.svg"],
+    link: "Wanna know more?",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/projects/3",
+    title: "NetZerAttic ",
+    des: "A website that specializes in attic insulation and energy efficiency, aiming to create net-zero energy consumption specifically for attics.",
+    img: "/netzerohome.png",
+    iconLists: ["/wordpress.svg", "/ssa.svg", "/elementor.svg"],
+    link: "Wanna know more?",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/projects/4",
+    title: "3D Projects",
+    des: "The Following are collections of 3D Projects I made during my 4th year.",
+    img: "/3dsmax.svg",
+    iconLists: ["/3dsmax.svg"],
+    link: "Wanna know more?",
   },
 ];
+
 
 
 
@@ -132,31 +133,171 @@ export const detailedProjects = [
       },
     ],
   },
+
+
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/projects/2",
-  },
+    title: "“Where to Look”: Your Health Companion",
+    desc: " Discover a world of wellness at “Where to Look”! Our mission? To empower you with knowledge, compassion, and hope. Dive into our comprehensive health condition section—from sniffles to serious ailments, we’ve got the lowdown. Chat with experts and fellow warriors, explore prevention tips, and find motivation when you need it most. Join our health-conscious community today. Let’s navigate wellness hand in hand!",
+    features: [
+      {
+        id: 1,
+        title: "Categorized Health Conditions",
+        img: "/w2lookhealth.png",
+        desc: "With 21 categories of health problems, users can easily find the information they need. Each category includes a detailed description, symptoms, causes, effects, treatments, and an inspirational quote.",
+      },
+      {
+        id: 2,
+        title: "Chat & Connect",
+        img: "/w2lookchat.png",
+        desc: "Need advice? Seeking support? Our chat feature connects you with experts and fellow warriors. Because healing is better together.",
+      },
+    ],
+  }, 
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/projects/3",
+    title: "NetZeroAttic",
+    desc:"The website was created to promote the business the Net-Zero-Attic that is focused in Attic insulation that is owned by a Canadian Company. The website promotes informative details about attic insulation and the services that the business offers.",
+    features: [
+      {
+        id: 1,
+        title: "Informative Website",
+        img: "/netzeroabout.png",
+        desc: "Offers different pages that provide valuable information about attic insulation, energy efficiency, and related services offered by Net-Zero-Attic.",
+      },
+      {
+        id: 2,
+        title: "Make an Appointment",
+        img: "/netzerocontact.png",
+        desc: "This feature allows users to schedule appointments with Net-Zero-Attic directly through the website to conveniently set up consultations, inspections, or insulation installations by choosing available time slots.",
+      },
+    ],
+  }, 
+ {
+    id: 4,
+    title: "3D Projects",
+    desc: "The Following are collections of 3D Projects that I made using 3DSMax.",
+  },
+];
+
+
+export const cards = [
+  {
+    id: 1,
+    title: "House",
+    desc: "The images below shows the 3D Version covering all the spaces of my house.",
+    images: [
+      {
+        id: 1,
+        className: "md:col-span-2",
+        thumbnail: "/house.jpg",
+      },
+      {
+        id: 2,
+        className: "col-span-1",
+        thumbnail: "/terrace.jpg",
+      },
+      {
+        id: 3,
+        className: "col-span-1",
+        thumbnail: "/loob.jpg",
+      },
+      {
+        id: 4,
+        className: "md:col-span-2",
+        thumbnail: "/cr.jpg",
+      },
+      {
+        id: 5,
+        className: "md:col-span-2",
+        thumbnail: "/sala2.jpg",
+      },
+      {
+        id: 6,
+        className: "col-span-1",
+        thumbnail: "/kusina.jpg",
+      },
+      {
+        id: 7,
+        className: "col-span-1",
+        thumbnail: "/secondfloor.jpg",
+      },
+      {
+        id: 8,
+        className: "md:col-span-2",
+        thumbnail: "/secondfloorterrace.jpg",
+      },
+    ]
+  },
+
+  {
+    id: 2,
+    title: "Room Building",
+    desc: "The images below are the 3D version of one of the buildings of Camarines Norte State College.",
+    images: [
+      {
+        id: 1,
+        className: "md:col-span-2",
+        thumbnail: "/room/room1.png",
+      },
+      {
+        id: 2,
+        className: "col-span-1",
+        thumbnail: "/room/room2.png",
+      },
+      {
+        id: 3,
+        className: "col-span-1",
+        thumbnail: "/room/terrace.png",
+      },
+      {
+        id: 4,
+        className: "md:col-span-2",
+        thumbnail: "/room/edit.png",
+      },
+    ]
+  },
+
+  {
+    id: 3,
+    title: "Bathroom",
+    desc: "The images belows shows the 3D version of a comfort room.",
+    images: [
+      {
+        id: 1,
+        className: "md:col-span-2",
+        thumbnail: "/bathroom/scene1.jpg",
+      },
+      {
+        id: 2,
+        className: "col-span-1",
+        thumbnail: "/bathroom/scene2.jpg",
+      },
+    ]
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/projects/4",
+    title: "Chess",
+    desc: "The following images shows the 3D version of a chess board and pieces as my first 3D project.",
+    images: [
+      {
+        id: 1,
+        className: "col-span-1",
+        thumbnail: "/chess/chess1.jpg",
+      },
+      {
+        id: 2,
+        className: "md:col-span-2",
+        thumbnail: "/chess/chess2.jpg",
+      },
+    ]
   },
+
+  
+  
 ];
+
+
 
 
 export const contributions = [
@@ -437,45 +578,33 @@ export const ProjectRole = [
   },
   {
     id: 2,
-    title: "Web-based Reservation Management System",
+    title: "“Where to Look”: Your Health Companion",
     roles: [
       {
         quote:
-          "Implemented the design using HTML/CSS and functions using JavaScript focusing especially on the reservation management system.",
-        title: "Front-end Developer",
+          "Designed User Interface and ensured the design feels intuitive, visually engaging, knowledge accessible.",
+        title: "UI/UX Designer",
       },
       {
         quote:
-          "Created the scheme of the database and its implementation to the system using PHP,and I also implemented the payment gateway.",
-        title: "Back-end Developer",
-      },
-      {
-        quote: "Created and implemented ways in order to improve better user-experience with user-friendly design, ease of transactions, and information access.",
-        title: "UX Designer",
+          "Applied the design through Wordpress for faster implementation and ease of deployment.",
+        title: "Front-end Developer",
       },
     ]
   },
   {
     id: 3,
-    title: "Web-based Reservation Management System",
+    title: "NetZeroAttic",
     roles: [
       {
         quote:
-          "Implemented the design using HTML/CSS and functions using JavaScript focusing especially on the reservation management system.",
+          "Focusing on the appointment, using the Simply Schedule Appointment (SSA), I am responsible of implementing of what the appointment should look like and set-up some functions of the appointment.",
         title: "Front-end Developer",
-      },
-      {
-        quote:
-          "Created the scheme of the database and its implementation to the system using PHP,and I also implemented the payment gateway.",
-        title: "Back-end Developer",
-      },
-      {
-        quote: "Created and implemented ways in order to improve better user-experience with user-friendly design, ease of transactions, and information access.",
-        title: "UX Designer",
       },
     ]
   },
   
 ];
+
 
 

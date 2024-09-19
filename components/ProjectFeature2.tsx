@@ -5,12 +5,12 @@ import { detailedProjects } from '@/data';
 
 const ProjectFeature2 = ({ id }: { id: number }) => {
   const projectDetail = detailedProjects.find((p) => p.id === id);
-  const monitorColors = ['bg-[#FF8C00]', 'bg-[#228B22]', 'bg-[#2F4F4F]'];
+  const monitorColors = ['border-[#FF8C00]', 'border-[#228B22]', 'border-[#2F4F4F]'];
 
 
 
   return (
-    <section className=" flex items-center justify-center px-0 lg:px-32 mb-32" id="about">
+    <section className=" flex items-center justify-center px-0 lg:px-32 mb-32">
       {projectDetail ? (
 
 <div className='flex flex-col gap-16 lg:gap-32'>
@@ -53,13 +53,13 @@ const ProjectFeature2 = ({ id }: { id: number }) => {
       
       <div className="relative rounded-lg shadow-lg flex justify-center items-center">
         
-        <div className={`relative ${monitorColors[idx % monitorColors.length]} p-4 rounded-lg`}>
+        <div className={`relative ${monitorColors[idx % monitorColors.length]} border-[15px]  rounded-lg max-h-[300px] overflow-y-auto`}>
           <img
             src={feat.img}
             alt="Product Display"
             height={500}
             width={500}
-            className="rounded-lg"
+            className=""
           />
         </div>
 
