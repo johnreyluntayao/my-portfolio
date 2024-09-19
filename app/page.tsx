@@ -26,7 +26,7 @@ export default function Home() {
    <div className="">
     <TechnicalSkills />
    </div>
-   <div className="relative bg-science-blue-50/25 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+   <div className=" bg-science-blue-50/25 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
     <Projects />
       <Footer />
    </div>

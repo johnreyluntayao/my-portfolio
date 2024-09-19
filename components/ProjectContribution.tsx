@@ -4,11 +4,11 @@ import { ProjectRole } from '@/data';
 
 const ProjectContribution = ({ id }: { id: number }) => {
   return (
-    <section className='bg-science-blue-50' id='project-contribution'>
-      <h1 className='heading pt-10 md:pt-10 lg:pt-15'>
+    <section className='py-10 md:py-10 lg:py-24'>
+      <h1 className='heading '>
         My <span className='text-science-blue-600'>Role</span>
       </h1>
-      <div className="pt-3 md:pt-5 lg:pt-10 rounded-md flex flex-col antialiased items-center justify-center relative">
+      <div className="pt-4 md:pt-8 lg:pt-16 rounded-md flex flex-col antialiased items-center justify-center relative">
         <InfiniteMovingCards
           items={ProjectRole}
           direction="right"

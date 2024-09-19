@@ -23,11 +23,13 @@ const ProjectHero = ({id}: {id: number}) => {
                          </p>
                    </div>
         
-                     <div className=''>
+                     <div className='flex items-center justify-center'>
                          <img 
                          src={project.img}
                          alt={project.title}
-                         className='rounded-lg w-full h-full'
+                         width={300}
+                         height={300}
+                         className='rounded-lg'
                          />
                      </div>
                  </div>

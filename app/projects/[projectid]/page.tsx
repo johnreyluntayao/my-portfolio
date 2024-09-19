@@ -27,17 +27,24 @@ const page = ({params} : {
         <ProjectAbout id={id}/>   
       </div>
     </div>
-    <div className=''>
+    <div className={`${id === 4 ? 'hidden' : ''}`}>
     <ProjectFeature2 id={id}/>
-    </div>
+    
 
-    <div className=" flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+    <div className=" flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 bg-gray-200">
       <div className="max-w-7xl w-full">
         <ProjectContribution id={id}/>  
     </div>
-  
+    </div>
+    
+
+    
       
   </div>
+  <div className=" bg-science-blue-50/25 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+    
+      <Footer />
+   </div>
 
   </main>
   )
