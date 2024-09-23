@@ -2,8 +2,7 @@
 
 import React, { useState, useTransition } from 'react';
 import { motion, useInView } from 'framer-motion';
-import TabButton from './ui/TabButton';
-import { tabData, about } from '@/data';
+import { about } from '@/data';
 
 const About = () => {
     const [tab, setTab] = useState("skills");
