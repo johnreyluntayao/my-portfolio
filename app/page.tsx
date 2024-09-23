@@ -15,21 +15,25 @@ import { FaHome } from "react-icons/fa";
 export default function Home() {
   return (
     <main>
-   <div className="relative bg-science-blue-50/25 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-    <div className="max-w-7xl w-full">
-      <FloatingNav navItems={navItems}/>
-      <Hero />
-      <Skills />
-      <About />
-    </div>
-   </div>
-   <div className="">
-    <TechnicalSkills />
-   </div>
-   <div className=" bg-science-blue-50/25 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-    <Projects />
+      <section className="relative bg-science-blue-50/50 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+        <div className="max-w-7xl w-full">
+          <FloatingNav navItems={navItems} />
+          <Hero />
+          <Skills />
+          <About />
+        </div>
+      </section>
+
+      <section>
+        <TechnicalSkills />
+      </section>
+
+      <section className="bg-science-blue-50/25 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+        <Projects />
+      </section>
+
       <Footer />
-   </div>
-   </main>
+    </main>
   );
 }
+

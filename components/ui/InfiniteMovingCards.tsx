@@ -87,11 +87,12 @@ export const InfiniteMovingCards = ({
       >
         {selectedItem ? (
           selectedItem.roles.map((role, idx) => (
+            // linear-gradient(180deg, var(--[science-blue-900]), var(--science-blue-950))
             <li
               className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 px-8 py-6 md:w-[450px]"
               style={{
                 background:
-                  "linear-gradient(180deg, var(--science-blue-900), var(--science-blue-950))",
+                  "#fbfcf8",
               }}
               key={`${selectedItem.id}-${idx}`}
             >
@@ -102,12 +103,12 @@ export const InfiniteMovingCards = ({
                 ></div>
                 <div className="relative z-20 mb-6 flex flex-row items-center">
                   <span className="flex flex-col gap-1">
-                    <span className="text-lg md:text-2xl lg:text-3xl leading-[1.6] text-white">
+                    <span className="text-lg md:text-2xl lg:text-3xl leading-[1.6] text-science-blue-900">
                       {role.title}
                     </span>
                   </span>
                 </div>
-                <span className="relative z-20 text-sm md:text-base lg:text-lg leading-[1.6] text-gray-400">
+                <span className="relative z-20 text-sm md:text-base lg:text-lg leading-[1.6] text-science-blue-900">
                   {role.quote}
                 </span>
               </blockquote>

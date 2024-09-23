@@ -87,3 +87,24 @@
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
 }
+
+
+.scroller{
+  overflow: hidden;
+
+}
+
+.scrollInner{
+  width: max-content;
+  flex-wrap: nowrap;
+}
+
+.scroller-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; 
+}
+
+.clip-triangle {
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}

@@ -51,7 +51,7 @@ export const LayoutGrid = ({ card }: { card: Card }) => {
       className="w-full h-full p-10 grid grid-cols-1 md:grid-cols-3 max-w-7xl mx-auto gap-4 relative"
       initial="hidden"
       whileInView="visible" // Trigger animation when this container is in view
-      viewport={{ once: true, amount: 0.3 }} // Ensure the animation only happens once per scroll
+      viewport={{ amount: 0.3 }} // Ensure the animation only happens once per scroll
       variants={containerVariant} // Apply container animation
     >
       {card.images.map((image) => (
