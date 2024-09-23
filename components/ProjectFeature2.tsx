@@ -1,93 +1,117 @@
-'use client';
+'use client'; 
 
-import React from 'react';
-import { detailedProjects } from '@/data';
-
-const ProjectFeature2 = ({ id }: { id: number }) => {
-  const projectDetail = detailedProjects.find((p) => p.id === id);
-  const monitorColors = ['border-[#FF8C00]', 'border-[#228B22]', 'border-[#2F4F4F]'];
-
-
-
-  return (
-    <section className=" flex items-center justify-center px-0 lg:px-32 mb-32">
-      {projectDetail ? (
-
-<div className='flex flex-col gap-16 lg:gap-32'>
-<div className='flex flex-col items-center justify-center gap-8'>
-<h1 className=" text-center text-2xl md:text-3xl lg:text-4xl text-science-blue-600 font-semibold">
-     Features
-    </h1>
-    <img
-      src="/mouse.svg"
-       alt="mouse" 
-       height={50}
-       width={50} 
-       className=''   
-     />
-
-    </div>  
-
-        <div className="flex flex-col gap-16 lg:gap-60 items-center px-16">
-
-        
-
-
-          {projectDetail.features?.map((feat, idx) => (
-            <React.Fragment key={idx}>
-              <div
-                className={`flex flex-col ${
-                  idx % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-                } items-center gap-2`}
+  import React, { useRef } from 'react';
+  import { motion, useInView } from 'framer-motion';
+  import { detailedProjects } from '@/data';
+  
+  const ProjectFeature2 = ({ id }: { id: number }) => {
+    const projectDetail = detailedProjects.find((p) => p.id === id);
+  
+    // Variants for animations
+    const fadeInLeft = {
+      hidden: { opacity: 0, x: -100 },
+      visible: { opacity: 1, x: 0, transition: { duration: 1, ease: 'easeOut' } }
+    };
+  
+    const fadeInRight = {
+      hidden: { opacity: 0, x: 100 },
+      visible: { opacity: 1, x: 0, transition: { duration: 1, ease: 'easeOut' } }
+    };
+  
+    // Ref for the header
+    const headerRef = useRef(null);
+    const isHeaderInView = useInView(headerRef, { margin: '0px 0px -200px 0px' });
+  
+    // Ref for the mouse icon
+    const mouseRef = useRef(null);
+    const isMouseInView = useInView(mouseRef, { margin: '0px 0px -200px 0px' });
+  
+    return (
+      <section className="relative flex items-center justify-center pt-32 lg:px-32 pb-32 overflow-hidden mt-32">
+        {/* Triangle Background */}
+       <div className="absolute top-0 left-0 w-full h-full z-0">
+          <div className="absolute top-0 left-0 w-full h-full bg-[#eef7f7] clip-triangle"></div>
+        </div>
+  
+        {projectDetail ? (
+          <div className="relative z-10 flex flex-col gap-16">
+            <div className="flex flex-col items-center justify-center gap-8">
+              {/* Animate the header */}
+              <motion.h1
+                ref={headerRef}
+                className="text-center text-3xl md:text-4xl lg:text-5xl text-science-blue-600 font-semibold"
+                initial={{ opacity: 0, y: -20 }}
+                animate={isHeaderInView ? { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' } } : { opacity: 0, y: -20 }}
               >
-                {/* <div className="w-full lg:w-1/2 order-1 lg:order-1">
-                  <img
-                    src={feat.img}
-                    alt={feat.title}
-                    className="w-full h-auto rounded-lg"
-                    
-                  />
-                </div> */}
-
-                <div className="flex items-center justify-center w-full lg:w-1/2 order-1 lg:order-1">
-      
-      <div className="relative rounded-lg shadow-lg flex justify-center items-center">
-        
-        <div className={`relative ${monitorColors[idx % monitorColors.length]} border-[15px]  rounded-lg max-h-[300px] overflow-y-auto`}>
-          <img
-            src={feat.img}
-            alt="Product Display"
-            height={500}
-            width={500}
-            className=""
-          />
-        </div>
-
-        
-        <div className="absolute bottom-[-20px] bg-gray-800 w-[100px] h-[20px] rounded-b-lg"></div>
-        <div className="absolute bottom-[-40px] bg-gray-400 w-[200px] h-[20px] rounded-t-lg "></div>
-      </div>
-    </div>
-
-               
-                <div className="mt-10 lg:mt-0 flex flex-col justify-center w-full lg:w-1/2 text-center md:text-left lg:text-left p-4 lg:p-8 order-2 lg:order-2">
-                  <h1 className="text-3xl items-center md:items-center lg:items-start font-bold mb-4 text-science-blue-950">
-                    {feat.title}
-                  </h1>
-                  <p className="text-sm md:text-base lg:text-lg font-normal text-science-blue-950">
-                    {feat.desc}
-                  </p>
-                </div>
-              </div>
-            </React.Fragment>
-          ))}
-        </div>
-        </div>
-      ) : (
-        <p>Not found</p>
-      )}
-    </section>
-  );
-};
-
-export default ProjectFeature2;
+                Features
+              </motion.h1>
+  
+              {/* Animate the mouse icon */}
+              <motion.img
+                ref={mouseRef}
+                src="/mouse.svg"
+                alt="mouse"
+                height={40}
+                width={40}
+                className=""
+                initial={{ opacity: 0, y: 20 }}
+                animate={isMouseInView ? { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' } } : { opacity: 0, y: 20 }}
+              />
+            </div>
+  
+            <div className="flex flex-col gap-16 lg:gap-32 items-center">
+              {projectDetail.features?.map((feat, idx) => {
+                const ref = useRef(null);
+                const isInView = useInView(ref, { margin: '0px 0px -200px 0px' });
+  
+                return (
+                  <React.Fragment key={idx}>
+                    <div
+                      ref={ref}
+                      className={`flex flex-col ${
+                        idx % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
+                      } items-center `}
+                    >
+                      <motion.div
+                        className="flex items-center justify-center w-full lg:h-3/4 lg:w-1/2 order-1 lg:order-1"
+                        initial="hidden"
+                        animate={isInView ? 'visible' : 'hidden'}
+                        variants={idx % 2 === 0 ? fadeInLeft : fadeInRight}
+                      >
+                        <img
+                          src={feat.img}
+                          alt="Product Display"
+                          height={600}
+                          width={600}
+                          className=""
+                        />
+                      </motion.div>
+  
+                      <motion.div
+                        className="mt-10 lg:mt-0 flex flex-col justify-center w-full lg:w-1/2 text-center md:text-left lg:text-left p-4 lg:p-8 order-2 lg:order-2"
+                        initial="hidden"
+                        animate={isInView ? 'visible' : 'hidden'}
+                        variants={idx % 2 === 0 ? fadeInRight : fadeInLeft}
+                      >
+                        <h1 className="text-4xl items-center md:items-center lg:items-start font-bold mb-4 text-science-blue-900">
+                          {feat.title}
+                        </h1>
+                        <p className="text-sm md:text-base lg:text-lg font-normal text-science-blue-950">
+                          {feat.desc}
+                        </p>
+                      </motion.div>
+                    </div>
+                  </React.Fragment>
+                );
+              })}
+            </div>
+          </div>
+        ) : (
+          <p>Not found</p>
+        )}
+      </section>
+    );
+  };
+  
+  export default ProjectFeature2;
+  
