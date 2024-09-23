@@ -98,7 +98,14 @@ const config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+
       keyframes: {
+        infinite_scroll: {
+          "100%": { transform: "translateX(calc(-50% + 0.5rem))" },
+        },
+        infinite_scroll_reverse: {
+          "100%": { transform: "translateX(calc(50% - 0.5rem))" },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -165,6 +172,8 @@ const config = {
         },
       },
       animation: {
+        infinite_scroll: "infinite_scroll 15s linear infinite",
+        infinite_scroll_reverse: "infinite_scroll_reverse 15s linear infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         spotlight: "spotlight 2s ease .75s 1 forwards",

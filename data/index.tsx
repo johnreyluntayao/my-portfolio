@@ -1,7 +1,7 @@
 export const navItems = [
   { name: "Home", link: "#hero" },
-  { name: "About", link: "#about" },
   { name: "Skills", link: "#skills" },
+  { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
 ];
 
@@ -74,7 +74,7 @@ export const projects = [
     id: 1,
     title: "Web-based Reservation Management System",
     des: "A centralized platform for making resort reservation, information, and virtual experience.",
-    img: "/reservation1.png",
+    img: "/Natura/home.png",
     iconLists: ["/html.svg", "/css.svg", "/javascript.svg", "/figma.svg", "/hostinger.svg"],
     link: "Wanna know more?",
   },
@@ -82,7 +82,7 @@ export const projects = [
     id: 2,
     title: " “Where to Look”: Your Health Companion",
     des: "Read, learn, and talk with others about health-related topics. This website will help you become more mindful of your health.",
-    img: "/w2lookhome.png",
+    img: "/wlook/w2lookhome.png",
     iconLists: ["/figma.svg", "/wordpress.svg"],
     link: "Wanna know more?",
   },
@@ -90,7 +90,7 @@ export const projects = [
     id: 3,
     title: "NetZerAttic ",
     des: "A website that specializes in attic insulation and energy efficiency, aiming to create net-zero energy consumption specifically for attics.",
-    img: "/netzerohome.png",
+    img: "/netzero/netzerohome.png",
     iconLists: ["/wordpress.svg", "/ssa.svg", "/elementor.svg"],
     link: "Wanna know more?",
   },
@@ -98,10 +98,18 @@ export const projects = [
     id: 4,
     title: "3D Projects",
     des: "The Following are collections of 3D Projects I made during my 4th year.",
-    img: "/3dsmax.svg",
+    img: "/3d.png",
     iconLists: ["/3dsmax.svg"],
     link: "Wanna know more?",
   },
+  {
+    id: 5,
+    title: "St. Martha Management System",
+    des: "Manage business transaction records and monitor client payments.",
+    img: "/stmartha/dashboard.png",
+    iconLists: ["/vbnet.png", "/figma.svg"],
+    link: "Wanna know more?",
+  }
 ];
 
 
@@ -116,19 +124,19 @@ export const detailedProjects = [
       {
         id: 1,
         title: "Reservation Management System",
-        img: "/reserve-feat3.png",
+        img: "/Natura/reserve.svg",
         desc: "Allows users to select deferent packages, date & time, payment methods, with conversational experience.",
       },
       {
         id: 2,
         title: "Website",
-        img: "/reserve-feat1.png",
+        img: "/Natura/home.svg",
         desc: "With the homepage a video introduction showcasing the resort and the resort's Facebook page plugin, gallery that showcases facilities, and other information about the resort.",
       },
       {
         id: 3,
         title: "3D Virtual Tour",
-        img: "/reserve-feat2.png",
+        img: "/Natura/virtual.svg",
         desc: "Introducing the website's virtual tour feature, enabling users to explore the resort remotely and navigate through various rooms.",
       },
     ],
@@ -143,13 +151,13 @@ export const detailedProjects = [
       {
         id: 1,
         title: "Categorized Health Conditions",
-        img: "/w2lookhealth.png",
+        img: "/wlook/list.svg",
         desc: "With 21 categories of health problems, users can easily find the information they need. Each category includes a detailed description, symptoms, causes, effects, treatments, and an inspirational quote.",
       },
       {
         id: 2,
         title: "Chat & Connect",
-        img: "/w2lookchat.png",
+        img: "/wlook/chat.svg",
         desc: "Need advice? Seeking support? Our chat feature connects you with experts and fellow warriors. Because healing is better together.",
       },
     ],
@@ -162,13 +170,13 @@ export const detailedProjects = [
       {
         id: 1,
         title: "Informative Website",
-        img: "/netzeroabout.png",
+        img: "/netzero/about.svg",
         desc: "Offers different pages that provide valuable information about attic insulation, energy efficiency, and related services offered by Net-Zero-Attic.",
       },
       {
         id: 2,
         title: "Make an Appointment",
-        img: "/netzerocontact.png",
+        img: "/netzero/reserve.svg",
         desc: "This feature allows users to schedule appointments with Net-Zero-Attic directly through the website to conveniently set up consultations, inspections, or insulation installations by choosing available time slots.",
       },
     ],
@@ -178,6 +186,17 @@ export const detailedProjects = [
     title: "3D Projects",
     desc: "The Following are collections of 3D Projects that I made using 3DSMax.",
   },
+  {
+    id: 5,
+    title: "St. Martha Management System",
+    desc: "In the ever-evolving landscape of technology, businesses face increasing challenges. St. Martha Memorial Homes Inc., situated in Daet, Camarines Norte, grappled with manual record-keeping and client contract management. To address these issues, a comprehensive management system was developed. It provides organized lists of contract and plan transactions, empowers administrators to efficiently manage records, and enables seamless client payment monitoring. This system streamlines business operations, benefiting both the company and its users.",
+    features: [
+      {
+        id: 1,
+        title: "",
+      }
+    ]
+  }
 ];
 
 
@@ -392,6 +411,11 @@ export const companies = [
     id: 13,
     name: "Adobe Premiere",
     img: "/adobe.svg",
+  },
+  {
+    id: 14,
+    name: "Wordpress",
+    img: "/wordpress.svg",
   },
 
 ];

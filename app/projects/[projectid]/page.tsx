@@ -18,7 +18,7 @@ const page = ({params} : {
 
 
   return (
-    <main className=''>
+    <main className='relative bg-[#fbfcf8] overflow-hidden'>
       <FloatingNav navItems={navItems}/>
       <ProjectHero id={id}/>
     <div className=" flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
@@ -31,7 +31,7 @@ const page = ({params} : {
     <ProjectFeature2 id={id}/>
     
 
-    <div className=" flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 bg-gray-200">
+    <div className="relative flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 bg-science-blue-900">
       <div className="max-w-7xl w-full">
         <ProjectContribution id={id}/>  
     </div>
@@ -41,7 +41,7 @@ const page = ({params} : {
     
       
   </div>
-  <div className=" bg-science-blue-50/25 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+  <div className="relative flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
     
       <Footer />
    </div>

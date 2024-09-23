@@ -4,9 +4,9 @@ import { ProjectRole } from '@/data';
 
 const ProjectContribution = ({ id }: { id: number }) => {
   return (
-    <section className='py-10 md:py-10 lg:py-24'>
-      <h1 className='heading '>
-        My <span className='text-science-blue-600'>Role</span>
+    <section className='relative py-10 md:py-10 lg:py-24'>
+      <h1 className='heading text-[#42c7cf]'>
+        My <span className='text-[#42c7cf]'>Role</span>
       </h1>
       <div className="pt-4 md:pt-8 lg:pt-16 rounded-md flex flex-col antialiased items-center justify-center relative">
         <InfiniteMovingCards
