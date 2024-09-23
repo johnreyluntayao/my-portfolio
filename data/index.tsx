@@ -185,6 +185,15 @@ export const detailedProjects = [
     id: 4,
     title: "3D Projects",
     desc: "The Following are collections of 3D Projects that I made using 3DSMax.",
+    features: [{
+      id: 1,
+      title: "",
+      img: "",
+      desc: "",
+
+    }
+
+    ]
   },
   {
     id: 5,
@@ -194,6 +203,8 @@ export const detailedProjects = [
       {
         id: 1,
         title: "",
+        img: "",
+        desc: "",
       }
     ]
   }

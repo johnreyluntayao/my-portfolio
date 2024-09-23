@@ -3,7 +3,6 @@
 import Footer from '@/components/Footer'
 import ProjectAbout from '@/components/ProjectAbout'
 import ProjectContribution from '@/components/ProjectContribution'
-import ProjectFeatures from '@/components/ProjectFeatures'
 import ProjectHero from '@/components/ProjectHero'
 import ProjectFeature2 from '@/components/ProjectFeature2'
 import { FloatingNav } from '@/components/ui/FloatingNavbar'
