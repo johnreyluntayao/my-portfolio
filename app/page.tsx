@@ -6,9 +6,6 @@ import Skills from "@/components/Skills";
 import TechnicalSkills from "@/components/TechnicalSkills";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { navItems } from "@/data";
-import Image from "next/image";
-import { FaHome } from "react-icons/fa";
-
 
 
 export default function Home() {
