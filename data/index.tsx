@@ -202,9 +202,15 @@ export const detailedProjects = [
     features: [
       {
         id: 1,
-        title: "",
-        img: "",
-        desc: "",
+        title: "Client Record Management",
+        img: "/stmartha/client-record.svg",
+        desc: "The system enables the user to input and maintain detailed client records. This includes essential information such as client names, contact details, and any relevant notes. The can easily search for specific clients, update their records, and track interactions and payments over time.",
+      },
+      {
+        id: 2,
+        title: "Transaction Management",
+        img: "/stmartha/transaction.svg",
+        desc: "The system handles various transactions related to clients. These includes contract signings, plan selections, and payment processing. The user/s can create, modify, and view transaction records, ensuring accurate and efficient management"
       }
     ]
   }
@@ -329,33 +335,6 @@ export const cards = [
 
 
 
-
-export const contributions = [
-  {
-    id: 1,
-    conntributions: [
-      {
-        id: 1,
-        logo: "",
-        title: "Back-end Developer",
-        desc: "",
-      },
-      {
-        id: 2,
-        logo: "",
-        title: "Front-end Developer",
-        desc: "",
-      },
-      {
-        id: 3,
-        logo: "",
-        title: "UX Designer",
-        desc: "",
-      },
-    ],
-  },
-];
-
 export const companies = [
   {
     id: 1,
@@ -431,132 +410,26 @@ export const companies = [
 
 ];
 
-export const workExperience = [
-  {
-    id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
-    className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
-  },
-  {
-    id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
-  },
-  {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
-  },
-];
 
 export const socialMedia = [
   {
     id: 1,
     img: "/git.svg", 
+    link: "https://github.com/johnreyluntayao",
   },
   {
     id: 2,
     img: "/twit.svg",
+    link: "",
   },
   {
     id: 3,
     img: "/link.svg",
-  },
-];
-
-interface TabDataType {
-  title: string;
-  id: string;
-  content: JSX.Element;
-}
-
-export const tabData: TabDataType[] = [
-  {
-    title: "Skills",
-    id: "skills",
-    content: (
-      <ul className="list-disc pl-5">
-        <li>HTML/CSS</li>
-        <li>PHP</li>
-        <li>JavaScript</li>
-        <li>TypeScript</li>
-        <li>React Native</li>
-        <li>React JS</li>
-        <li>MySQL</li>
-        <li>Figma</li>
-        <li>Canva</li>
-        <li>Vbnet</li>
-        <li>3DSmax</li>
-        <li>Adobe Premiere Pro</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Experiences",
-    id: "experiences",
-    content: (
-      <ul className="list-disc pl-5">
-        <li>HTML/CSS1</li>
-        <li>JavaScript1</li>
-        <li>ReactJS1</li>
-        <li>Figma1</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Certifications",
-    id: "certifications",
-    content: (
-      <ul className="list-disc pl-5">
-        <li>Academic Distinction Award, 2024</li>
-        <li>TOPCIT (Test for Practical Competency in IT), Level 2, 2023</li>
-        <li>BYCT (Bicol Youth Congress in Information Technology), Certificate of Participation, 2023</li>
-        <li>DICT Graphics Design using Adobe Express Webinar, Certificate of Participation, 2023</li>
-        <li>Dean's List Award, 2022</li>
-        <li>CSS Computer System Servicing, NCII Passer, 2017</li>
-      </ul>
-    ),
+    link: "https://www.linkedin.com/in/johnrey-luntayao",
   },
 ];
 
 
-export const projectDetails = [
-  {
-    id: 1,
-    title: "Project 1",
-    desc: "Description",
-    features: [
-      {
-        name: "Name1",
-        desc: "Descrition1",
-      },
-      {
-        name2: "Name1",
-        desc2: "Descrition1",
-      },
-      {
-        name3: "Name1",
-        desc2: "Descrition1",
-      },
-    ],
-    contributions: [
-      "Yes", "Contri2",
-    ],
-  }
-];
 
 export const about = 
   {
@@ -635,6 +508,32 @@ export const ProjectRole = [
         quote:
           "Focusing on the appointment, using the Simply Schedule Appointment (SSA), I am responsible of implementing of what the appointment should look like and set-up some functions of the appointment.",
         title: "Front-end Developer",
+      },
+    ]
+  },
+  {
+    id: 4,
+    title: "3D Projects",
+    roles: [
+      {
+        quote: "",
+        title: "",
+      },
+    ]
+  },
+  {
+    id: 5,
+    title: "St. Martha Management System",
+    roles: [
+      {
+        quote: 
+        "As a front-end developer, I played a key role in building the system, focusing on developing features like the payment section, client information area, dashboard, and reports.",
+        title: "Front-end Developer",
+      },
+      {
+        quote: 
+        "As part of my responsibilities, I designed the database schema and seamlessly integrated it into the system. My work involved managing data structures, implementing payment functionality, and handling price and discount calculations.",
+        title: "Back-end Developer"
       },
     ]
   },
