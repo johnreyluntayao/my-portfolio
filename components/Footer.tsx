@@ -24,6 +24,7 @@ const Footer = () => {
                  title="Let's get in touch"
                  icon={<FaLocationArrow />}
                  position='right'
+                 moreClasses='bg-[linear-gradient(110deg,#0d91ea,45%,#7cc7fd,55%,#0d91ea)]'
                 />
             </a>
         </div>
@@ -32,12 +33,13 @@ const Footer = () => {
             <p className='md:text-base text-small md:font-normal font-light text-science-blue-950'>Copyright © 2024 Johnrey</p>
 
             <div className='flex items-center md:gap-3 lg:gap-6'>
-                {socialMedia.map((profile) => (
-                    <div key={profile.id} className='w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-science-blue-100 border border-science-blue-200 rounded-full'>
-                        <img src={profile.img} alt={profile.img} width={20} height={20} />
-                    </div>
-                ))}
-            </div>
+    {socialMedia.map((profile) => (
+        <a key={profile.id} href={profile.link} target="_blank" rel="noopener noreferrer" className='w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-science-blue-100 border border-science-blue-200 rounded-full'>
+            <img src={profile.img} alt={profile.img} width={20} height={20} />
+        </a>
+    ))}
+</div>
+
         </div>
 
     </footer>

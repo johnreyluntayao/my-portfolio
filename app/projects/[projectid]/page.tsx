@@ -17,7 +17,7 @@ const page = ({params} : {
 
 
   return (
-    <main className='relative bg-[#fbfcf8] overflow-hidden'>
+    <main className='relative overflow-hidden'>
       <FloatingNav navItems={navItems}/>
       <ProjectHero id={id}/>
     <div className=" flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
