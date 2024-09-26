@@ -25,7 +25,6 @@ export const FloatingNav = ({
   const [visible, setVisible] = useState(false);
   const [activeSection, setActiveSection] = useState("");
 
-
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     if (typeof current === "number") {
       let direction = current - scrollYProgress.getPrevious()!;
@@ -80,7 +79,7 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex max-w-fit fixed top-10 inset-x-0 mx-auto border border-white/20 bg-white/30 backdrop-blur-sm rounded-full dark:bg-black shadow-[0_8px_16px_rgb(0_0_0/0.4)] z-[5000] px-10 py-5 items-center justify-center space-x-4",
+          "flex max-w-fit fixed top-4 md:top-10 lg:top-10 inset-x-0 mx-auto border border-white/20 bg-white/30 backdrop-blur-sm rounded-full dark:bg-black shadow-[0_8px_16px_rgb(0_0_0/0.4)] z-[5000] px-10 py-5 items-center justify-center space-x-4",
           className
         )}
       >
@@ -100,15 +99,16 @@ export const FloatingNav = ({
               if (targetSection) {
                 targetSection.scrollIntoView({ behavior: "smooth" });
               } else {
-                router.push(`http://localhost:3000/#${sectionId}`);
+                
+                router.push(`/#${sectionId}`);
               }
             }}
           >
             <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="">{navItem.name}</span>
+            <span className="sm:text-xs md:text-base lg:text-lg">{navItem.name}</span>
           </Link>
         ))}
-        <button className="bg-science-blue-500 font-medium relative text-white dark:text-white px-4 py-2 rounded-full text-sm md:text-base lg:text-lg">
+        <button className="bg-science-blue-500 relative text-white dark:text-white px-4 py-2 rounded-full text-xs md:text-base lg:text-lg">
           <Link href="#contact">Contact Me</Link>
         </button>
       </motion.div>

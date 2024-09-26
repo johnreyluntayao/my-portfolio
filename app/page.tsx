@@ -10,8 +10,8 @@ import { navItems } from "@/data";
 
 export default function Home() {
   return (
-    <main>
-      <section className="relative bg-science-blue-50/50 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+    <main className="relative overflow-hidden">
+      <section className="flex justify-center items-center flex-col  mx-auto sm:px-10 px-5">
         <div className="max-w-7xl w-full">
           <FloatingNav navItems={navItems} />
           <Hero />
@@ -24,7 +24,7 @@ export default function Home() {
         <TechnicalSkills />
       </section>
 
-      <section className="bg-science-blue-50/25 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+      <section className=" flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
         <Projects />
       </section>
 
