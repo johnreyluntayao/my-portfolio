@@ -3,6 +3,7 @@
 import React from 'react';
 import { projects } from '@/data';
 import { motion } from 'framer-motion';
+import { Spotlight } from './ui/spotlight';
 
 const ProjectHero = ({ id }: { id: number }) => {
   const project = projects.find((p) => p.id === id);
@@ -36,6 +37,11 @@ const ProjectHero = ({ id }: { id: number }) => {
       className=' flex justify-center bg-science-blue-900 items-center py-32 mx-auto sm:px-10 px-5 h-screen'
       id='project-hero'
     >
+      <div>
+        <Spotlight className='-top-40 -left-10 rounded-lg md:-left-32 md:-top-20 h-screen' fill="#7cc7fd" />
+        <Spotlight className='top-10 left-full h-[80vh] w-[50vw] transform rotate-180' fill="#7cc7fd" />
+        <Spotlight className='top-28 left-80 h-[80vh] w-[50vw]' fill="#7cc7fd" />
+      </div>
       {project ? (
         <motion.div
           className='grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl justify-center items-center'
@@ -58,7 +64,7 @@ const ProjectHero = ({ id }: { id: number }) => {
               alt={project.title}
               width={500}
               height={500}
-              className='rounded-lg'
+              className={`rounded-lg ${id === 5 ? "w-[15vw] h-[60vh]" : "" }`}
             />
           </motion.div>
         </motion.div>

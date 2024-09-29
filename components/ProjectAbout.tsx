@@ -41,7 +41,7 @@ const ProjectAbout = ({ id }: { id: number }) => {
   return (
     <div className="flex justify-center items-center" id="project-about">
       <div className="w-full">
-        {id === 4 ? (
+        {id === 7 ? (
           cards.map((card) => (
             <div key={card.id}>
               <motion.div
@@ -106,7 +106,7 @@ const ProjectAbout = ({ id }: { id: number }) => {
               transition={{ duration: 1, ease: 'easeOut' }}
             >
               <div className="shadow-lg border-4 border-science-blue-900 rounded-lg h-full px-6 py-4 lg:px-10 lg:py-8 w-full lg:w-[60vw] md:w-[70vw] relative">
-                <h1 className="heading absolute -top-8 left-1/2 transform -translate-x-1/2 text-3xl md:text-4xl lg:text-5xl text-science-blue-950 font-bold bg-[#fbfcf8] px-4">
+                <h1 className="heading absolute -top-8 left-1/2 transform -translate-x-1/2 text-3xl md:text-4xl lg:text-5xl text-science-blue-950 font-bold bg-[#ffffff] px-4">
                   Project{' '}
                   <span className="text-science-blue-600">Description</span>
                 </h1>

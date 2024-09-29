@@ -43,7 +43,7 @@ const Projects = () => {
               <h1 className='font-bold text-science-blue-950 lg:text-2xl md:text-xl text-base line-clamp-1'>
                 {title}
               </h1>
-              <p className='lg:text-lg md:text-base text-science-blue-950 font-light text-sm line-clamp-2'>
+              <p className='lg:text-lg pt-2 h-16 md:text-base text-science-blue-950 font-light text-sm line-clamp-2'>
                 {des}
               </p>
               <div className='flex items-center justify-between mt-7 mb-3'>

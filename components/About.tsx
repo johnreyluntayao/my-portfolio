@@ -4,6 +4,7 @@ import React, { useState, useTransition } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { about } from '@/data';
 import GlowingButton from './ui/GlowingButton';
+import { FaArrowRight } from 'react-icons/fa6';
 
 const About = () => {
     const [tab, setTab] = useState("skills");
@@ -65,17 +66,19 @@ const About = () => {
 
                  
                     <motion.a
-                        href="https://www.google.com/"
-                        className="lg:pt-5"
+                        href="https://drive.google.com/file/d/1JiBDlFyAMUZmmyEdkYV7HkozYJNyDXw0/view?usp=sharing"
+                        className="pt-5"
                         ref={buttonRef}
                         variants={buttonVariants}
                         initial="hidden"
                         animate={isButtonInView ? 'visible' : 'hidden'}
                     >
                         <GlowingButton 
-                            title="See my resume!"
+                            title="See my resume"
                             moreClasses='bg-[linear-gradient(110deg,#0d91ea,45%,#7cc7fd,55%,#0d91ea)]'
                             //bg-[linear-gradient(110deg,#fd7c76,45%,#ff908a,55%,#fd7c76)]
+                            icon={<FaArrowRight />}
+                            position='right'
                         />
                     </motion.a>
                 </motion.div>
