@@ -80,6 +80,14 @@ export const projects = [
   },
   {
     id: 2,
+    title: "Sparrk",
+    des: "Book and play! Reserve an sport facility in your area with Sparrk!",
+    img: "/sparrk/sparrk.png",
+    iconLists: ["/figma.svg", "/canva.svg", "/adobe.svg"],
+    link: "Wanna know more?",
+  },
+  {
+    id: 3,
     title: " “Where to Look”: Your Health Companion",
     des: "Read, learn, and talk with others about health-related topics. This website will help you become more mindful of your health.",
     img: "/wlook/w2lookhome.png",
@@ -87,7 +95,7 @@ export const projects = [
     link: "Wanna know more?",
   },
   {
-    id: 3,
+    id: 4,
     title: "NetZerAttic ",
     des: "A website that specializes in attic insulation and energy efficiency, aiming to create net-zero energy consumption specifically for attics.",
     img: "/netzero/netzerohome.png",
@@ -95,21 +103,29 @@ export const projects = [
     link: "Wanna know more?",
   },
   {
-    id: 4,
-    title: "3D Projects",
-    des: "The Following are collections of 3D Projects I made during my 4th year.",
-    img: "/3d.png",
-    iconLists: ["/3dsmax.svg"],
+    id: 5,
+    title: "Netflix Clone",
+    des: "A simple demonstration of the Netflix mobile application and it is called 'Jetflix'.",
+    img: "/netflix/p1.png",
+    iconLists: ["/figma.svg",],
     link: "Wanna know more?",
   },
   {
-    id: 5,
+    id: 6,
     title: "St. Martha Management System",
     des: "Manage business transaction records and monitor client payments.",
     img: "/stmartha/dashboard.png",
     iconLists: ["/vbnet.png", "/figma.svg"],
     link: "Wanna know more?",
-  }
+  },
+  {
+    id: 7,
+    title: "3D Modelling",
+    des: "The Following are collections of 3D Projects I made during my 4th year.",
+    img: "/3d.png",
+    iconLists: ["/3dsmax.svg"],
+    link: "Wanna know more?",
+  },
 ];
 
 
@@ -120,6 +136,7 @@ export const detailedProjects = [
     id: 1,
     title: "Web-based Reservation Management System",
     desc: "The system provides a user-friendly interface website that contains information about the resort, a fast and convenient reservation management system, and a virtual tour of the resort. The system was develop order to changing the reservation process of the resort from a manual to a system and enhancing the quality and satisfaction of the resort's services.",
+    srcLink: "https://github.com/johnreyluntayao/resort-reservation-management-system",
     features: [
       {
         id: 1,
@@ -145,8 +162,35 @@ export const detailedProjects = [
 
   {
     id: 2,
+    title: "Sparrk",
+    desc: "Sparrk.ph is a platform that's revolutionizing the way athletes and sports enthusiasts connect with sports facilities. Whether you're a facility owner or a sports lover, Sparrk makes it easier than ever to find, book, and play. The intuitive platform streamlines the process, ensuring that everyone—from guests to facility managers—can enjoy a seamless experience. So, whether you’re looking to score a tennis court or book a basketball gym, Sparrk has you covered!",
+    srcLink: "https://www.sparrk.ph",
+    features: [
+      {
+        id: 1,
+        title: "UI/UX Designer",
+        img: "/sparrk/designer.svg",
+        desc: "Designed the UI for the web version dashboard and space creations of Sparrk. Also designed the notification and spaces section for the mobile version.",
+      },
+      {
+        id: 2,
+        title: "Graphic Designer",
+        img: "/sparrk/graphic.svg",
+        desc: "Designed fliers, standings, bookmarks, and stickers for the Sparrk promotion.",
+      },
+      {
+        id: 3,
+        title: "Video Editor",
+        img: "/sparrk/editor.svg",
+        desc: "Edited a teaser video for the Sparrk promotion.",
+      },
+    ],
+  }, 
+  {
+    id: 3,
     title: "“Where to Look”: Your Health Companion",
     desc: " Discover a world of wellness at “Where to Look”! Our mission? To empower you with knowledge, compassion, and hope. Dive into our comprehensive health condition section—from sniffles to serious ailments, we’ve got the lowdown. Chat with experts and fellow warriors, explore prevention tips, and find motivation when you need it most. Join our health-conscious community today. Let’s navigate wellness hand in hand!",
+    srcLink: "https://yourw2look.wordpress.com",
     features: [
       {
         id: 1,
@@ -163,9 +207,10 @@ export const detailedProjects = [
     ],
   }, 
   {
-    id: 3,
+    id: 4,
     title: "NetZeroAttic",
     desc:"The website was created to promote the business the Net-Zero-Attic that is focused in Attic insulation that is owned by a Canadian Company. The website promotes informative details about attic insulation and the services that the business offers.",
+    srcLink: "https://net-zero-attic.com/",
     features: [
       {
         id: 1,
@@ -182,9 +227,10 @@ export const detailedProjects = [
     ],
   }, 
  {
-    id: 4,
-    title: "3D Projects",
-    desc: "The Following are collections of 3D Projects that I made using 3DSMax.",
+    id: 5,
+    title: "Netflix Clone",
+    desc: "This is a prototype of the Netflix mobile application, featuring all essential interfaces to replicate the user experience of the original app. While the application is not fully functional and lacks backend integration, it showcases a selection of data for demonstration purposes. Users can play one specific video, providing a glimpse of the playback functionality. Additionally, there is a feedback tab included, though it is not operational. This Netflix clone serves primarily as a demonstration of the mobile app's layout and design, rather than a complete working version.",
+    srcLink: "https://github.com/johnreyluntayao/Netflix-Clone",
     features: [{
       id: 1,
       title: "",
@@ -196,9 +242,10 @@ export const detailedProjects = [
     ]
   },
   {
-    id: 5,
+    id: 6,
     title: "St. Martha Management System",
     desc: "In the ever-evolving landscape of technology, businesses face increasing challenges. St. Martha Memorial Homes Inc., situated in Daet, Camarines Norte, grappled with manual record-keeping and client contract management. To address these issues, a comprehensive management system was developed. It provides organized lists of contract and plan transactions, empowers administrators to efficiently manage records, and enables seamless client payment monitoring. This system streamlines business operations, benefiting both the company and its users.",
+    srcLink: "https://github.com/johnreyluntayao/st-martha-management-system",
     features: [
       {
         id: 1,
@@ -213,7 +260,22 @@ export const detailedProjects = [
         desc: "The system handles various transactions related to clients. These includes contract signings, plan selections, and payment processing. The user/s can create, modify, and view transaction records, ensuring accurate and efficient management"
       }
     ]
-  }
+  },
+  {
+    id: 7,
+    title: "3D Modelling",
+    desc: "The Following are collections of 3D Projects that I made using 3DSMax.",
+    srcLink: "",
+    features: [{
+      id: 1,
+      title: "",
+      img: "",
+      desc: "",
+
+    }
+
+    ]
+  },
 ];
 
 
@@ -486,6 +548,16 @@ export const ProjectRole = [
   },
   {
     id: 2,
+    title: "Sparrk",
+    roles: [
+      {
+        quote: "",
+        title: "",
+      },
+    ]
+  },
+  {
+    id: 3,
     title: "“Where to Look”: Your Health Companion",
     roles: [
       {
@@ -501,7 +573,7 @@ export const ProjectRole = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     title: "NetZeroAttic",
     roles: [
       {
@@ -512,8 +584,8 @@ export const ProjectRole = [
     ]
   },
   {
-    id: 4,
-    title: "3D Projects",
+    id: 5,
+    title: "Netflix Clone",
     roles: [
       {
         quote: "",
@@ -522,7 +594,7 @@ export const ProjectRole = [
     ]
   },
   {
-    id: 5,
+    id: 6,
     title: "St. Martha Management System",
     roles: [
       {
@@ -537,8 +609,45 @@ export const ProjectRole = [
       },
     ]
   },
+  {
+    id: 7,
+    title: "3D Projects",
+    roles: [
+      {
+        quote: "",
+        title: "",
+      },
+    ]
+  },
   
 ];
+
+
+export const phoneImages = [
+  { 
+    id: 1, 
+    src: '/netflix/p2.svg', 
+  },
+  { id: 2, 
+    src: '/netflix/p3.svg',  
+  },
+  { id: 3, 
+    src: '/netflix/p4.svg',  
+  },
+  { id: 4, 
+    src: '/netflix/p5.svg',  
+  },
+  { id: 5, 
+    src: '/netflix/p6.svg', 
+  },
+  { id: 6, 
+    src: '/netflix/p7.svg',  
+  },
+  { id: 7, 
+    src: '/netflix/p8.svg', 
+  },
+];
+
 
 
 
