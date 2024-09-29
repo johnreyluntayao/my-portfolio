@@ -6,6 +6,7 @@ import { detailedProjects } from '@/data';
 
 const ProjectFeature2 = ({ id }: { id: number }) => {
   const projectDetail = detailedProjects.find((p) => p.id === id);
+  const title = id === 2;
 
   
   const fadeInLeft = {
@@ -36,8 +37,17 @@ const ProjectFeature2 = ({ id }: { id: number }) => {
       {projectDetail ? (
         <div className="relative z-10 flex flex-col gap-16">
           <div className="flex flex-col items-center justify-center gap-8">
-            
-            <motion.h1
+            {title ? (
+               <motion.h1
+               ref={headerRef}
+               className="text-center text-3xl md:text-4xl lg:text-5xl text-science-blue-600 font-semibold"
+               initial={{ opacity: 0, y: -20 }}
+               animate={isHeaderInView ? { opacity: 1, y: 0, transition: { duration: 1, ease: 'easeOut' } } : { opacity: 0, y: -20 }}
+             >
+               Contributions
+             </motion.h1>
+            ) : (
+              <motion.h1
               ref={headerRef}
               className="text-center text-3xl md:text-4xl lg:text-5xl text-science-blue-600 font-semibold"
               initial={{ opacity: 0, y: -20 }}
@@ -45,6 +55,8 @@ const ProjectFeature2 = ({ id }: { id: number }) => {
             >
               Features
             </motion.h1>
+            )}
+           
 
            
             <motion.img
