@@ -30,9 +30,10 @@ const ProjectFeature2 = ({ id }: { id: number }) => {
   return (
     <section className="relative flex items-center justify-center pt-32 lg:px-32 pb-32 overflow-hidden mt-32">
       {/* Triangle Background */}
-      <div className="absolute top-0 left-0 w-full h-full z-0">
+      
+      {/* <div className="absolute top-0 left-0 w-full h-full z-0">
         <div className="absolute top-0 left-0 w-full h-full bg-[#eef7f7] clip-triangle"></div>
-      </div>
+      </div> */}
 
       {projectDetail ? (
         <div className="relative z-10 flex flex-col gap-16">

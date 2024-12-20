@@ -130,7 +130,6 @@ export const projects = [
 
 
 
-
 export const detailedProjects = [
   {
     id: 1,

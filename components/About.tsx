@@ -75,7 +75,7 @@ const About = () => {
                     >
                         <GlowingButton 
                             title="See my resume"
-                            moreClasses='bg-[linear-gradient(110deg,#0d91ea,45%,#7cc7fd,55%,#0d91ea)]'
+                            moreClasses='text-white font-bold bg-[linear-gradient(110deg,#0d91ea,45%,#7cc7fd,55%,#0d91ea)]'
                             //bg-[linear-gradient(110deg,#fd7c76,45%,#ff908a,55%,#fd7c76)]
                             icon={<FaArrowRight />}
                             position='right'
