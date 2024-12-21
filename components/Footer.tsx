@@ -36,51 +36,14 @@ const Footer = () => {
       className='relative z-10 w-full pt-32 pb-10 mx-auto sm:px-10 px-5' 
       id="contact"
     >
-      <div className='absolute left-0 bottom-0 w-full min-h-96 z-0'>
+      {/* <div className='absolute left-0 bottom-0 w-full min-h-96 z-0'>
         <img 
           src="/footer-grid.svg"
           alt="grid"
           className='w-full h-full opacity-50'
         />
-      </div>
+      </div> */}
 
-      <motion.div 
-        className='relative z-10 flex flex-col items-center'
-        variants={footerVariants}
-        initial="hidden"
-        animate={isInView ? 'visible' : 'hidden'}
-      >
-        <motion.h1 
-          className='heading lg:max-w-[45vw] text-science-blue-950'
-          variants={headingVariants}
-          initial="hidden"
-          animate={isInView ? 'visible' : 'hidden'}
-        >
-          Ready to <span className='text-science-blue-600'>Hire me?</span>
-        </motion.h1>
-        <motion.p 
-          className='text-science-blue-950 md:mt-10 my-5 text-center lg:text-lg md:text-base text-sm'
-          variants={textVariants}
-          initial="hidden"
-          animate={isInView ? 'visible' : 'hidden'}
-        >
-          Reach out to me today! And let's discuss how to make you achieve your goals.
-        </motion.p>
-        <motion.a 
-          className=''
-          href='mailto:johnrey.luntayao23@gmail.com'
-          variants={buttonVariants}
-          initial="hidden"
-          animate={isInView ? 'visible' : 'hidden'}
-        >
-          <GlowingButton 
-            title="Let's get in touch"
-            icon={<FaLocationArrow />}
-            position='right'
-            moreClasses='bg-[linear-gradient(110deg,#0d91ea,45%,#7cc7fd,55%,#0d91ea)]'
-          />
-        </motion.a>
-      </motion.div>
 
       <motion.div 
         className='relative z-10 flex mt-16 md:flex-row flex-col justify-between items-center'

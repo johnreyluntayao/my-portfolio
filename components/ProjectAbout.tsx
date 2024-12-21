@@ -128,3 +128,4 @@ const ProjectAbout = ({ id }: { id: number }) => {
 };
 
 export default ProjectAbout;
+
