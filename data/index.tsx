@@ -136,6 +136,7 @@ export const detailedProjects = [
     title: "Web-based Reservation Management System",
     desc: "The system provides a user-friendly interface website that contains information about the resort, a fast and convenient reservation management system, and a virtual tour of the resort. The system was develop order to changing the reservation process of the resort from a manual to a system and enhancing the quality and satisfaction of the resort's services.",
     srcLink: "https://github.com/johnreyluntayao/resort-reservation-management-system",
+    image: "/Natura/home.png",
     features: [
       {
         id: 1,
@@ -164,6 +165,7 @@ export const detailedProjects = [
     title: "Sparrk",
     desc: "Sparrk.ph is a platform that's revolutionizing the way athletes and sports enthusiasts connect with sports facilities. Whether you're a facility owner or a sports lover, Sparrk makes it easier than ever to find, book, and play. The intuitive platform streamlines the process, ensuring that everyone—from guests to facility managers—can enjoy a seamless experience. So, whether you’re looking to score a tennis court or book a basketball gym, Sparrk has you covered!",
     srcLink: "https://www.sparrk.ph",
+    image: "/sparrk/sparrk.png",
     features: [
       {
         id: 1,
@@ -190,6 +192,7 @@ export const detailedProjects = [
     title: "“Where to Look”: Your Health Companion",
     desc: " Discover a world of wellness at “Where to Look”! Our mission? To empower you with knowledge, compassion, and hope. Dive into our comprehensive health condition section—from sniffles to serious ailments, we’ve got the lowdown. Chat with experts and fellow warriors, explore prevention tips, and find motivation when you need it most. Join our health-conscious community today. Let’s navigate wellness hand in hand!",
     srcLink: "https://yourw2look.wordpress.com",
+    image: "/wlook/w2lookhome.png",
     features: [
       {
         id: 1,
@@ -210,6 +213,7 @@ export const detailedProjects = [
     title: "NetZeroAttic",
     desc:"The website was created to promote the business the Net-Zero-Attic that is focused in Attic insulation that is owned by a Canadian Company. The website promotes informative details about attic insulation and the services that the business offers.",
     srcLink: "https://net-zero-attic.com/",
+    image: "/netzero/netzerohome.png",
     features: [
       {
         id: 1,
@@ -230,6 +234,7 @@ export const detailedProjects = [
     title: "Netflix Clone",
     desc: "This is a prototype of the Netflix mobile application, featuring all essential interfaces to replicate the user experience of the original app. While the application is not fully functional and lacks backend integration, it showcases a selection of data for demonstration purposes. Users can play one specific video, providing a glimpse of the playback functionality. Additionally, there is a feedback tab included, though it is not operational. This Netflix clone serves primarily as a demonstration of the mobile app's layout and design, rather than a complete working version.",
     srcLink: "https://github.com/johnreyluntayao/Netflix-Clone",
+    image: "/netflix/p1.png",
     features: [{
       id: 1,
       title: "",
@@ -245,6 +250,7 @@ export const detailedProjects = [
     title: "St. Martha Management System",
     desc: "In the ever-evolving landscape of technology, businesses face increasing challenges. St. Martha Memorial Homes Inc., situated in Daet, Camarines Norte, grappled with manual record-keeping and client contract management. To address these issues, a comprehensive management system was developed. It provides organized lists of contract and plan transactions, empowers administrators to efficiently manage records, and enables seamless client payment monitoring. This system streamlines business operations, benefiting both the company and its users.",
     srcLink: "https://github.com/johnreyluntayao/st-martha-management-system",
+    image: "/stmartha/dashboard.png",
     features: [
       {
         id: 1,
@@ -265,6 +271,7 @@ export const detailedProjects = [
     title: "3D Modelling",
     desc: "The Following are collections of 3D Projects that I made using 3DSMax.",
     srcLink: "",
+    image: "/3d.png",
     features: [{
       id: 1,
       title: "",
