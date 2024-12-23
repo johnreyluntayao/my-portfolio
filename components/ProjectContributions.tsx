@@ -44,7 +44,7 @@ const ProjectContributions = ({id} : {id: number}) => {
       </motion.h1>
 
       {contributions ? (
-            <div className={`w-full mt-32 grid md:grid-cols-2 grid-cols-1 gap-10 gap-y-20 lg:gap-10 place-items-center lg:grid-cols-${Math.min(
+            <div className={`w-full my-32 grid md:grid-cols-2 grid-cols-1 gap-10 gap-y-20 lg:gap-10 place-items-center lg:grid-cols-${Math.min(
               contributions.roles.length,
               4
             )}`}>
