@@ -6,8 +6,8 @@ import React, { useEffect, useState } from "react";
 type Item = {
   id: number;
   title: string;
-  roles: {
-    quote: string;
+  tech: {
+    icon: string;
     title: string;
   }[];
 };
@@ -86,18 +86,18 @@ export const InfiniteMovingCards = ({
   )}
 >
   {selectedItem ? (
-    selectedItem.roles.map((role, idx) => (
+    selectedItem.tech.map((tech, idx) => (
       <li
         className="relative flex items-center gap-4 sm:gap-5 bg-white/20 hover:bg-white/40 rounded-lg p-4 sm:p-5 shadow-lg hover:shadow-xl transition-shadow duration-300"
         key={`${selectedItem.id}-${idx}`}
       >
         <img
-          src={role.quote}
-          alt={role.title}
+          src={tech.icon}
+          alt={tech.title}
           className="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 object-contain rounded-full bg-white/30 p-1 shadow-md"
         />
         <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl font-semibold leading-tight">
-          {role.title}
+          {tech.title}
         </p>
       </li>
     ))
