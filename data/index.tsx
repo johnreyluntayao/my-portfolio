@@ -628,6 +628,109 @@ export const ProjectRole = [
   
 ];
 
+export const techImplementation = [
+  {
+    id: 1,
+    title: "Web-based Reservation Management System",
+    roles: [
+      {   
+        quote: "/html.svg",
+        title: "HTML",
+      },
+      {
+        quote: "/css.svg",
+        title: "CSS",
+      },
+      {
+        quote: "/javascript.svg",
+        title: "JavaScript",
+      },
+      {
+        quote: "/figma.svg",
+        title: "Figma",
+      },
+      {
+        quote: "/hostinger.svg",
+        title: "Hostinger",
+      },
+    ]
+  },
+  {
+    id: 2,
+    title: "Sparrk",
+    roles: [
+      {
+        quote: "",
+        title: "",
+      },
+    ]
+  },
+  {
+    id: 3,
+    title: "“Where to Look”: Your Health Companion",
+    roles: [
+      {
+        quote:
+          "Designed User Interface and ensured the design feels intuitive, visually engaging, knowledge accessible.",
+        title: "UI/UX Designer",
+      },
+      {
+        quote:
+          "Applied the design through Wordpress for faster implementation and ease of deployment.",
+        title: "Front-end Developer",
+      },
+    ]
+  },
+  {
+    id: 4,
+    title: "NetZeroAttic",
+    roles: [
+      {
+        quote:
+          "Focusing on the appointment, using the Simply Schedule Appointment (SSA), I am responsible of implementing of what the appointment should look like and set-up some functions of the appointment.",
+        title: "Front-end Developer",
+      },
+    ]
+  },
+  {
+    id: 5,
+    title: "Netflix Clone",
+    roles: [
+      {
+        quote: "",
+        title: "",
+      },
+    ]
+  },
+  {
+    id: 6,
+    title: "St. Martha Management System",
+    roles: [
+      {
+        quote: 
+        "As a front-end developer, I played a key role in building the system, focusing on developing features like the payment section, client information area, dashboard, and reports.",
+        title: "Front-end Developer",
+      },
+      {
+        quote: 
+        "As part of my responsibilities, I designed the database schema and seamlessly integrated it into the system. My work involved managing data structures, implementing payment functionality, and handling price and discount calculations.",
+        title: "Back-end Developer"
+      },
+    ]
+  },
+  {
+    id: 7,
+    title: "3D Projects",
+    roles: [
+      {
+        quote: "",
+        title: "",
+      },
+    ]
+  },
+  
+];
+
 
 export const phoneImages = [
   { 

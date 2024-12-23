@@ -28,7 +28,7 @@ const ProjectFeature2 = ({ id }: { id: number }) => {
   const isMouseInView = useInView(mouseRef, { margin: '0px 0px -200px 0px' });
 
   return (
-    <section className="relative flex items-center justify-center pt-32 lg:px-32 pb-32 overflow-hidden mt-32">
+    <section className="relative flex items-center justify-center pt-32 lg:px-32 pb-32 overflow-hidden">
       {/* Triangle Background */}
       
       {/* <div className="absolute top-0 left-0 w-full h-full z-0">
@@ -41,7 +41,7 @@ const ProjectFeature2 = ({ id }: { id: number }) => {
             {title ? (
                <motion.h1
                ref={headerRef}
-               className="text-center text-3xl md:text-4xl lg:text-5xl text-science-blue-600 font-semibold"
+               className="text-center heading text-science-blue-600 font-semibold"
                initial={{ opacity: 0, y: -20 }}
                animate={isHeaderInView ? { opacity: 1, y: 0, transition: { duration: 1, ease: 'easeOut' } } : { opacity: 0, y: -20 }}
              >
@@ -50,7 +50,7 @@ const ProjectFeature2 = ({ id }: { id: number }) => {
             ) : (
               <motion.h1
               ref={headerRef}
-              className="text-center text-3xl md:text-4xl lg:text-5xl text-science-blue-600 font-semibold"
+              className="text-center heading text-science-blue-600 font-semibold"
               initial={{ opacity: 0, y: -20 }}
               animate={isHeaderInView ? { opacity: 1, y: 0, transition: { duration: 1, ease: 'easeOut' } } : { opacity: 0, y: -20 }}
             >
@@ -101,7 +101,7 @@ const ProjectFeature2 = ({ id }: { id: number }) => {
                     </motion.div>
 
                     <motion.div
-                      className="mt-10 lg:mt-0 flex flex-col justify-center w-full lg:w-1/2 text-center md:text-left lg:text-left p-4 lg:p-8 order-2 lg:order-2"
+                      className="mt-10 lg:mt-0 flex flex-col justify-center w-full lg:w-[45%] lg:h-3/4 text-center md:text-left lg:text-left p-4 lg:p-8 order-2 lg:order-2"
                       initial="hidden"
                       animate={isInView ? 'visible' : 'hidden'}
                       variants={idx % 2 === 0 ? fadeInRight : fadeInLeft}

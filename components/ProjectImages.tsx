@@ -1,12 +1,9 @@
 import React from 'react';
-import { detailedProjects } from '@/data';
 import { LayoutGrid } from './ui/LayoutGrid';
 import { cards } from '@/data';
-import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
+import { motion} from 'framer-motion';
 
-const ProjectAbout = ({ id }: { id: number }) => {
-  const project = detailedProjects.find((p) => p.id === id);
+const ProjectImages = ({ id }: { id: number }) => {
 
   const containerVariant = {
     hidden: { opacity: 0 },
@@ -28,14 +25,6 @@ const ProjectAbout = ({ id }: { id: number }) => {
         duration: 0.5,
       },
     },
-  };
-
-  const ref = useRef(null);
-  const inView = useInView(ref, {});
-
-  const variants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
   };
 
   return (
@@ -103,5 +92,5 @@ const ProjectAbout = ({ id }: { id: number }) => {
   );
 };
 
-export default ProjectAbout;
+export default ProjectImages;
 
