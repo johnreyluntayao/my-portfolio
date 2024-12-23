@@ -33,7 +33,7 @@ const Footer = () => {
   return (
     <footer 
       ref={footerRef}
-      className='relative z-10 w-full pt-32 pb-10 mx-auto sm:px-10 px-5' 
+      className='relative z-10 w-full pb-8 mx-auto sm:px-10 px-5' 
       id="contact"
     >
       {/* <div className='absolute left-0 bottom-0 w-full min-h-96 z-0'>

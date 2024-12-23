@@ -10,6 +10,7 @@ import React from 'react'
 import ImageGrid from '@/components/ui/ImageGrid'
 import TechImplementation from '@/components/TechImplementation'
 import ProjectContributions from '@/components/ProjectContributions'
+import Contact from '@/components/Contact'
 
 
 
@@ -50,12 +51,11 @@ const page = ({params} : {
       </div>
     </div>
 
-
-  
-  <div className="relative flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-      <Footer />
+  <div className="flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+      <Contact />
    </div>
 
+   <Footer />
   </main>
   )
 }
