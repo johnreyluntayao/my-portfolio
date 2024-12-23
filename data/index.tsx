@@ -540,15 +540,18 @@ export const ProjectRole = [
         quote:
           "Implemented the design using HTML/CSS and functions using JavaScript focusing especially on the reservation management system.",
         title: "Front-end Developer",
+        icon: "/front-end.svg",
       },
       {
         quote:
           "Created the scheme of the database and its implementation to the system using PHP,and I also implemented the payment gateway.",
         title: "Back-end Developer",
+        icon: "/back-end.svg",
       },
       {
         quote: "Created and implemented ways in order to improve better user-experience with user-friendly design, ease of transactions, and information access.",
         title: "UX Designer",
+        icon: "/ui-designer.svg",
       },
     ]
   },
@@ -559,6 +562,7 @@ export const ProjectRole = [
       {
         quote: "",
         title: "",
+        icon: "",
       },
     ]
   },
@@ -570,11 +574,13 @@ export const ProjectRole = [
         quote:
           "Designed User Interface and ensured the design feels intuitive, visually engaging, knowledge accessible.",
         title: "UI/UX Designer",
+        icon: "/ui-designer.svg",
       },
       {
         quote:
           "Applied the design through Wordpress for faster implementation and ease of deployment.",
         title: "Front-end Developer",
+        icon: "/front-end.svg",
       },
     ]
   },
@@ -586,6 +592,7 @@ export const ProjectRole = [
         quote:
           "Focusing on the appointment, using the Simply Schedule Appointment (SSA), I am responsible of implementing of what the appointment should look like and set-up some functions of the appointment.",
         title: "Front-end Developer",
+        icon: "/front-end.svg",
       },
     ]
   },
@@ -596,6 +603,7 @@ export const ProjectRole = [
       {
         quote: "",
         title: "",
+        icon: "",
       },
     ]
   },
@@ -607,11 +615,13 @@ export const ProjectRole = [
         quote: 
         "As a front-end developer, I played a key role in building the system, focusing on developing features like the payment section, client information area, dashboard, and reports.",
         title: "Front-end Developer",
+        icon: "/front-end.svg",
       },
       {
         quote: 
         "As part of my responsibilities, I designed the database schema and seamlessly integrated it into the system. My work involved managing data structures, implementing payment functionality, and handling price and discount calculations.",
-        title: "Back-end Developer"
+        title: "Back-end Developer",
+        icon: "/back-end.svg",
       },
     ]
   },
@@ -622,6 +632,7 @@ export const ProjectRole = [
       {
         quote: "",
         title: "",
+        icon: "",
       },
     ]
   },
@@ -632,25 +643,25 @@ export const techImplementation = [
   {
     id: 1,
     title: "Web-based Reservation Management System",
-    roles: [
+    tech: [
       {   
-        quote: "/html.svg",
+        icon: "/html.svg",
         title: "HTML",
       },
       {
-        quote: "/css.svg",
+        icon: "/css.svg",
         title: "CSS",
       },
       {
-        quote: "/javascript.svg",
+        icon: "/javascript.svg",
         title: "JavaScript",
       },
       {
-        quote: "/figma.svg",
+        icon: "/figma.svg",
         title: "Figma",
       },
       {
-        quote: "/hostinger.svg",
+        icon: "/hostinger.svg",
         title: "Hostinger",
       },
     ]
@@ -658,73 +669,84 @@ export const techImplementation = [
   {
     id: 2,
     title: "Sparrk",
-    roles: [
+    tech: [ 
       {
-        quote: "",
-        title: "",
+        icon: "/figma.svg",
+        title: "Figma",
+      },
+      {
+        icon: "/canva.svg",
+        title: "Canva",
+      },
+      {
+        icon: "/adobe.svg",
+        title: "3DSMax",
       },
     ]
   },
   {
     id: 3,
     title: "“Where to Look”: Your Health Companion",
-    roles: [
+    tech: [ 
       {
-        quote:
-          "Designed User Interface and ensured the design feels intuitive, visually engaging, knowledge accessible.",
-        title: "UI/UX Designer",
+        icon:"/figma.svg",
+        title: "Figma",
       },
       {
-        quote:
-          "Applied the design through Wordpress for faster implementation and ease of deployment.",
-        title: "Front-end Developer",
+        icon:"/wordpress.svg",
+        title: "Wordpress",
       },
     ]
   },
   {
     id: 4,
     title: "NetZeroAttic",
-    roles: [
+    tech: [ 
       {
-        quote:
-          "Focusing on the appointment, using the Simply Schedule Appointment (SSA), I am responsible of implementing of what the appointment should look like and set-up some functions of the appointment.",
-        title: "Front-end Developer",
+        icon: "/wordpress.svg",
+        title: "Wordpress",
+      },
+      {
+        icon: "/ssa.svg",
+        title: "Simple Schedule Appointment",
+      },      
+      {
+        icon: "/elementor.svg",
+        title: "Elementor",
       },
     ]
   },
   {
     id: 5,
     title: "Netflix Clone",
-    roles: [
+    tech: [ 
       {
-        quote: "",
-        title: "",
+        icon: "/figma.svg",
+        title: "Figma",
       },
     ]
   },
   {
     id: 6,
     title: "St. Martha Management System",
-    roles: [
+    tech: [ 
       {
-        quote: 
-        "As a front-end developer, I played a key role in building the system, focusing on developing features like the payment section, client information area, dashboard, and reports.",
-        title: "Front-end Developer",
+        icon: "/vbnet.png",
+        title: "VB.NET",
       },
       {
-        quote: 
-        "As part of my responsibilities, I designed the database schema and seamlessly integrated it into the system. My work involved managing data structures, implementing payment functionality, and handling price and discount calculations.",
-        title: "Back-end Developer"
+        icon: "/figma.svg",
+        title: "Figma"
       },
     ]
   },
   {
     id: 7,
     title: "3D Projects",
-    roles: [
+    tech: [
       {
-        quote: "",
-        title: "",
+        icon: "/3dsmax.svg",
+        title: "3DSMax",
       },
     ]
   },

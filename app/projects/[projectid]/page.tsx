@@ -9,6 +9,7 @@ import { navItems} from '@/data'
 import React from 'react'
 import ImageGrid from '@/components/ui/ImageGrid'
 import TechImplementation from '@/components/TechImplementation'
+import ProjectContributions from '@/components/ProjectContributions'
 
 
 
@@ -35,15 +36,19 @@ const page = ({params} : {
     </div>
     <div className={`${id === 5 || id === 7 ? 'hidden' : ''}`}>
     <ProjectFeature2 id={id}/>
-    
+    </div>
 
     <div className="relative flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 bg-science-blue-900">
-      <div className={`${id === 2 ? 'hidden' : ''} max-w-7xl w-full `}>
+      <div className="max-w-7xl w-full">
         <TechImplementation id={id}/>  
     </div>
     </div>
-          
-  </div>
+
+    <div className={`${id === 7 ? 'hidden' : 'flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5'}`}>
+      <div className="max-w-7xl w-full">      
+        <ProjectContributions id={id}/>   
+      </div>
+    </div>
 
 
   
