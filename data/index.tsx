@@ -780,5 +780,13 @@ export const phoneImages = [
 ];
 
 
+export const myApproach = [
+  { id: 1, title: 'Planning & Strategy', description: 'Lorem ipsum dolor sit amet. Vel amet rerum est quaerat repellendus aut enim inventore eum aliquid eveniet non culpa esse. At temporibus delectus At dolore corrupti id omnis mollitia ut autem quia. Sit perspiciatis recusandae qui earum molestias At iste minus vel blanditiis dolorum.' },
+  { id: 2, title: 'Planning & Strategy', description: 'Lorem ipsum dolor sit amet. Vel amet rerum est quaerat repellendus aut enim inventore eum aliquid eveniet non culpa esse. At temporibus delectus At dolore corrupti id omnis mollitia ut autem quia. Sit perspiciatis recusandae qui earum molestias At iste minus vel blanditiis dolorum.' },
+  { id: 3, title: 'Planning & Strategy', description: 'Lorem ipsum dolor sit amet. Vel amet rerum est quaerat repellendus aut enim inventore eum aliquid eveniet non culpa esse. At temporibus delectus At dolore corrupti id omnis mollitia ut autem quia. Sit perspiciatis recusandae qui earum molestias At iste minus vel blanditiis dolorum.' },
+  { id: 4, title: 'Planning & Strategy', description: 'Lorem ipsum dolor sit amet. Vel amet rerum est quaerat repellendus aut enim inventore eum aliquid eveniet non culpa esse. At temporibus delectus At dolore corrupti id omnis mollitia ut autem quia. Sit perspiciatis recusandae qui earum molestias At iste minus vel blanditiis dolorum.' },
+  { id: 5, title: 'Planning & Strategy', description: 'Lorem ipsum dolor sit amet. Vel amet rerum est quaerat repellendus aut enim inventore eum aliquid eveniet non culpa esse. At temporibus delectus At dolore corrupti id omnis mollitia ut autem quia. Sit perspiciatis recusandae qui earum molestias At iste minus vel blanditiis dolorum.' },
+];
+
 
 
