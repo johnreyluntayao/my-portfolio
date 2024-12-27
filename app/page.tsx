@@ -2,6 +2,7 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
+import MyApproach from "@/components/MyApproach";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import TechnicalSkills from "@/components/TechnicalSkills";
@@ -27,8 +28,11 @@ export default function Home() {
 
       <div className=" flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
         <Projects />
+        <MyApproach />
         <Contact />
       </div>
+
+      
 
       
       <Footer />
