@@ -3,6 +3,7 @@ export const navItems = [
   { name: "Skills", link: "#skills" },
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
+  { name: "Approach", link: "#myApproach"},
 ];
 
 export const items = [
@@ -134,7 +135,7 @@ export const detailedProjects = [
   {
     id: 1,
     title: "Web-based Reservation Management System",
-    desc: "The system provides a user-friendly interface website that contains information about the resort, a fast and convenient reservation management system, and a virtual tour of the resort. The system was develop order to changing the reservation process of the resort from a manual to a system and enhancing the quality and satisfaction of the resort's services.",
+    desc: "The system offers a user-friendly website with resort information, a convenient reservation management system, and a virtual tour. It was developed to modernize the resort's manual reservation process, enhancing service quality and customer satisfaction.",
     srcLink: "https://github.com/johnreyluntayao/resort-reservation-management-system",
     image: "/Natura/home.png",
     features: [
@@ -163,7 +164,7 @@ export const detailedProjects = [
   {
     id: 2,
     title: "Sparrk",
-    desc: "Sparrk.ph is a platform that's revolutionizing the way athletes and sports enthusiasts connect with sports facilities. Whether you're a facility owner or a sports lover, Sparrk makes it easier than ever to find, book, and play. The intuitive platform streamlines the process, ensuring that everyone—from guests to facility managers—can enjoy a seamless experience. So, whether you’re looking to score a tennis court or book a basketball gym, Sparrk has you covered!",
+    desc: "Sparrk.ph transforms how athletes and sports enthusiasts connect with facilities, making it simple for both facility owners and sports lovers to find, book, and play. The intuitive platform streamlines the process, ensuring a seamless experience for everyone. Whether you need a tennis court or a basketball gym, Sparrk has you covered!",
     srcLink: "https://www.sparrk.ph",
     image: "/sparrk/sparrk.png",
     features: [
@@ -190,7 +191,7 @@ export const detailedProjects = [
   {
     id: 3,
     title: "“Where to Look”: Your Health Companion",
-    desc: " Discover a world of wellness at “Where to Look”! Our mission? To empower you with knowledge, compassion, and hope. Dive into our comprehensive health condition section—from sniffles to serious ailments, we’ve got the lowdown. Chat with experts and fellow warriors, explore prevention tips, and find motivation when you need it most. Join our health-conscious community today. Let’s navigate wellness hand in hand!",
+    desc: "Discover wellness at 'Where to Look'! Our mission is to empower you with knowledge, compassion, and hope. Explore our comprehensive health condition section, chat with experts and fellow warriors, and find prevention tips and motivation. Join our health-conscious community today and let's navigate wellness together!",
     srcLink: "https://yourw2look.wordpress.com",
     image: "/wlook/w2lookhome.png",
     features: [
@@ -232,7 +233,7 @@ export const detailedProjects = [
  {
     id: 5,
     title: "Netflix Clone",
-    desc: "This is a prototype of the Netflix mobile application, featuring all essential interfaces to replicate the user experience of the original app. While the application is not fully functional and lacks backend integration, it showcases a selection of data for demonstration purposes. Users can play one specific video, providing a glimpse of the playback functionality. Additionally, there is a feedback tab included, though it is not operational. This Netflix clone serves primarily as a demonstration of the mobile app's layout and design, rather than a complete working version.",
+    desc: "This prototype of the Netflix mobile app replicates essential interfaces for demonstration. While not fully functional, it showcases data and allows playback of one video. The feedback tab is included but non-operational.",
     srcLink: "https://github.com/johnreyluntayao/Netflix-Clone",
     image: "/netflix/p1.png",
     features: [{
@@ -248,7 +249,7 @@ export const detailedProjects = [
   {
     id: 6,
     title: "St. Martha Management System",
-    desc: "In the ever-evolving landscape of technology, businesses face increasing challenges. St. Martha Memorial Homes Inc., situated in Daet, Camarines Norte, grappled with manual record-keeping and client contract management. To address these issues, a comprehensive management system was developed. It provides organized lists of contract and plan transactions, empowers administrators to efficiently manage records, and enables seamless client payment monitoring. This system streamlines business operations, benefiting both the company and its users.",
+    desc: "St. Martha Memorial Homes Inc. in Daet, Camarines Norte, faced challenges with manual record-keeping and contract management. A comprehensive system was developed to organize transactions, manage records efficiently, and monitor client payments, streamlining operations and benefiting both the company and its users.",
     srcLink: "https://github.com/johnreyluntayao/st-martha-management-system",
     image: "/stmartha/dashboard.png",
     features: [

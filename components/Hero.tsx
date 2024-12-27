@@ -2,10 +2,8 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Spotlight } from './ui/spotlight';
-import { TextGenerateEffect } from './ui/TextGenerateEffect';
-import GlowingButton from './ui/GlowingButton';
 import { HiArrowNarrowDown } from "react-icons/hi";
+import { Spotlight, TextGenerateEffect, GlowingButton } from "@/lib/imports" 
 
 const Hero = () => {
   const containerVariants = {
@@ -31,7 +29,7 @@ const Hero = () => {
   };
 
   return (
-    <div className='pb-20 pt-36' id='hero'>
+    <section className='flex justify-center items-center h-screen' id='hero'>
       <div>
         <Spotlight className='-top-40 -left-10 rounded-lg md:-left-32 md:-top-20 h-screen' fill="#7cc7fd" />
         <Spotlight className='top-10 left-full h-[80vh] w-[50vw] transform rotate-180' fill="#37abf9" />
@@ -86,7 +84,7 @@ const Hero = () => {
           </motion.a>
         </div>
       </motion.div>
-    </div>
+    </section>
   );
 };
 

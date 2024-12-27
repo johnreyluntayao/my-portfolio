@@ -1,28 +1,31 @@
 import React from 'react';
 
-import { myApproach } from '@/data';
-import { FaArrowRight } from "react-icons/fa";
+import { myApproach } from '@/lib/imports';
+import { FaArrowDown, FaArrowRight } from "react-icons/fa";
 
 
 const MyApproach = () => {
 
   return (
-    <section className="mb-32">
+    <section className="my-32" id="myApproach">
       <div className="flex flex-col lg:flex-row gap-10">
         {/* Left Section */}
         <div className="flex-1">
-          <div className="flex items-center gap-3">
-            <div className="bg-science-blue-500 border-8 border-science-blue-100 text-white p-4 rounded-full ">
-              <span className="text-xl"><FaArrowRight/></span>
+          <div className="flex items-center justify-center md:justify-start gap-3">
+            <div className="bg-science-blue-500 border-8 border-science-blue-100 text-white p-4 rounded-full">
+              <span className="text-xl">
+                <span className='hidden lg:block'><FaArrowRight/></span>
+                <span className='block lg:hidden'><FaArrowDown/></span>
+              </span>
             </div>
           </div>
-          <div className='flex text-start pt-8'>
-          <h1 className='heading text-science-blue-950'>
-                My {' '} 
-                <span className='text-science-blue-600'>Approach</span>
-        </h1>
-        </div>
-          <p className="mtext-sm md:text-base lg:text-lg font-normal text-science-blue-950 pt-4">
+          <div className='flex justify-center md:justify-start md:text-start pt-8'>
+            <h1 className='heading text-science-blue-950'>
+                  My {' '} 
+                  <span className='text-science-blue-600'>Approach</span>
+            </h1>
+          </div>
+          <p className="text-sm md:text-base lg:text-lg font-normal text-science-blue-950 pt-4 text-center md:text-start">
             Lorem ipsum dolor sit amet. Vel amet rerum est quaerat repellendus aut enim inventore eum aliquid eveniet non culpa esse.
           </p>
         </div>

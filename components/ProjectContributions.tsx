@@ -1,9 +1,8 @@
 "use client"
 
-import { ProjectRole } from '@/data';
+import { ProjectRole } from '@/lib/imports';
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import clsx from "clsx";
 
 const ProjectContributions = ({id} : {id: number}) => {
   const contributions = ProjectRole.find((role) => role.id === id)
@@ -32,7 +31,7 @@ const ProjectContributions = ({id} : {id: number}) => {
   };
 
   return (
-    <div className='relative mt-32 place-items-center' id="skills" ref={ref}>
+    <div className={`${id === 7 ? 'hidden' : 'flex relative mt-32 place-items-center justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5'}`} id="skills" ref={ref}>
       <motion.h1
         className='heading text-science-blue-950'
         variants={headingVariants}

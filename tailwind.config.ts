@@ -22,14 +22,22 @@ const config = {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        'sm': '640px',  // Small devices
+        'md': '768px',  // Tablets
+        'lg': '1024px', // Laptops
+        'xl': '1280px', // Desktops
+        '2xl': '1536px', // Large screens
+        // Custom breakpoints
+        'xs': '480px', // Extra small devices
+        '3xl': '1920px', // Ultra-large screens
       },
     },
     extend: {
-      
       spacing: {
-        '18': '4.5rem', 
-        '88': '22rem',
+        'mobile-margin': '1rem', // 16px
+        'tablet-margin': '2rem', // 32px
+        'laptop-margin': '3rem', // 48px
+        'desktop-margin': '4rem', // 64px
       },
 
       colors: {
@@ -57,8 +65,6 @@ const config = {
         '900': '#0c416e',
         '950': '#082949',
     },
-    
-
         blue: {
           "100": "#E4ECFF",
         },
@@ -193,6 +199,18 @@ const config = {
     },
   },
   plugins: [
+      function ({ addComponents }: any) {
+        addComponents({
+          '.responsive-margins': {
+            marginLeft: '1rem', // mobile
+            marginRight: '1rem', // mobile
+            '@screen sm': { marginLeft: '2rem', marginRight: '2rem' }, // tablet
+            '@screen lg': { marginLeft: '3rem', marginRight: '3rem' }, // laptop
+            '@screen xl': { marginLeft: '4rem', marginRight: '4rem' }, // desktop
+          },
+        });
+      },
+
     require("tailwindcss-animate"),
     addVariablesForColors,
     function ({ matchUtilities, theme }: any) {
