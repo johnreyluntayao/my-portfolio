@@ -1,41 +1,36 @@
-import About from "@/components/About";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
-import MyApproach from "@/components/MyApproach";
-import Projects from "@/components/Projects";
-import Skills from "@/components/Skills";
-import TechnicalSkills from "@/components/TechnicalSkills";
-import { FloatingNav } from "@/components/ui/FloatingNavbar";
-import { navItems } from "@/data";
+
+import {
+  FloatingNav, 
+  About, 
+  Hero, 
+  Skills, 
+  TechnicalSkills, 
+  Projects, 
+  MyApproach, 
+  Contact, 
+  Footer, 
+  navItems
+ } from "@/lib/imports"
 
 
 export default function Home() {
   return (
-    <main className="relative overflow-hidden">
-      <div className="flex justify-center items-center flex-col  mx-auto sm:px-10 px-5">
-        <div className="max-w-7xl w-full">
-          <FloatingNav navItems={navItems} />
-          <Hero />
-          <Skills />
-          <About />
-        </div>
-      </div>
+    <main className="relative overflow-hidden bg-white">
+      <div className="px-mobile-margin md:px-tablet-margin lg:px-laptop-margin xl:px-desktop-margin">
+      <FloatingNav navItems={navItems}/>
+      <Hero />
+      <Skills />
+      <About />
 
-      <div>
+      <div className="relative -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin xl:-mx-desktop-margin">
         <TechnicalSkills />
       </div>
 
-      <div className=" flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-        <Projects />
-        <MyApproach />
-        <Contact />
-      </div>
-
-      
-
-      
+      <Projects />
+      <MyApproach />
+      <Contact />
       <Footer />
+      </div>
     </main>
   );
 }

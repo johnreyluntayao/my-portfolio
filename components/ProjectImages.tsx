@@ -1,6 +1,5 @@
 import React from 'react';
-import { LayoutGrid } from './ui/LayoutGrid';
-import { cards } from '@/data';
+import { cards, LayoutGrid } from '@/lib/imports';
 import { motion} from 'framer-motion';
 
 const ProjectImages = ({ id }: { id: number }) => {
@@ -28,7 +27,7 @@ const ProjectImages = ({ id }: { id: number }) => {
   };
 
   return (
-    <div className="flex justify-center items-center" id="project-about">
+    <div className={`${id === 7 ? 'flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5' : 'hidden'}`} id="project-about">
       <div className="w-full">
         {id === 7 ? (
           cards.map((card) => (

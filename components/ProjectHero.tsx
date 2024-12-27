@@ -1,17 +1,13 @@
 "use client"
 
 import React from 'react';
-import { detailedProjects } from '@/data';
+import { detailedProjects, GlowingButton, Spotlight, GlobalTextGenerateEffect } from '@/lib/imports';
 import { motion, useInView } from 'framer-motion';
-import { Spotlight } from './ui/spotlight';
-import GlowingButton from '@/components/ui/GlowingButton'
 import { FaCode, FaArrowRight } from 'react-icons/fa6'
-import { GlobalTextGenerateEffect } from './ui/TextGenerateEffect';
 
 const ProjectHero = ({ id }: { id: number }) => {
   const project = detailedProjects.find((p) => p.id === id);
 
-  // Variants for text and image animations
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
@@ -47,8 +43,8 @@ const ProjectHero = ({ id }: { id: number }) => {
 
   return (
     // bg-gradient-to-r from-[#0069b7] to-[#009daf]
-    <div
-      className=' flex justify-center bg-science-blue-900 items-center py-32 mx-auto sm:px-10 px-5 h-screen'
+    <section
+      className='flex justify-center bg-science-blue-900 items-center py-32 sm:px-10 px-5 h-screen -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin xl:-mx-desktop-margin'
       id='project-hero'
     >
       <div>
@@ -69,9 +65,9 @@ const ProjectHero = ({ id }: { id: number }) => {
             <GlobalTextGenerateEffect 
             className='text-center md:text-center lg:text-start'
             words={project.title}
-            extraClassName='font-bold text-[#45C7D1] text-[40px] md:text-3xl lg:text-4xl mb-[25px]'
+            extraClassName='font-bold text-[#45C7D1] text-2xl md:text-3xl lg:text-4xl mb-[25px]'
             />
-            <p className='text-center lg:text-start text-white/80 md:tracking-wider mb-[30px] text-sm md:text-md lg:text-lg'>
+            <p className='text-center lg:text-start text-white/80 md:tracking-wider mb-[30px] text-sm md:text-md lg:text-lg xl:text-xl'>
               {project.desc}
             </p>
 
@@ -97,23 +93,16 @@ const ProjectHero = ({ id }: { id: number }) => {
             <motion.img
               src={project.image}
               alt={project.title}
-              width={800}
-              height={800}
-              className={`rounded-lg ${id === 5 ? "w-[15vw] h-[60vh]" : "" }`}
+              className={`rounded-lg ${id === 5 ? "w-[32vw] md:w-[20vw] lg:w-[16vw] h-auto" : "w-[90vw] sm:w-[75vw] md:w-[60vw] lg:w-[40vw] h-auto" }`}
             />
-
-            
+  
           </motion.div>
-
-
-
         </motion.div>
-
 
       ) : (
         <h1>Not Found</h1>
       )}
-    </div>
+    </section>
   );
 };
 

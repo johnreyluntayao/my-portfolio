@@ -2,20 +2,23 @@
 
 import React from 'react';
 import { motion, useInView } from 'framer-motion';
-import { phoneImages } from '@/data';
+import { phoneImages } from '@/lib/imports';
 
-const ImageGrid = () => {
+const ImageGrid = ({ id }: { id: number }) => {
+
   return (
-    <div className="pt-16 pb-16 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+    <section className={`${id === 5 ? 'grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 items-center justify-center min-h-screen my-24 gap-4 p-4' : 'hidden'}`}>
       {phoneImages.map((p, index) => {
         const ref = React.useRef(null); 
         const inView = useInView(ref, { }); 
+
 
        
         const variants = {
           hidden: { opacity: 0, y: 20 }, 
           visible: { opacity: 1, y: 0 }, 
         };
+
 
         return (
           <motion.div
@@ -36,7 +39,7 @@ const ImageGrid = () => {
           </motion.div>
         );
       })}
-    </div>
+    </section>
   );
 };
 

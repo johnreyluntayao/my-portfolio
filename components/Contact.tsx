@@ -2,7 +2,7 @@
 
 import React, {useRef} from 'react'
 import { motion, useInView } from 'framer-motion';
-import GlowingButton from './ui/GlowingButton';
+import { GlowingButton } from '@/lib/imports';
 import { FaLocationArrow } from 'react-icons/fa';
 
 
@@ -32,7 +32,7 @@ const Contact = () => {
   return (
     <section
     ref={footerRef}
-      className='relative p-[100px] w-full mx-auto sm:px-10 px-5 bg-gradient-to-r from-science-blue-500 to-science-blue-800 rounded-tl-[100px] rounded-br-[100px]' 
+      className='relative p-[100px] w-full mx-auto sm:px-10 px-5 bg-gradient-to-r from-science-blue-500 to-science-blue-800 rounded-tl-[100px] rounded-br-[100px] rounded-bl-[100px] md:rounded-bl-none' 
       id="contact"
     >
          <motion.div 

@@ -2,7 +2,7 @@
 
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { detailedProjects } from '@/data';
+import { detailedProjects } from '@/lib/imports';
 
 const ProjectFeature2 = ({ id }: { id: number }) => {
   const projectDetail = detailedProjects.find((p) => p.id === id);
@@ -28,7 +28,7 @@ const ProjectFeature2 = ({ id }: { id: number }) => {
   const isMouseInView = useInView(mouseRef, { margin: '0px 0px -200px 0px' });
 
   return (
-    <section className="relative flex items-center justify-center pt-32 lg:px-32 pb-32 overflow-hidden">
+    <section className={`${id === 5 || id === 7 ? 'hidden' : 'relative flex items-center justify-center pt-32 lg:px-16 pb-32 overflow-hidden'}`}>
       {/* Triangle Background */}
       
       {/* <div className="absolute top-0 left-0 w-full h-full z-0">
@@ -101,7 +101,7 @@ const ProjectFeature2 = ({ id }: { id: number }) => {
                     </motion.div>
 
                     <motion.div
-                      className="mt-10 lg:mt-0 flex flex-col justify-center w-full lg:w-[45%] lg:h-3/4 text-center md:text-left lg:text-left p-4 lg:p-8 order-2 lg:order-2"
+                      className="mt-10 lg:mt-0 flex flex-col justify-center w-full lg:w-[45%] lg:h-3/4 text-center lg:text-left p-4 lg:p-8 order-2 lg:order-2"
                       initial="hidden"
                       animate={isInView ? 'visible' : 'hidden'}
                       variants={idx % 2 === 0 ? fadeInRight : fadeInLeft}

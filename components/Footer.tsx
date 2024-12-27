@@ -2,33 +2,23 @@
 
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import GlowingButton from './ui/GlowingButton';
-import { FaLocationArrow } from 'react-icons/fa';
-import { socialMedia } from '@/data';
+import { socialMedia } from '@/lib/imports';
 
 const footerVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
 };
 
-const headingVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
-};
 
 const textVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: 'easeOut' } },
 };
 
-const buttonVariants = {
-  hidden: { opacity: 0, scale: 0.9 },
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.6, ease: 'easeOut' } },
-};
 
 const Footer = () => {
   const footerRef = useRef(null);
-  const isInView = useInView(footerRef, {}); // Set `once: true` to animate only once
+  const isInView = useInView(footerRef, {});
 
   return (
     <footer 
@@ -36,14 +26,6 @@ const Footer = () => {
       className='relative z-10 w-full pb-8 mx-auto sm:px-10 px-5' 
       id="contact"
     >
-      {/* <div className='absolute left-0 bottom-0 w-full min-h-96 z-0'>
-        <img 
-          src="/footer-grid.svg"
-          alt="grid"
-          className='w-full h-full opacity-50'
-        />
-      </div> */}
-
 
       <motion.div 
         className='relative z-10 flex mt-16 md:flex-row flex-col justify-between items-center'

@@ -79,7 +79,7 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex max-w-fit fixed top-4 md:top-10 lg:top-10 inset-x-0 mx-auto border border-white/20 bg-white/30 backdrop-blur-sm rounded-full dark:bg-black shadow-[0_8px_16px_rgb(0_0_0/0.4)] z-[5000] px-10 py-5 items-center justify-center space-x-4",
+          "flex max-w-fit fixed top-4 md:top-10 lg:top-10 inset-x-0 mx-auto border border-white/20 bg-white/30 backdrop-blur-sm rounded-full dark:bg-black shadow-[0_8px_16px_rgb(0_0_0/0.4)] z-[5000] px-16 py-5 items-center justify-center space-x-4",
           className
         )}
       >
@@ -88,8 +88,8 @@ export const FloatingNav = ({
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative dark:text-neutral-50 items-center flex space-x-1 text-science-blue-950 dark:hover:text-neutral-300 hover:text-science-blue-500 hover:font-semibold text-sm md:text-base lg:text-lg",
-              activeSection === navItem.link ? "text-blue-500 font-semibold" : ""
+              "relative dark:text-neutral-50 items-center flex space-x-1 text-science-blue-950 dark:hover:text-neutral-300 hover:border-b-4 hover:border-science-blue-500 text-sm md:text-base lg:text-lg",
+              activeSection === navItem.link ? "border-b-4 border-science-blue-500 font-semibold" : ""
             )}
             onClick={(e) => {
               e.preventDefault();
@@ -109,7 +109,7 @@ export const FloatingNav = ({
           </Link>
         ))}
         <button className="bg-science-blue-500 relative text-white dark:text-white px-4 py-2 rounded-full text-xs md:text-base lg:text-lg">
-          <Link href="#contact">Contact Me</Link>
+          <Link href="#contact">Connect!</Link>
         </button>
       </motion.div>
     </AnimatePresence>
