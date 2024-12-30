@@ -9,14 +9,15 @@ import {
   MyApproach, 
   Contact, 
   Footer, 
-  navItems
+  navItems,
+  BackToTop,
  } from "@/lib/imports"
 
 
 export default function Home() {
   return (
-    <main className="relative overflow-hidden bg-white">
-      <div className="px-mobile-margin md:px-tablet-margin lg:px-laptop-margin xl:px-desktop-margin">
+    <main className="relative overflow-hidden bg-white ">
+      <div className="px-mobile-margin md:px-tablet-margin lg:px-laptop-margin xl:px-desktop-margin 3xl:container">
       <FloatingNav navItems={navItems}/>
       <Hero />
       <Skills />
@@ -30,6 +31,7 @@ export default function Home() {
       <MyApproach />
       <Contact />
       <Footer />
+      <BackToTop />
       </div>
     </main>
   );

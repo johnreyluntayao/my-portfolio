@@ -28,8 +28,8 @@ const config = {
         'xl': '1280px', // Desktops
         '2xl': '1536px', // Large screens
         // Custom breakpoints
-        'xs': '480px', // Extra small devices
-        '3xl': '1920px', // Ultra-large screens
+        'xs': '480px', 
+        '3xl': '1920px', 
       },
     },
     extend: {

@@ -27,13 +27,13 @@ const ProjectImages = ({ id }: { id: number }) => {
   };
 
   return (
-    <div className={`${id === 7 ? 'flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5' : 'hidden'}`} id="project-about">
+    <div className={`${id === 7 ? 'flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 py-16' : 'hidden'}`}>
       <div className="w-full">
         {id === 7 ? (
           cards.map((card) => (
             <div key={card.id}>
               <motion.div
-                className="relative pt-24"
+                className="relative"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ amount: 0.3 }}

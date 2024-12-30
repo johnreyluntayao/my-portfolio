@@ -23,6 +23,7 @@ export { default as GlowingButton } from '@/components/ui/GlowingButton';
 export { PinContainer } from '@/components/ui/3d-pin'
 export { LayoutGrid } from '@/components/ui/LayoutGrid';
 export { InfiniteMovingCards } from '@/components/ui/InfiniteMovingCards';
+export { default as BackToTop } from "@/components/ui/BackToTop"
 
 
 // Data

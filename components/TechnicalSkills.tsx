@@ -35,7 +35,7 @@ const TechnicalSkills = () => {
   }, []);
 
   return (
-    <section ref={scrollRef} className="scroller relative h-auto min-h-[50vh] -mt-14 bg-gradient-to-r from-science-blue-900 to-science-blue-500 flex justify-center items-center py-8 ">
+    <section ref={scrollRef} className="scroller relative h-auto min-h-[50vh] -mt-14 bg-gradient-to-r from-science-blue-900 to-science-blue-500 flex justify-center items-center py-8 mb-16">
       <div className="scroller-wrapper">
         {/* First row scrolling to the left */}
         <div className="scrollInner flex items-center justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-12 p-4 animate-infinite_scroll">

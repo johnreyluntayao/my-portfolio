@@ -11,7 +11,8 @@ import {
   TechImplementation,
   ProjectContributions,
   Contact,
-  Footer
+  Footer,
+  BackToTop
 } from "@/lib/imports"
 
 const page = ({params} : {
@@ -22,7 +23,7 @@ const page = ({params} : {
 
   return (
     <main className='relative overflow-hidden bg-white'>
-      <div className="px-mobile-margin md:px-tablet-margin lg:px-laptop-margin xl:px-desktop-margin 2xl:container">
+      <div className="px-mobile-margin md:px-tablet-margin lg:px-laptop-margin xl:px-desktop-margin 3xl:container">
          <FloatingNav navItems={navItems}/>
          <ProjectHero id={id}/>
          <ProjectImages id={id}/> 
@@ -32,6 +33,7 @@ const page = ({params} : {
          <ProjectContributions id={id}/> 
          <Contact />
          <Footer />
+         <BackToTop />
       </div>
     </main>
   )

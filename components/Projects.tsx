@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 
 const Projects = () => {
   return (
-    <section className='mt-32' id="projects">
+    <section className='py-16' id="projects">
   <motion.h1 
     className='heading text-science-blue-950'
     initial={{ opacity: 0, y: -50 }}

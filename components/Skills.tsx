@@ -30,7 +30,7 @@ const Skills = () => {
   };
 
   return (
-    <section className='w-full mt-32' id="skills" ref={ref}>
+    <section className='w-full py-16' id="skills" ref={ref}>
       <motion.h1
         className='heading text-science-blue-950'
         variants={headingVariants}
