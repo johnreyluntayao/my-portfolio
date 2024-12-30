@@ -31,7 +31,7 @@ const ProjectContributions = ({id} : {id: number}) => {
   };
 
   return (
-    <div className={`${id === 7 ? 'hidden' : 'flex relative mt-32 place-items-center justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5'}`} id="skills" ref={ref}>
+    <div className={`${id === 7 || id === 2 ? 'hidden' : 'flex relative mt-32 place-items-center justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5'}`} id="skills" ref={ref}>
       <motion.h1
         className='heading text-science-blue-950'
         variants={headingVariants}
@@ -43,10 +43,12 @@ const ProjectContributions = ({id} : {id: number}) => {
       </motion.h1>
 
       {contributions ? (
-            <div className={`w-full my-32 grid md:grid-cols-2 grid-cols-1 gap-10 gap-y-20 lg:gap-10 place-items-center lg:grid-cols-${Math.min(
-              contributions.roles.length,
-              4
-            )}`}>
+            <div
+            className={`w-full my-32 grid gap-10 gap-y-20 place-items-center 
+              grid-cols-1 
+              md:grid-cols-${contributions.roles.length === 1 ? 1 : 2} 
+              lg:grid-cols-${Math.min(contributions.roles.length, 4)}`}
+          >
             {contributions.roles.map((role, index) => (
               <motion.div
                 key={index}
