@@ -453,7 +453,7 @@ export const mainSkills = [
     id: 2,
     logo: "/front-end.svg",
     title: "Front-end Development",
-    desc: "Front-end developer with experience gained during school, having worked on various projects using multiple programming languages and effectively implementing client requirements."
+    desc: "Front-end developer with experience, having worked on various projects using multiple programming languages and effectively implementing client requirements."
   },
   {
     id: 3,

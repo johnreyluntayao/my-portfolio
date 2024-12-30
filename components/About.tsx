@@ -59,7 +59,7 @@ const About = () => {
 
       
       <motion.a
-        href="https://drive.google.com/file/d/1JiBDlFyAMUZmmyEdkYV7HkozYJNyDXw0/view?usp=sharing"
+        href="https://drive.google.com/file/d/1-8q5YKcTNVNhi7hULIVXUh5B00qrBpKQ/view?usp=sharing"
         className="pb-6"
         ref={buttonRef}
         variants={buttonVariants}
