@@ -28,7 +28,7 @@ const ProjectFeature2 = ({ id }: { id: number }) => {
   const isMouseInView = useInView(mouseRef, { margin: '0px 0px -200px 0px' });
 
   return (
-    <section className={`${id === 5 || id === 7 ? 'hidden' : 'relative flex items-center justify-center pt-32 lg:px-16 pb-32 overflow-hidden'}`}>
+    <section className={`${id === 5 || id === 7 ? 'hidden' : 'relative flex items-center justify-center pt-32 lg:px-16 py-16 overflow-hidden'}`}>
       {/* Triangle Background */}
       
       {/* <div className="absolute top-0 left-0 w-full h-full z-0">

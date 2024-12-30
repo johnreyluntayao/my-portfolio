@@ -22,7 +22,7 @@ const MyApproach = () => {
   };
 
   return (
-    <section className="my-32" id="myApproach">
+    <section className="py-16" id="myApproach">
       <motion.div
         className="flex flex-col justify-center items-center"
         initial="hidden"

@@ -7,7 +7,7 @@ import { phoneImages } from '@/lib/imports';
 const ImageGrid = ({ id }: { id: number }) => {
 
   return (
-    <section className={`${id === 5 ? 'grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 items-center justify-center min-h-screen my-24 gap-4 p-4' : 'hidden'}`}>
+    <section className={`${id === 5 ? 'grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 items-center justify-center min-h-screen py-16 gap-4 p-4' : 'hidden'}`}>
       {phoneImages.map((p, index) => {
         const ref = React.useRef(null); 
         const inView = useInView(ref, { }); 
@@ -24,7 +24,7 @@ const ImageGrid = ({ id }: { id: number }) => {
           <motion.div
             key={index}
             ref={ref} 
-            className={`relative`}
+            className={`relative flex items-center justify-center`}
             initial="hidden"
             animate={inView ? "visible" : "hidden"} 
             variants={variants} 

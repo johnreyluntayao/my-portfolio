@@ -44,8 +44,7 @@ const ProjectHero = ({ id }: { id: number }) => {
 
   return (
     <section
-      className="relative flex justify-center bg-science-blue-900 items-center py-32 sm:px-10 px-5 h-screen -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin xl:-mx-desktop-margin"
-      id="project-hero"
+      className="relative flex justify-center bg-science-blue-900 items-center py-32 mb-16 sm:px-10 px-5 h-screen -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin xl:-mx-desktop-margin"
     >
       <div>
         <Spotlight className="-top-40 -left-10 rounded-lg md:-left-32 md:-top-20 h-screen" fill="#7cc7fd" />

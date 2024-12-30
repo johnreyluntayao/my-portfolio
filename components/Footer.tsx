@@ -27,7 +27,6 @@ const Footer = () => {
     <footer 
       ref={footerRef}
       className='relative z-10 w-full pb-8 mx-auto' 
-      id="contact"
     >
       <motion.div 
         className='relative z-10 flex mt-16 md:flex-row flex-col justify-between items-center'
