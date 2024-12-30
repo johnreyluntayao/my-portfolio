@@ -1,12 +1,24 @@
-"use client"
+"use client";
 
-import React from 'react';
-import { detailedProjects, GlowingButton, Spotlight, GlobalTextGenerateEffect } from '@/lib/imports';
-import { motion, useInView } from 'framer-motion';
-import { FaCode, FaArrowRight } from 'react-icons/fa6'
+import React from "react";
+import { useRouter } from "next/navigation";
+import { detailedProjects, GlowingButton, Spotlight, GlobalTextGenerateEffect } from "@/lib/imports";
+import { motion } from "framer-motion";
+import { FaCode, FaArrowRight, FaArrowLeft } from "react-icons/fa6";
 
 const ProjectHero = ({ id }: { id: number }) => {
+  const router = useRouter();
   const project = detailedProjects.find((p) => p.id === id);
+
+  const isFirst = id === 1;
+  const isLast = id === detailedProjects[detailedProjects.length - 1]?.id;
+
+  const handleNavigation = (direction: "prev" | "next") => {
+    const newId = direction === "prev" ? id - 1 : id + 1;
+    if (newId > 0 && newId <= detailedProjects.length) {
+      router.push(`/projects/${newId}`);
+    }
+  };
 
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -15,7 +27,7 @@ const ProjectHero = ({ id }: { id: number }) => {
       y: 0,
       transition: {
         delay: 0.2,
-        staggerChildren: 0.3, 
+        staggerChildren: 0.3,
       },
     },
   };
@@ -30,78 +42,110 @@ const ProjectHero = ({ id }: { id: number }) => {
     visible: { opacity: 1, scale: 1, transition: { duration: 0.8 } },
   };
 
-    const buttonRef = React.useRef(null);
-    const isButtonInView = useInView(buttonRef, { amount: 0.3, once: true });
-    const buttonVariants = {
-      hidden: { opacity: 0, scale: 0.8 },
-      visible: {
-        opacity: 1,
-        scale: 1,
-        transition: { duration: 0.6, ease: 'easeOut' },
-      },
-  };
-
   return (
-    // bg-gradient-to-r from-[#0069b7] to-[#009daf]
     <section
-      className='flex justify-center bg-science-blue-900 items-center py-32 sm:px-10 px-5 h-screen -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin xl:-mx-desktop-margin'
-      id='project-hero'
+      className="relative flex justify-center bg-science-blue-900 items-center py-32 sm:px-10 px-5 h-screen -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin xl:-mx-desktop-margin"
+      id="project-hero"
     >
       <div>
-        <Spotlight className='-top-40 -left-10 rounded-lg md:-left-32 md:-top-20 h-screen' fill="#7cc7fd" />
-        <Spotlight className='top-10 left-full h-[80vh] w-[50vw] transform rotate-180' fill="#7cc7fd" />
-        <Spotlight className='top-28 left-80 h-[80vh] w-[50vw]' fill="#7cc7fd" />
+        <Spotlight className="-top-40 -left-10 rounded-lg md:-left-32 md:-top-20 h-screen" fill="#7cc7fd" />
+        <Spotlight className="top-10 left-full h-[80vh] w-[50vw] transform rotate-180" fill="#7cc7fd" />
+        <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="#7cc7fd" />
       </div>
+
       {project ? (
-
-
         <motion.div
-          className='grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-7xl justify-center items-center'
-          initial='hidden'
-          animate='visible'
+          className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-7xl justify-center items-center lg:w-[80vw]"
+          initial="hidden"
+          animate="visible"
           variants={containerVariants}
         >
+          
           <motion.div variants={itemVariants}>
-            <GlobalTextGenerateEffect 
-            className='text-center md:text-center lg:text-start'
-            words={project.title}
-            extraClassName='font-bold text-[#45C7D1] text-2xl md:text-3xl lg:text-4xl mb-[25px]'
+            <GlobalTextGenerateEffect
+              className="text-center md:text-center lg:text-start"
+              words={project.title}
+              extraClassName="font-bold text-[#45C7D1] text-2xl md:text-3xl lg:text-4xl mb-[25px]"
             />
-            <p className='text-center lg:text-start text-white/80 md:tracking-wider mb-[30px] text-sm md:text-md lg:text-lg xl:text-xl'>
+            <p className="text-center lg:text-start text-white/80 md:tracking-wider mb-[30px] text-sm md:text-md lg:text-lg xl:text-xl">
               {project.desc}
             </p>
 
             <motion.a
-        href={project.srcLink}
-        className={` ${id === 7 ? 'hidden' : ''} flex justify-center lg:justify-start`}
-        ref={buttonRef}
-        variants={buttonVariants}
-        initial="hidden"
-        animate={isButtonInView ? 'visible' : 'hidden'}
-        >
-        <GlowingButton 
-            title={`${id === 3 || id === 4 ? `Visit site` : `Source code`}`}
-            moreClasses='bg-[linear-gradient(110deg,#fd7c76,45%,#ff908a,55%,#fd7c76)] text-white font-bold'
-            //bg-[linear-gradient(110deg,#0d91ea,45%,#7cc7fd,55%,#0d91ea)]
-            icon={id === 1 || id === 5 || id === 6 ? <FaCode /> : <FaArrowRight />}
-            position='right'
-        />
-        </motion.a>
+              href={project.srcLink}
+              className={`${id === 7 ? "hidden" : ""} flex justify-center lg:justify-start`}
+            >
+              <GlowingButton
+                title={`${id === 3 || id === 4 ? `Visit site` : `Source code`}`}
+                moreClasses="bg-[linear-gradient(110deg,#fd7c76,45%,#ff908a,55%,#fd7c76)] text-white font-bold"
+                icon={id === 1 || id === 5 || id === 6 ? <FaCode /> : <FaArrowRight />}
+                position="right"
+              />
+            </motion.a>
           </motion.div>
 
-          <motion.div className='flex items-center justify-center' variants={imageVariants}>
+          
+          <motion.div className="flex flex-col items-center justify-center" variants={imageVariants}>
             <motion.img
               src={project.image}
               alt={project.title}
-              className={`rounded-lg ${id === 5 ? "w-[32vw] md:w-[20vw] lg:w-[16vw] h-auto" : "w-[90vw] sm:w-[75vw] md:w-[60vw] lg:w-[40vw] h-auto" }`}
+              className={`rounded-lg ${
+                id === 5
+                  ? "w-[32vw] md:w-[20vw] lg:w-[16vw] h-auto"
+                  : "w-[90vw] sm:w-[75vw] md:w-[60vw] lg:w-[40vw] h-auto"
+              }`}
             />
-  
+
+            {/* Navigation Buttons for Mobile */}
+            <div className="flex justify-center mt-6 space-x-4 sm:flex lg:hidden">
+              <button
+                onClick={() => handleNavigation("prev")}
+                disabled={isFirst}
+                className={`bg-science-blue-700 text-white p-3 rounded-full shadow-lg ${
+                  isFirst ? "opacity-50 cursor-not-allowed" : "hover:bg-science-blue-600 focus:outline-none transition"
+                }`}
+                aria-label="Previous"
+              >
+                <FaArrowLeft size={20} />
+              </button>
+              <button
+                onClick={() => handleNavigation("next")}
+                disabled={isLast}
+                className={`bg-science-blue-700 text-white p-3 rounded-full shadow-lg ${
+                  isLast ? "opacity-50 cursor-not-allowed" : "hover:bg-science-blue-600 focus:outline-none transition"
+                }`}
+                aria-label="Next"
+              >
+                <FaArrowRight size={20} />
+              </button>
+            </div>
           </motion.div>
         </motion.div>
-
       ) : (
         <h1>Not Found</h1>
       )}
+
+      {/* Navigation Buttons for Desktop */}
+      <button
+        onClick={() => handleNavigation("prev")}
+        disabled={isFirst}
+        className={`hidden lg:flex absolute left-5 sm:left-10 top-1/2 transform -translate-y-1/2 bg-science-blue-700 text-white p-3 rounded-full shadow-lg ${
+          isFirst ? "opacity-50 cursor-not-allowed" : "hover:bg-science-blue-600 focus:outline-none transition"
+        }`}
+        aria-label="Previous"
+      >
+        <FaArrowLeft size={20} />
+      </button>
+      <button
+        onClick={() => handleNavigation("next")}
+        disabled={isLast}
+        className={`hidden lg:flex absolute right-5 sm:right-10 top-1/2 transform -translate-y-1/2 bg-science-blue-700 text-white p-3 rounded-full shadow-lg ${
+          isLast ? "opacity-50 cursor-not-allowed" : "hover:bg-science-blue-600 focus:outline-none transition"
+        }`}
+        aria-label="Next"
+      >
+        <FaArrowRight size={20} />
+      </button>
     </section>
   );
 };
