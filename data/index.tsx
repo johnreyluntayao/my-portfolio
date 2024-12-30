@@ -3,71 +3,9 @@ export const navItems = [
   { name: "Skills", link: "#skills" },
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
+  { name: "Approach", link: "#myApproach"},
 ];
 
-export const items = [
-  {
-    id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
-    description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-    imgClassName: "w-full h-full",
-    titleClassName: "justify-end",
-    img: "/b1.svg",
-    spareImg: "",
-  },
-  {
-    id: 2,
-    title: "I'm very flexible with time zone communications",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "",
-    spareImg: "",
-  },
-  {
-    id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-center",
-    img: "",
-    spareImg: "",
-  },
-  {
-    id: 4,
-    title: "Tech enthusiast with a passion for development.",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
-  },
-
-  {
-    id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
-    className: "md:col-span-3 md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
-    spareImg: "/grid.svg",
-  },
-  {
-    id: 6,
-    title: "Do you want to start a project together?",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-    img: "",
-    spareImg: "",
-  },
-];
 
 export const projects = [
   {
@@ -130,13 +68,13 @@ export const projects = [
 
 
 
-
 export const detailedProjects = [
   {
     id: 1,
     title: "Web-based Reservation Management System",
-    desc: "The system provides a user-friendly interface website that contains information about the resort, a fast and convenient reservation management system, and a virtual tour of the resort. The system was develop order to changing the reservation process of the resort from a manual to a system and enhancing the quality and satisfaction of the resort's services.",
+    desc: "The system offers a user-friendly website with resort information, a convenient reservation management system, and a virtual tour. It was developed to modernize the resort's manual reservation process, enhancing service quality and customer satisfaction.",
     srcLink: "https://github.com/johnreyluntayao/resort-reservation-management-system",
+    image: "/Natura/home.png",
     features: [
       {
         id: 1,
@@ -163,8 +101,9 @@ export const detailedProjects = [
   {
     id: 2,
     title: "Sparrk",
-    desc: "Sparrk.ph is a platform that's revolutionizing the way athletes and sports enthusiasts connect with sports facilities. Whether you're a facility owner or a sports lover, Sparrk makes it easier than ever to find, book, and play. The intuitive platform streamlines the process, ensuring that everyone—from guests to facility managers—can enjoy a seamless experience. So, whether you’re looking to score a tennis court or book a basketball gym, Sparrk has you covered!",
+    desc: "Sparrk.ph transforms how athletes and sports enthusiasts connect with facilities, making it simple for both facility owners and sports lovers to find, book, and play. The intuitive platform streamlines the process, ensuring a seamless experience for everyone. Whether you need a tennis court or a basketball gym, Sparrk has you covered!",
     srcLink: "https://www.sparrk.ph",
+    image: "/sparrk/sparrk.png",
     features: [
       {
         id: 1,
@@ -189,8 +128,9 @@ export const detailedProjects = [
   {
     id: 3,
     title: "“Where to Look”: Your Health Companion",
-    desc: " Discover a world of wellness at “Where to Look”! Our mission? To empower you with knowledge, compassion, and hope. Dive into our comprehensive health condition section—from sniffles to serious ailments, we’ve got the lowdown. Chat with experts and fellow warriors, explore prevention tips, and find motivation when you need it most. Join our health-conscious community today. Let’s navigate wellness hand in hand!",
+    desc: "Discover wellness at 'Where to Look'! Our mission is to empower you with knowledge, compassion, and hope. Explore our comprehensive health condition section, chat with experts and fellow warriors, and find prevention tips and motivation. Join our health-conscious community today and let's navigate wellness together!",
     srcLink: "https://yourw2look.wordpress.com",
+    image: "/wlook/w2lookhome.png",
     features: [
       {
         id: 1,
@@ -211,6 +151,7 @@ export const detailedProjects = [
     title: "NetZeroAttic",
     desc:"The website was created to promote the business the Net-Zero-Attic that is focused in Attic insulation that is owned by a Canadian Company. The website promotes informative details about attic insulation and the services that the business offers.",
     srcLink: "https://net-zero-attic.com/",
+    image: "/netzero/netzerohome.png",
     features: [
       {
         id: 1,
@@ -229,8 +170,9 @@ export const detailedProjects = [
  {
     id: 5,
     title: "Netflix Clone",
-    desc: "This is a prototype of the Netflix mobile application, featuring all essential interfaces to replicate the user experience of the original app. While the application is not fully functional and lacks backend integration, it showcases a selection of data for demonstration purposes. Users can play one specific video, providing a glimpse of the playback functionality. Additionally, there is a feedback tab included, though it is not operational. This Netflix clone serves primarily as a demonstration of the mobile app's layout and design, rather than a complete working version.",
+    desc: "This prototype of the Netflix mobile app replicates essential interfaces for demonstration. While not fully functional, it showcases data and allows playback of one video. The feedback tab is included but non-operational.",
     srcLink: "https://github.com/johnreyluntayao/Netflix-Clone",
+    image: "/netflix/p1.png",
     features: [{
       id: 1,
       title: "",
@@ -244,8 +186,9 @@ export const detailedProjects = [
   {
     id: 6,
     title: "St. Martha Management System",
-    desc: "In the ever-evolving landscape of technology, businesses face increasing challenges. St. Martha Memorial Homes Inc., situated in Daet, Camarines Norte, grappled with manual record-keeping and client contract management. To address these issues, a comprehensive management system was developed. It provides organized lists of contract and plan transactions, empowers administrators to efficiently manage records, and enables seamless client payment monitoring. This system streamlines business operations, benefiting both the company and its users.",
+    desc: "St. Martha Memorial Homes Inc. in Daet, Camarines Norte, faced challenges with manual record-keeping and contract management. A comprehensive system was developed to organize transactions, manage records efficiently, and monitor client payments, streamlining operations and benefiting both the company and its users.",
     srcLink: "https://github.com/johnreyluntayao/st-martha-management-system",
+    image: "/stmartha/dashboard.png",
     features: [
       {
         id: 1,
@@ -266,6 +209,7 @@ export const detailedProjects = [
     title: "3D Modelling",
     desc: "The Following are collections of 3D Projects that I made using 3DSMax.",
     srcLink: "",
+    image: "/3d.png",
     features: [{
       id: 1,
       title: "",
@@ -509,7 +453,7 @@ export const mainSkills = [
     id: 2,
     logo: "/front-end.svg",
     title: "Front-end Development",
-    desc: "Front-end developer with experience gained during school, having worked on various projects using multiple programming languages and effectively implementing client requirements."
+    desc: "Front-end developer with experience, having worked on various projects using multiple programming languages and effectively implementing client requirements."
   },
   {
     id: 3,
@@ -534,15 +478,18 @@ export const ProjectRole = [
         quote:
           "Implemented the design using HTML/CSS and functions using JavaScript focusing especially on the reservation management system.",
         title: "Front-end Developer",
+        icon: "/front-end.svg",
       },
       {
         quote:
           "Created the scheme of the database and its implementation to the system using PHP,and I also implemented the payment gateway.",
         title: "Back-end Developer",
+        icon: "/back-end.svg",
       },
       {
         quote: "Created and implemented ways in order to improve better user-experience with user-friendly design, ease of transactions, and information access.",
         title: "UX Designer",
+        icon: "/ui-designer.svg",
       },
     ]
   },
@@ -553,6 +500,7 @@ export const ProjectRole = [
       {
         quote: "",
         title: "",
+        icon: "",
       },
     ]
   },
@@ -564,11 +512,13 @@ export const ProjectRole = [
         quote:
           "Designed User Interface and ensured the design feels intuitive, visually engaging, knowledge accessible.",
         title: "UI/UX Designer",
+        icon: "/ui-designer.svg",
       },
       {
         quote:
           "Applied the design through Wordpress for faster implementation and ease of deployment.",
         title: "Front-end Developer",
+        icon: "/front-end.svg",
       },
     ]
   },
@@ -580,6 +530,7 @@ export const ProjectRole = [
         quote:
           "Focusing on the appointment, using the Simply Schedule Appointment (SSA), I am responsible of implementing of what the appointment should look like and set-up some functions of the appointment.",
         title: "Front-end Developer",
+        icon: "/front-end.svg",
       },
     ]
   },
@@ -588,9 +539,15 @@ export const ProjectRole = [
     title: "Netflix Clone",
     roles: [
       {
-        quote: "",
-        title: "",
+        quote: "Created wireframe and UI design of the Netflix clone app.",
+        title: "UI Designer",
+        icon: "/ui-designer.svg",
       },
+      {
+        quote: "Integrated the front-end of the Netflix clone for mobile devices.",
+        title: "Front-end Developer",
+        icon: "/front-end.svg",
+      }
     ]
   },
   {
@@ -601,11 +558,13 @@ export const ProjectRole = [
         quote: 
         "As a front-end developer, I played a key role in building the system, focusing on developing features like the payment section, client information area, dashboard, and reports.",
         title: "Front-end Developer",
+        icon: "/front-end.svg",
       },
       {
         quote: 
         "As part of my responsibilities, I designed the database schema and seamlessly integrated it into the system. My work involved managing data structures, implementing payment functionality, and handling price and discount calculations.",
-        title: "Back-end Developer"
+        title: "Back-end Developer",
+        icon: "/back-end.svg",
       },
     ]
   },
@@ -616,6 +575,125 @@ export const ProjectRole = [
       {
         quote: "",
         title: "",
+        icon: "",
+      },
+    ]
+  },
+  
+];
+
+export const techImplementation = [
+  {
+    id: 1,
+    title: "Web-based Reservation Management System",
+    tech: [
+      {   
+        icon: "/html.svg",
+        title: "HTML",
+      },
+      {
+        icon: "/css.svg",
+        title: "CSS",
+      },
+      {
+        icon: "/javascript.svg",
+        title: "JavaScript",
+      },
+      {
+        icon: "/figma.svg",
+        title: "Figma",
+      },
+      {
+        icon: "/hostinger.svg",
+        title: "Hostinger",
+      },
+    ]
+  },
+  {
+    id: 2,
+    title: "Sparrk",
+    tech: [ 
+      {
+        icon: "/figma.svg",
+        title: "Figma",
+      },
+      {
+        icon: "/canva.svg",
+        title: "Canva",
+      },
+      {
+        icon: "/adobe.svg",
+        title: "3DSMax",
+      },
+    ]
+  },
+  {
+    id: 3,
+    title: "“Where to Look”: Your Health Companion",
+    tech: [ 
+      {
+        icon:"/figma.svg",
+        title: "Figma",
+      },
+      {
+        icon:"/wordpress.svg",
+        title: "Wordpress",
+      },
+    ]
+  },
+  {
+    id: 4,
+    title: "NetZeroAttic",
+    tech: [ 
+      {
+        icon: "/wordpress.svg",
+        title: "Wordpress",
+      },
+      {
+        icon: "/ssa.svg",
+        title: "Simple Schedule Appointment",
+      },      
+      {
+        icon: "/elementor.svg",
+        title: "Elementor",
+      },
+    ]
+  },
+  {
+    id: 5,
+    title: "Netflix Clone",
+    tech: [ 
+      {
+        icon: "/figma.svg",
+        title: "Figma",
+      },
+      {
+        icon: "/react.svg",
+        title: "React Native",
+      }
+    ]
+  },
+  {
+    id: 6,
+    title: "St. Martha Management System",
+    tech: [ 
+      {
+        icon: "/vbnet.png",
+        title: "VB.NET",
+      },
+      {
+        icon: "/figma.svg",
+        title: "Figma"
+      },
+    ]
+  },
+  {
+    id: 7,
+    title: "3D Projects",
+    tech: [
+      {
+        icon: "/3dsmax.svg",
+        title: "3DSMax",
       },
     ]
   },
@@ -648,6 +726,13 @@ export const phoneImages = [
   },
 ];
 
+
+export const myApproach = [
+  { id: 1, title: 'Planning & Refinement', description: 'Prioritize features and gathering requirements. Define the scope of the upcoming sprint.' },
+  { id: 2, title: 'Development & Integration', description: 'Sprint Execution for development and integration of features and also in designing. Regular checking of progress and obstacles and test of code.' },
+  { id: 3, title: 'Review & Improvement', description: 'Demonstration of completed work and gather feedback for improvements. Reflect on the sprint and implement improvements.' },
+  
+];
 
 
 

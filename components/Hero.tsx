@@ -2,10 +2,8 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Spotlight } from './ui/spotlight';
-import { TextGenerateEffect } from './ui/TextGenerateEffect';
-import GlowingButton from './ui/GlowingButton';
 import { HiArrowNarrowDown } from "react-icons/hi";
+import { Spotlight, TextGenerateEffect, GlowingButton } from "@/lib/imports" 
 
 const Hero = () => {
   const containerVariants = {
@@ -31,17 +29,33 @@ const Hero = () => {
   };
 
   return (
-    <div className='pb-20 pt-36' id='hero'>
+    <section className='flex justify-center items-center h-screen mb-16' id='hero'>
+      {/* Spotlight Backgrounds */}
       <div>
         <Spotlight className='-top-40 -left-10 rounded-lg md:-left-32 md:-top-20 h-screen' fill="#7cc7fd" />
         <Spotlight className='top-10 left-full h-[80vh] w-[50vw] transform rotate-180' fill="#37abf9" />
         <Spotlight className='top-28 left-80 h-[80vh] w-[50vw]' fill="#37abf9" />
       </div>
 
+      {/* Overlay */}
       <div className="h-screen w-full dark:bg-black-100 dark:bg-grid-white/[0.03] bg-grid-science-blue-200/[0.3] flex items-center justify-center absolute top-0 left-0">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_5%,black)]" />
       </div>
 
+      <motion.div
+        className="absolute top-5 left-5 z-20 flex items-center"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
+        <img
+          src="/Logo.svg"
+          alt="Logo"
+          className="h-10 md:h-12 lg:h-16 "
+        />
+      </motion.div>
+
+      {/* Main Content */}
       <motion.div 
         className='flex justify-center relative my-20 z-10' 
         variants={containerVariants} 
@@ -76,17 +90,16 @@ const Hero = () => {
             animate="visible"
           >
             <GlowingButton 
-              title="Know More"
+              title="Know more"
               icon={<HiArrowNarrowDown />}
               position='right'
-              moreClasses='bg-[linear-gradient(110deg,#0d91ea,45%,#7cc7fd,55%,#0d91ea)]'
-
+              moreClasses='text-white font-bold bg-[linear-gradient(110deg,#0d91ea,45%,#7cc7fd,55%,#0d91ea)]'
               // bg-[linear-gradient(110deg,#fd7c76,45%,#ff908a,55%,#fd7c76)]
             />
           </motion.a>
         </div>
       </motion.div>
-    </div>
+    </section>
   );
 };
 

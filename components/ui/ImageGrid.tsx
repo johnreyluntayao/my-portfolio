@@ -2,14 +2,16 @@
 
 import React from 'react';
 import { motion, useInView } from 'framer-motion';
-import { phoneImages } from '@/data';
+import { phoneImages } from '@/lib/imports';
 
-const ImageGrid = () => {
+const ImageGrid = ({ id }: { id: number }) => {
+
   return (
-    <div className="pt-16 pb-16 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+    <section className={`${id === 5 ? 'grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 items-center justify-center min-h-screen py-16 gap-4 p-4' : 'hidden'}`}>
       {phoneImages.map((p, index) => {
         const ref = React.useRef(null); 
         const inView = useInView(ref, { }); 
+
 
        
         const variants = {
@@ -17,11 +19,12 @@ const ImageGrid = () => {
           visible: { opacity: 1, y: 0 }, 
         };
 
+
         return (
           <motion.div
             key={index}
             ref={ref} 
-            className={`relative`}
+            className={`relative flex items-center justify-center`}
             initial="hidden"
             animate={inView ? "visible" : "hidden"} 
             variants={variants} 
@@ -36,7 +39,7 @@ const ImageGrid = () => {
           </motion.div>
         );
       })}
-    </div>
+    </section>
   );
 };
 

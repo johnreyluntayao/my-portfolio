@@ -6,8 +6,8 @@ import React, { useEffect, useState } from "react";
 type Item = {
   id: number;
   title: string;
-  roles: {
-    quote: string;
+  tech: {
+    icon: string;
     title: string;
   }[];
 };
@@ -78,46 +78,35 @@ export const InfiniteMovingCards = ({
       )}
     >
       <ul
-        ref={scrollerRef}
-        className={cn(
-          "flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
-          start && "animate-scroll",
-          pauseOnHover && "hover:[animation-play-state:paused]"
-        )}
+  ref={scrollerRef}
+  className={cn(
+    "flex min-w-full shrink-0 gap-16 py-2 w-max flex-nowrap",
+    start && "animate-scroll",
+    pauseOnHover && "hover:[animation-play-state:paused]"
+  )}
+>
+  {selectedItem ? (
+    selectedItem.tech.map((tech, idx) => (
+      <li
+        className="relative flex items-center gap-4 sm:gap-5 bg-white/20 hover:bg-white/40 rounded-lg p-4 sm:p-5 shadow-lg hover:shadow-xl transition-shadow duration-300"
+        key={`${selectedItem.id}-${idx}`}
       >
-        {selectedItem ? (
-          selectedItem.roles.map((role, idx) => (
-            // linear-gradient(180deg, var(--[science-blue-900]), var(--science-blue-950))
-            <li
-              className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 px-8 py-6 md:w-[450px]"
-              style={{
-                background:
-                  "#fbfcf8",
-              }}
-              key={`${selectedItem.id}-${idx}`}
-            >
-              <blockquote>
-                <div
-                  aria-hidden="true"
-                  className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
-                ></div>
-                <div className="relative z-20 mb-6 flex flex-row items-center">
-                  <span className="flex flex-col gap-1">
-                    <span className="text-lg md:text-2xl lg:text-3xl leading-[1.6] text-science-blue-900">
-                      {role.title}
-                    </span>
-                  </span>
-                </div>
-                <span className="relative z-20 text-sm md:text-base lg:text-lg leading-[1.6] text-science-blue-900">
-                  {role.quote}
-                </span>
-              </blockquote>
-            </li>
-          ))
-        ) : (
-          <div>Not Found</div>
-        )}
-      </ul>
+        <img
+          src={tech.icon}
+          alt={tech.title}
+          className="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 object-contain rounded-full bg-white/30 p-1 shadow-md"
+        />
+        <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl font-semibold leading-tight">
+          {tech.title}
+        </p>
+      </li>
+    ))
+  ) : (
+    <div className="text-center text-white">Not Found</div>
+  )}
+</ul>
+
+
     </div>
   );
 };

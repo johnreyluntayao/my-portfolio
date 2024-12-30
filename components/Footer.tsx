@@ -2,18 +2,11 @@
 
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import GlowingButton from './ui/GlowingButton';
-import { FaLocationArrow } from 'react-icons/fa';
-import { socialMedia } from '@/data';
+import { socialMedia } from '@/lib/imports';
 
 const footerVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
-};
-
-const headingVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
 };
 
 const textVariants = {
@@ -21,73 +14,27 @@ const textVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: 'easeOut' } },
 };
 
-const buttonVariants = {
-  hidden: { opacity: 0, scale: 0.9 },
+const logoVariants = {
+  hidden: { opacity: 0, scale: 0.8 },
   visible: { opacity: 1, scale: 1, transition: { duration: 0.6, ease: 'easeOut' } },
 };
 
 const Footer = () => {
   const footerRef = useRef(null);
-  const isInView = useInView(footerRef, {}); // Set `once: true` to animate only once
+  const isInView = useInView(footerRef, {});
 
   return (
     <footer 
       ref={footerRef}
-      className='relative z-10 w-full pt-32 pb-10 mx-auto sm:px-10 px-5' 
-      id="contact"
+      className='relative z-10 w-full pb-8 mx-auto' 
     >
-      <div className='absolute left-0 bottom-0 w-full min-h-96 z-0'>
-        <img 
-          src="/footer-grid.svg"
-          alt="grid"
-          className='w-full h-full opacity-50'
-        />
-      </div>
-
-      <motion.div 
-        className='relative z-10 flex flex-col items-center'
-        variants={footerVariants}
-        initial="hidden"
-        animate={isInView ? 'visible' : 'hidden'}
-      >
-        <motion.h1 
-          className='heading lg:max-w-[45vw] text-science-blue-950'
-          variants={headingVariants}
-          initial="hidden"
-          animate={isInView ? 'visible' : 'hidden'}
-        >
-          Ready to <span className='text-science-blue-600'>Hire me?</span>
-        </motion.h1>
-        <motion.p 
-          className='text-science-blue-950 md:mt-10 my-5 text-center lg:text-lg md:text-base text-sm'
-          variants={textVariants}
-          initial="hidden"
-          animate={isInView ? 'visible' : 'hidden'}
-        >
-          Reach out to me today! And let's discuss how to make you achieve your goals.
-        </motion.p>
-        <motion.a 
-          className=''
-          href='mailto:johnrey.luntayao23@gmail.com'
-          variants={buttonVariants}
-          initial="hidden"
-          animate={isInView ? 'visible' : 'hidden'}
-        >
-          <GlowingButton 
-            title="Let's get in touch"
-            icon={<FaLocationArrow />}
-            position='right'
-            moreClasses='bg-[linear-gradient(110deg,#0d91ea,45%,#7cc7fd,55%,#0d91ea)]'
-          />
-        </motion.a>
-      </motion.div>
-
       <motion.div 
         className='relative z-10 flex mt-16 md:flex-row flex-col justify-between items-center'
         variants={footerVariants}
         initial="hidden"
         animate={isInView ? 'visible' : 'hidden'}
       >
+        {/* Text */}
         <motion.p 
           className='md:text-base text-small md:font-normal font-light text-science-blue-950'
           variants={textVariants}
@@ -97,6 +44,21 @@ const Footer = () => {
           Copyright © 2024 Johnrey
         </motion.p>
 
+        {/* Logo */}
+        <motion.div
+          className='my-4 md:my-0 flex items-center justify-center'
+          variants={logoVariants}
+          initial="hidden"
+          animate={isInView ? 'visible' : 'hidden'}
+        >
+          <img 
+            src="/Logo.svg" 
+            alt="Johnrey Logo" 
+            className="w-12 h-12 md:w-16 md:h-16"
+          />
+        </motion.div>
+
+        {/* Social Media Links */}
         <div className='flex items-center md:gap-3 lg:gap-6'>
           {socialMedia.map((profile) => (
             <motion.a 
@@ -115,6 +77,6 @@ const Footer = () => {
       </motion.div>
     </footer>
   );
-}
+};
 
 export default Footer;
