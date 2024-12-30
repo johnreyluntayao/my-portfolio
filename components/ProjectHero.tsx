@@ -76,7 +76,7 @@ const ProjectHero = ({ id }: { id: number }) => {
               className={`${id === 7 ? "hidden" : ""} flex justify-center lg:justify-start`}
             >
               <GlowingButton
-                title={`${id === 3 || id === 4 ? `Visit site` : `Source code`}`}
+                title={`${id === 2 || id === 3 || id === 4 ? `Visit site` : `Source code`}`}
                 moreClasses="bg-[linear-gradient(110deg,#fd7c76,45%,#ff908a,55%,#fd7c76)] text-white font-bold"
                 icon={id === 1 || id === 5 || id === 6 ? <FaCode /> : <FaArrowRight />}
                 position="right"
