@@ -43,7 +43,7 @@ const Hero = () => {
       </div>
 
       <motion.div
-        className="absolute top-5 left-5 z-20 flex items-center"
+        className="absolute top-5 left-mobile-margin md:left-tablet-margin lg:left-laptop-margin xl:left-desktop-margin z-20 flex items-center"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
