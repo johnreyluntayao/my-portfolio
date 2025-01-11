@@ -68,7 +68,7 @@ const Contact = () => {
             title="Let's Connect!"
             icon={<FaLocationArrow />}
             position='right'
-            moreClasses='text-science-blue-500 font-bold bg-white'
+            moreClasses='text-science-blue-500 font-semibold bg-white'
             //bg-[linear-gradient(110deg,#ffffff,45%,#7cc7fd,55%,#ffffff)]
           />
         </motion.a>
