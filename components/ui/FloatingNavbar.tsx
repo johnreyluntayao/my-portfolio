@@ -20,7 +20,7 @@ export const FloatingNav = ({
     link: string;
     icon?: JSX.Element;
   }[];
-  className?: string;
+  className?: string; 
 }) => {
   const { scrollYProgress } = useScroll();
   const [visible, setVisible] = useState(false);

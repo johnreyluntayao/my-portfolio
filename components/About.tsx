@@ -67,8 +67,8 @@ const About = () => {
         animate={isButtonInView ? "visible" : "hidden"}
       >
         <GlowingButton
-          title="See my resume"
-          moreClasses="text-white font-bold bg-[linear-gradient(110deg,#0d91ea,45%,#7cc7fd,55%,#0d91ea)]"
+          title="My resume"
+          moreClasses="text-white bg-[linear-gradient(110deg,#0d91ea,45%,#7cc7fd,55%,#0d91ea)]"
           icon={<FaArrowRight />}
           position="right"
         />
