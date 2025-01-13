@@ -28,7 +28,7 @@ const ProjectFeature2 = ({ id }: { id: number }) => {
   const isMouseInView = useInView(mouseRef, { margin: '0px 0px -200px 0px' });
 
   return (
-    <section className={`${id === 5 || id === 7 ? 'hidden' : 'relative flex items-center justify-center pt-32 lg:px-16 py-16 overflow-hidden'}`}>
+    <section className={`${id === 5 || id === 7 ? 'hidden' : 'relative flex items-center justify-center lg:px-16 my-16 overflow-hidden max-w-max'}`}>
       {/* Triangle Background */}
       
       {/* <div className="absolute top-0 left-0 w-full h-full z-0">
@@ -36,7 +36,7 @@ const ProjectFeature2 = ({ id }: { id: number }) => {
       </div> */}
 
       {projectDetail ? (
-        <div className="relative z-10 flex flex-col gap-16">
+        <div className="relative z-10 flex flex-col gap-8">
           <div className="flex flex-col items-center justify-center gap-8">
             {title ? (
                <motion.h1
@@ -72,7 +72,7 @@ const ProjectFeature2 = ({ id }: { id: number }) => {
             />
           </div>
 
-          <div className="flex flex-col gap-16 lg:gap-32 items-center">
+          <div className="flex flex-col gap-8 lg:gap-16 items-center">
             {projectDetail.features?.map((feat, idx) => {
               const ref = useRef(null);
               const isInView = useInView(ref, { margin: '0px 0px -200px 0px' });

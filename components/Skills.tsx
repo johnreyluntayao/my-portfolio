@@ -30,7 +30,7 @@ const Skills = () => {
   };
 
   return (
-    <section className='w-full py-16' id="skills" ref={ref}>
+    <section className='relative max-w-max my-16' id="skills" ref={ref}>
       <motion.h1
         className='heading text-science-blue-950'
         variants={headingVariants}
@@ -41,7 +41,7 @@ const Skills = () => {
         <span className='text-science-blue-600'>Main Skills</span>
       </motion.h1>
 
-      <div className='mt-32 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 gap-y-20 w-full'>
+      <div className='mt-24 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 gap-y-20 max-w-7xl'>
         {mainSkills.map((skill, index) => (
           <motion.div
             key={skill.id}

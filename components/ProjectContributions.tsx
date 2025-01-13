@@ -31,7 +31,7 @@ const ProjectContributions = ({id} : {id: number}) => {
   };
 
   return (
-    <div className={`${id === 7 || id === 2 ? 'hidden' : 'flex relative py-16 mt-16 place-items-center justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5'}`} ref={ref}>
+    <section className={`${id === 7 || id === 2 ? 'hidden' : 'flex relative max-w-max pb-16 mt-16 place-items-center justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5'}`} ref={ref}>
       <motion.h1
         className='heading text-science-blue-950'
         variants={headingVariants}
@@ -44,7 +44,7 @@ const ProjectContributions = ({id} : {id: number}) => {
 
       {contributions ? (
             <div
-            className={`w-full mt-24 grid gap-10 gap-y-20 place-items-center 
+            className={`w-full mt-24 grid gap-8 place-items-center
               grid-cols-1 
               md:grid-cols-${contributions.roles.length === 1 ? 1 : 2} 
               lg:grid-cols-${Math.min(contributions.roles.length, 4)}`}
@@ -77,7 +77,7 @@ const ProjectContributions = ({id} : {id: number}) => {
             <div>Not Found</div>
     )}
 
-    </div>
+    </section>
   );
 };
 

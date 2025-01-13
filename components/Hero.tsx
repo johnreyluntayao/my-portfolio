@@ -29,7 +29,7 @@ const Hero = () => {
   };
 
   return (
-    <section className=' flex justify-center items-center h-screen mb-16' id='hero'>
+    <section className=' flex justify-center items-center h-screen mb-16 2xl:h-[75rem]' id='hero'>
       {/* Spotlight Backgrounds */}
       <div>
         <Spotlight className='-top-40 -left-10 rounded-lg md:-left-32 md:-top-20 h-screen' fill="#7cc7fd" />
@@ -38,12 +38,12 @@ const Hero = () => {
       </div>
 
       {/* Overlay */}
-      <div className="h-screen w-full dark:bg-black-100 dark:bg-grid-white/[0.03] bg-grid-science-blue-200/[0.3] flex items-center justify-center absolute top-0 left-0">
+      <div className="h-screen 2xl:h-[75rem] w-full dark:bg-black-100 dark:bg-grid-white/[0.03] bg-grid-science-blue-200/[0.3] flex items-center justify-center absolute top-0 left-0">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_5%,black)]" />
       </div>
 
       <motion.div
-        className="absolute top-5 left-mobile-margin md:left-tablet-margin lg:left-laptop-margin xl:left-desktop-margin z-20 flex items-center"
+        className="absolute top-5 left-mobile-margin md:left-tablet-margin lg:left-laptop-margin xl:left-desktop-margin"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}

@@ -45,6 +45,11 @@ const config = {
         'tablet-margin': '2rem', // 32px
         'laptop-margin': '3rem', // 48px
         'desktop-margin': '4rem', // 64px
+        'bigger-margin': '5rem', // 64px
+      },
+
+      maxWidth: {
+        'max': '1536px',  // Custom max-width for 4K screens
       },
 
       colors: {

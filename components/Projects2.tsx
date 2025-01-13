@@ -7,9 +7,9 @@ import { motion } from 'framer-motion';
 
 const Projects = () => {
   return (
-    <section className="py-16 place-items-center" id="projects">
+    <section className="mt-24 mb-16 place-items-center" id="projects">
       <motion.h1
-        className="text-3xl md:text-4xl lg:text-5xl font-bold text-science-blue-950 text-center pb-4"
+        className="text-3xl md:text-4xl lg:text-5xl font-bold text-science-blue-950 text-center"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -17,7 +17,7 @@ const Projects = () => {
       >
         Some of my <span className="text-science-blue-600">Projects</span>
       </motion.h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 py-8 justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mt-16 justify-center">
         {projects.map(({ id, title, des, img, iconLists, link }, index) => (
           <motion.a
             href={`projects/${id}`}

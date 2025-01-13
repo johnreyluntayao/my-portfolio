@@ -23,13 +23,17 @@ const page = ({params} : {
 
   return (
     <main className='relative overflow-hidden bg-white'>
-      <div className="px-mobile-margin md:px-tablet-margin lg:px-laptop-margin xl:px-desktop-margin 3xl:container">
+      <div className="px-mobile-margin md:px-tablet-margin lg:px-laptop-margin xl:px-desktop-margin place-items-center">
          <FloatingNav navItems={navItems}/>
-         <ProjectHero id={id}/>
+         <div className='w-full'>
+          <ProjectHero id={id}/>
+         </div>
          <ProjectImages id={id}/> 
          <ImageGrid id={id}/>
          <ProjectFeature2 id={id}/>
-         <TechImplementation id={id}/>
+         <div className='w-full'>
+          <TechImplementation id={id}/>
+        </div>
          <ProjectContributions id={id}/> 
          <Contact />
          <Footer />
