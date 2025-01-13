@@ -6,6 +6,7 @@ import {
   Skills, 
   TechnicalSkills, 
   Projects, 
+  Projects2,
   MyApproach, 
   Contact, 
   Footer, 
@@ -16,8 +17,8 @@ import {
 
 export default function Home() {
   return (
-    <main className="relative overflow-hidden bg-white ">
-      <div className="px-mobile-margin md:px-tablet-margin lg:px-laptop-margin xl:px-desktop-margin 3xl:container">
+    <main className="relative overflow-hidden bg-white">
+      <div className=" px-mobile-margin md:px-tablet-margin lg:px-laptop-margin xl:px-desktop-margin">
       <FloatingNav navItems={navItems}/>
       <Hero />
       <Skills />
@@ -27,7 +28,7 @@ export default function Home() {
         <TechnicalSkills />
       </div>
 
-      <Projects />
+      <Projects2 />
       <MyApproach />
       <Contact />
       <Footer />
