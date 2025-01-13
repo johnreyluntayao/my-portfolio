@@ -25,7 +25,7 @@ const About = () => {
     };
 
     return (
-<section className="pt-16 flex items-center justify-center px-4 lg:px-32" id="about">
+<section className="relative mt-16 flex items-center justify-center px-4 lg:px-32 max-w-max" id="about">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
     
     <motion.div

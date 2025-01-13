@@ -22,7 +22,7 @@ const MyApproach = () => {
   };
 
   return (
-    <section className="py-16" id="myApproach">
+    <section className="my-16 max-w-max" id="myApproach">
       <motion.div
         className="flex flex-col justify-center items-center"
         initial="hidden"
@@ -63,7 +63,7 @@ const MyApproach = () => {
         </motion.div>
 
         <motion.p
-          className="text-base md:text-lg lg:text-xl font-normal text-science-blue-950 pt-4 text-center max-w-[750px] pb-12"
+          className="text-base md:text-lg lg:text-xl font-normal text-science-blue-950 pt-4 text-center max-w-[750px] mb-16"
           initial="hidden"
           whileInView="visible"
           viewport={{ amount: 0.2 }}

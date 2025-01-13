@@ -7,7 +7,7 @@ import { phoneImages } from '@/lib/imports';
 const ImageGrid = ({ id }: { id: number }) => {
 
   return (
-    <section className={`${id === 5 ? 'grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 items-center justify-center min-h-screen py-16 gap-4 p-4' : 'hidden'}`}>
+    <section className={`${id === 5 ? 'grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 items-center justify-center min-h-screen my-16 gap-4 p-4 max-w-max' : 'hidden'}`}>
       {phoneImages.map((p, index) => {
         const ref = React.useRef(null); 
         const inView = useInView(ref, { }); 

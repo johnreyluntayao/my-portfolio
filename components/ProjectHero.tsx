@@ -44,13 +44,25 @@ const ProjectHero = ({ id }: { id: number }) => {
 
   return (
     <section
-      className="relative flex justify-center bg-science-blue-900 items-center py-32 mb-16 sm:px-10 px-5 h-screen -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin xl:-mx-desktop-margin"
+      className="relative flex justify-center bg-science-blue-900 items-center py-32 mb-16 sm:px-10 px-5 h-screen 2xl:h-[75vh] -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin xl:-mx-desktop-margin"
     >
       <div>
         <Spotlight className="-top-40 -left-10 rounded-lg md:-left-32 md:-top-20 h-screen" fill="#7cc7fd" />
         <Spotlight className="top-10 left-full h-[80vh] w-[50vw] transform rotate-180" fill="#7cc7fd" />
         <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="#7cc7fd" />
       </div>
+
+
+      <button
+        onClick={() => handleNavigation("prev")}
+        disabled={isFirst}
+        className={`hidden lg:flex mr-5 transform -translate-y-1/2 bg-science-blue-700 text-white p-3 rounded-full shadow-lg ${
+          isFirst ? "opacity-50 cursor-not-allowed" : "hover:bg-science-blue-600 focus:outline-none transition"
+        }`}
+        aria-label="Previous"
+      >
+        <FaArrowLeft size={20} />
+      </button>
 
       {project ? (
         <motion.div
@@ -126,19 +138,9 @@ const ProjectHero = ({ id }: { id: number }) => {
 
       {/* Navigation Buttons for Desktop */}
       <button
-        onClick={() => handleNavigation("prev")}
-        disabled={isFirst}
-        className={`hidden lg:flex absolute left-5 sm:left-10 top-1/2 transform -translate-y-1/2 bg-science-blue-700 text-white p-3 rounded-full shadow-lg ${
-          isFirst ? "opacity-50 cursor-not-allowed" : "hover:bg-science-blue-600 focus:outline-none transition"
-        }`}
-        aria-label="Previous"
-      >
-        <FaArrowLeft size={20} />
-      </button>
-      <button
         onClick={() => handleNavigation("next")}
         disabled={isLast}
-        className={`hidden lg:flex absolute right-5 sm:right-10 top-1/2 transform -translate-y-1/2 bg-science-blue-700 text-white p-3 rounded-full shadow-lg ${
+        className={`hidden lg:flex ml-5 transform -translate-y-1/2 bg-science-blue-700 text-white p-3 rounded-full shadow-lg ${
           isLast ? "opacity-50 cursor-not-allowed" : "hover:bg-science-blue-600 focus:outline-none transition"
         }`}
         aria-label="Next"
