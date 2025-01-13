@@ -26,7 +26,7 @@ const Footer = () => {
   return (
     <footer 
       ref={footerRef}
-      className='relative z-10 w-full pb-8 mx-auto' 
+      className='relative z-10 max-w-max pb-8 mx-auto' 
     >
       <motion.div 
         className='relative z-10 flex mt-16 md:flex-row flex-col justify-between items-center'

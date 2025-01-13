@@ -4,8 +4,8 @@ import {
   About, 
   Hero, 
   Skills, 
-  TechnicalSkills, 
-  Projects, 
+  TechStack,  
+  Projects2,
   MyApproach, 
   Contact, 
   Footer, 
@@ -16,18 +16,16 @@ import {
 
 export default function Home() {
   return (
-    <main className="relative overflow-hidden bg-white ">
-      <div className="px-mobile-margin md:px-tablet-margin lg:px-laptop-margin xl:px-desktop-margin 3xl:container">
+    <main className="relative overflow-hidden bg-white">
+      <div className="px-mobile-margin md:px-tablet-margin lg:px-laptop-margin xl:px-desktop-margin place-items-center">
       <FloatingNav navItems={navItems}/>
       <Hero />
       <Skills />
       <About />
-
-      <div className="relative -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin xl:-mx-desktop-margin">
-        <TechnicalSkills />
+      <div className="w-full">
+        <TechStack />
       </div>
-
-      <Projects />
+      <Projects2 />
       <MyApproach />
       <Contact />
       <Footer />

@@ -20,17 +20,24 @@ const config = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
-      screens: {
-        'sm': '640px',  // Small devices
-        'md': '768px',  // Tablets
-        'lg': '1024px', // Laptops
-        'xl': '1280px', // Desktops
-        '2xl': '1536px', // Large screens
-        // Custom breakpoints
-        'xs': '480px', 
-        '3xl': '1920px', 
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        md: '3rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
       },
+      screens: {
+        'xs': '480px',       // Extra small devices
+        'sm': '640px',       // Small devices (phones)
+        'md': '768px',       // Medium devices (tablets)
+        'lg': '1024px',      // Large devices (laptops)
+        'xl': '1280px',      // Extra large devices (desktops)
+        '2xl': '1536px',     // 2X large screens
+        '3xl': '1920px',     // 3X large screens (wider desktops)
+        '4xl': '2560px',     // 4X large screens (ultra-wide monitors)
+      },      
     },
     extend: {
       spacing: {
@@ -38,6 +45,11 @@ const config = {
         'tablet-margin': '2rem', // 32px
         'laptop-margin': '3rem', // 48px
         'desktop-margin': '4rem', // 64px
+        'bigger-margin': '5rem', // 64px
+      },
+
+      maxWidth: {
+        'max': '1536px',  // Custom max-width for 4K screens
       },
 
       colors: {
