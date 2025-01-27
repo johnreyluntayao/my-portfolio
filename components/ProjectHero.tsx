@@ -25,10 +25,7 @@ const ProjectHero = ({ id }: { id: number }) => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: {
-        delay: 0.2,
-        staggerChildren: 0.3,
-      },
+      transition: { delay: 0.2, staggerChildren: 0.3 },
     },
   };
 
@@ -43,20 +40,14 @@ const ProjectHero = ({ id }: { id: number }) => {
   };
 
   return (
-    <section
-      className="relative flex justify-center bg-science-blue-900 items-center py-32 mb-16 sm:px-10 px-5 h-screen 2xl:h-[75vh] -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin xl:-mx-desktop-margin"
-    >
-      <div>
-        <Spotlight className="-top-40 -left-10 rounded-lg md:-left-32 md:-top-20 h-screen" fill="#7cc7fd" />
-        <Spotlight className="top-10 left-full h-[80vh] w-[50vw] transform rotate-180" fill="#7cc7fd" />
-        <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="#7cc7fd" />
-      </div>
+    <section className="relative flex justify-center bg-science-blue-900 items-center py-32 mb-16 sm:px-10 px-5 h-screen 2xl:max-h-[75rem] -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin xl:-mx-desktop-margin">
+      <Spotlight />
 
-
+      {/* Previous Navigation Button */}
       <button
         onClick={() => handleNavigation("prev")}
         disabled={isFirst}
-        className={`hidden lg:flex mr-5 transform -translate-y-1/2 bg-science-blue-700 text-white p-3 rounded-full shadow-lg ${
+        className={`relative hidden lg:flex mr-5 transform -translate-y-1/2 bg-science-blue-700 text-white p-3 rounded-full shadow-lg ${
           isFirst ? "opacity-50 cursor-not-allowed" : "hover:bg-science-blue-600 focus:outline-none transition"
         }`}
         aria-label="Previous"
@@ -66,12 +57,12 @@ const ProjectHero = ({ id }: { id: number }) => {
 
       {project ? (
         <motion.div
-          className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-7xl justify-center items-center lg:w-[80vw]"
+          className="relative grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-7xl justify-center items-center lg:w-[80vw]"
           initial="hidden"
           animate="visible"
           variants={containerVariants}
         >
-          
+          {/* Project Text Section */}
           <motion.div variants={itemVariants}>
             <GlobalTextGenerateEffect
               className="text-center md:text-center lg:text-start"
@@ -82,10 +73,7 @@ const ProjectHero = ({ id }: { id: number }) => {
               {project.desc}
             </p>
 
-            <motion.a
-              href={project.srcLink}
-              className={`${id === 7 ? "hidden" : ""} flex justify-center lg:justify-start`}
-            >
+            <motion.a href={project.srcLink} className={`${id === 7 ? "hidden" : ""} flex justify-center lg:justify-start`}>
               <GlowingButton
                 title={`${id === 2 || id === 3 || id === 4 ? `Visit site` : `Source code`}`}
                 moreClasses="bg-[linear-gradient(110deg,#fd7c76,45%,#ff908a,55%,#fd7c76)] text-white"
@@ -95,7 +83,7 @@ const ProjectHero = ({ id }: { id: number }) => {
             </motion.a>
           </motion.div>
 
-          
+          {/* Project Image Section */}
           <motion.div className="flex flex-col items-center justify-center" variants={imageVariants}>
             <motion.img
               src={project.image}
@@ -107,7 +95,7 @@ const ProjectHero = ({ id }: { id: number }) => {
               }`}
             />
 
-            {/* Navigation Buttons for Mobile */}
+            {/* Mobile Navigation Buttons */}
             <div className="flex justify-center mt-6 space-x-4 sm:flex lg:hidden">
               <button
                 onClick={() => handleNavigation("prev")}
@@ -136,11 +124,11 @@ const ProjectHero = ({ id }: { id: number }) => {
         <h1>Not Found</h1>
       )}
 
-      {/* Navigation Buttons for Desktop */}
+      {/* Desktop Navigation Button */}
       <button
         onClick={() => handleNavigation("next")}
         disabled={isLast}
-        className={`hidden lg:flex ml-5 transform -translate-y-1/2 bg-science-blue-700 text-white p-3 rounded-full shadow-lg ${
+        className={`relative hidden lg:flex ml-5 transform -translate-y-1/2 bg-science-blue-700 text-white p-3 rounded-full shadow-lg ${
           isLast ? "opacity-50 cursor-not-allowed" : "hover:bg-science-blue-600 focus:outline-none transition"
         }`}
         aria-label="Next"
