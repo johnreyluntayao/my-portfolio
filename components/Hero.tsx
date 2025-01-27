@@ -34,14 +34,14 @@ const Hero = () => {
 
   return (
     <section
-      className="flex justify-center items-center h-screen mb-16 2xl:max-h-[75rem]"
+      className="flex justify-center items-center h-screen mb-32 2xl:max-h-[75rem]"
       id="hero"
     >
       {/* Spotlight Backgrounds */}
       <Spotlight />
 
       {/* Overlay */}
-      <div className="h-screen 2xl:h-[75rem] w-full dark:bg-black-100 dark:bg-grid-white/[0.03] bg-grid-science-blue-200/[0.3] flex items-center justify-center absolute top-0 left-0">
+      <div className="h-screen 2xl:max-h-[75rem] w-full dark:bg-black-100 dark:bg-grid-white/[0.03] bg-grid-science-blue-200/[0.3] flex items-center justify-center absolute top-0 left-0">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_1%,black)]" />
       </div>
 
@@ -101,11 +101,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-
-
-
-        {/* <Spotlight className='-top-40 -left-10 rounded-lg md:-left-32 md:-top-20 h-screen' fill="#7cc7fd" />
-        <Spotlight className='top-10 left-full h-[80vh] w-[50vw] transform rotate-180' fill="#37abf9" />
-        <Spotlight className='top-28 left-80 h-[80vh] w-[50vw]' fill="#37abf9" /> */}
-                      // bg-[linear-gradient(110deg,#fd7c76,45%,#ff908a,55%,#fd7c76)]

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
@@ -14,8 +14,9 @@ const Skills = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.5,
-        delay: index * 0.3, 
+        duration: 0.4,
+        delay: index * 0.2,
+        ease: "easeInOut", // Smoother easing for fluidity
       },
     }),
   };
@@ -25,12 +26,12 @@ const Skills = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5 }, 
+      transition: { duration: 0.5, ease: "easeInOut" },
     },
   };
 
   return (
-    <section className='relative max-w-max my-16' id="skills" ref={ref}>
+    <section className='relative max-w-max my-32' id="skills" ref={ref}>
       <motion.h1
         className='heading text-science-blue-950'
         variants={headingVariants}
@@ -41,7 +42,7 @@ const Skills = () => {
         <span className='text-science-blue-600'>Main Skills</span>
       </motion.h1>
 
-      <div className='mt-24 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 gap-y-20 max-w-7xl'>
+      <div className='mt-28 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 gap-y-20 max-w-7xl'>
         {mainSkills.map((skill, index) => (
           <motion.div
             key={skill.id}
@@ -50,11 +51,9 @@ const Skills = () => {
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
             custom={index} 
-            whileHover={{ scale: 1.05, rotate: 2 }} 
+            whileHover={{ scale: 1.03, rotate: 1 }}
           >
-            
             <div className="absolute -top-12 flex items-center justify-center w-20 h-20 bg-science-blue-100 rounded-full">
-              
               <img
                 src={skill.logo}
                 alt={skill.title}
