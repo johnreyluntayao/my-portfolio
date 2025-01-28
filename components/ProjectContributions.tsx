@@ -31,7 +31,7 @@ const ProjectContributions = ({id} : {id: number}) => {
   };
 
   return (
-    <section className={`${id === 7 || id === 2 ? 'hidden' : 'flex relative max-w-max pb-16 mt-16 place-items-center justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5'}`} ref={ref}>
+    <section className={`${id === 8 || id === 3 ? 'hidden' : 'flex relative max-w-max pb-16 mt-16 place-items-center justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5'}`} ref={ref}>
       <motion.h1
         className='heading text-science-blue-950'
         variants={headingVariants}

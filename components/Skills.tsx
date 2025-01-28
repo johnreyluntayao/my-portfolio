@@ -46,7 +46,7 @@ const Skills = () => {
         {mainSkills.map((skill, index) => (
           <motion.div
             key={skill.id}
-            className="relative flex flex-col items-center p-4 bg-white shadow-lg border border-slate-100 rounded-lg h-full"
+            className="relative flex flex-col items-center p-4 bg-white shadow-lg border border-slate-100 rounded-lg h-full max-w-xs"
             variants={cardVariants}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}

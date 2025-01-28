@@ -27,9 +27,9 @@ const ProjectImages = ({ id }: { id: number }) => {
   };
 
   return (
-    <div className={`${id === 7 ? 'flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 my-16 max-w-max' : 'hidden'}`}>
+    <div className={`${id === 8 ? 'flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 my-16 max-w-max' : 'hidden'}`}>
       <div className="w-full">
-        {id === 7 ? (
+        {id === 8 ? (
           cards.map((card) => (
             <div key={card.id}>
               <motion.div
