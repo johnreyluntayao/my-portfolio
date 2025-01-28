@@ -1,5 +1,5 @@
 import React from 'react';
-import { companies, InfiniteMovingCards2 } from '@/lib/imports';
+import { techStack, InfiniteMovingCards2 } from '@/lib/imports';
 
 const TechStack = () => {
   return (
@@ -7,14 +7,14 @@ const TechStack = () => {
       <div className="rounded-md flex flex-col antialiased items-center justify-center relative">
         <div className='pb-6'>
         <InfiniteMovingCards2
-          items={companies}
+          items={techStack}
           direction="right"
           speed="normal"
           />
         </div>
         <div className=''>
         <InfiniteMovingCards2
-          items={companies}
+          items={techStack}
           direction="left"
           speed="normal"
           />

@@ -6,10 +6,8 @@ export { default as About } from "@/components/About";
 export { default as Contact } from "@/components/Contact";
 export { default as Hero } from "@/components/Hero";
 export { default as MyApproach } from "@/components/MyApproach";
-export { default as Projects } from "@/components/Projects";
 export { default as Projects2 } from "@/components/Projects2";
 export { default as Skills } from "@/components/Skills";
-export { default as TechnicalSkills } from "@/components/TechnicalSkills";
 export { default as ProjectImages } from '@/components/ProjectImages'
 export { default as ProjectHero } from '@/components/ProjectHero'
 export { default as ProjectFeature2 } from '@/components/ProjectFeature2'
@@ -33,7 +31,7 @@ export {
     navItems,
     mainSkills,
     about,
-    companies,
+    techStack,
     projects,
     myApproach,
     socialMedia,
