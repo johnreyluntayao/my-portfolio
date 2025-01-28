@@ -195,7 +195,7 @@ export const InfiniteMovingCards2 = ({
             <img
               src={item.img}
               alt={item.name}
-              className="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 object-contain rounded-full bg-white/30 p-1 shadow-md"
+              className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-18 lg:h-18 object-contain rounded-full bg-white/30 p-1 shadow-md"
             />
             <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl font-semibold leading-tight">
               {item.name}
