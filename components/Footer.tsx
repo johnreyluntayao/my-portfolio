@@ -22,6 +22,7 @@ const logoVariants = {
 const Footer = () => {
   const footerRef = useRef(null);
   const isInView = useInView(footerRef, {});
+  const year = new Date().getFullYear();
 
   return (
     <footer 
@@ -41,7 +42,7 @@ const Footer = () => {
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
         >
-          Copyright © 2024 Johnrey
+          Copyright © {year} Johnrey
         </motion.p>
 
         {/* Logo */}
