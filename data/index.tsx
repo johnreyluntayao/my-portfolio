@@ -12,17 +12,17 @@ export const navItems = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg", 
+    img: "/social/git.svg", 
     link: "https://github.com/johnreyluntayao",
   },
   {
     id: 2,
-    img: "/twit.svg",
-    link: "",
+    img: "/social/facebook.svg",
+    link: "https://www.facebook.com/johnrey.luntayao",
   },
   {
     id: 3,
-    img: "/link.svg",
+    img: "/social/link.svg",
     link: "https://www.linkedin.com/in/johnrey-luntayao",
   },
 ];
@@ -31,25 +31,25 @@ export const socialMedia = [
 export const mainSkills = [
   {
     id: 1,
-    logo: "/ui-designer.svg",
+    logo: "/role/ui-designer.svg",
     title: "UI/UX Design",
     desc: "UI/UX designer with experience in diverse projects from school and internship, focusing on creating user-friendly interfaces. Skilled in designing solutions that enhance user experience, with a primary focus on Figma for design execution."
   },
   {
     id: 2,
-    logo: "/front-end.svg",
+    logo: "/role/front-end.svg",
     title: "Front-end Development",
     desc: "Front-end developer with experience, having worked on various projects using multiple programming languages and effectively implementing client requirements."
   },
   {
     id: 3,
-    logo: "/back-end.svg",
+    logo: "/role/back-end.svg",
     title: "Back-end Development",
     desc: "Experienced in designing database schemas, connecting databases to applications, handling CRUD operations, data manipulation, and implementing payment gateways to optimize backend processes."
   },
   {
     id: 4,
-    logo: "/graphic-design.svg",
+    logo: "/role/graphic-design.svg",
     title: "Graphic Design",
     desc: "Acquired extensive experience as a graphic designer during my internship, where I created diverse promotional materials and utilized video editing skills to produce engaging videos."
   },
@@ -66,73 +66,73 @@ export const techStack = [
   {
     id: 1,
     name: "HTML",
-    img: "/html-2.svg",
+    img: "/techstack/html-2.svg",
   },
   {
     id: 2,
     name: "CSS",
-    img: "/css-2.svg",
+    img: "/techstack/css-2.svg",
   },
   {
     id: 3,
     name: "JavaScript",
-    img: "/javascript2.svg",
+    img: "/techstack/javascript2.svg",
   },
   {
     id: 4,
     name: "TypeScript",
-    img: "/typescript.svg",
+    img: "/techstack/typescript.svg",
 
   },
   {
     id: 5,
     name: "PHP",
-    img: "/php2.svg",
+    img: "/techstack/php2.svg",
   },
   {
     id: 6,
     name: "Next JS",
-    img: "/nextjs.svg",
+    img: "/techstack/nextjs.svg",
   },
   {
     id: 7,
     name: "React Native",
-    img: "/react.svg",
+    img: "/techstack/react.svg",
   },
   {
     id: 8,
     name: "MySQL",
-    img: "/mysql2.png",
+    img: "/techstack/mysql2.png",
   },
   {
     id: 9,
     name: "VbNet",
-    img: "/vbnet.png",
+    img: "/techstack/vbnet.png",
   },
   {
     id: 10,
     name: "Figma",
-    img: "/figma.svg",
+    img: "/techstack/figma.svg",
   },
   {
     id: 11,
     name: "Canva",
-    img: "/canva.svg",
+    img: "/techstack/canva.svg",
   },
   {
     id: 12,
     name: "3DSMax",
-    img: "/3dsmax.svg",
+    img: "/techstack/3dsmax.svg",
   },
   {
     id: 13,
     name: "Adobe Premiere",
-    img: "/adobe.svg",
+    img: "/techstack/adobe.svg",
   },
   {
     id: 14,
     name: "Wordpress",
-    img: "/wordpress.svg",
+    img: "/techstack/wordpress.svg",
   },
 
 ];
@@ -153,7 +153,7 @@ export const projects = [
     title: "TravelCN",
     des: "Discover tourist spots and festivals inside the Camarines Norte province.",
     img: "/travelcn/travelcn.png",
-    iconLists: ["/figma.svg", "/nextjs.svg", "typescript.svg"],
+    iconLists: ["/techstack/figma.svg", "/techstack/nextjs.svg", "/techstack/typescript.svg"],
     link: "Wanna know more?",
   },
   {
@@ -161,7 +161,7 @@ export const projects = [
     title: "NetZerAttic ",
     des: "A website that specializes in attic insulation and energy efficiency, aiming to create net-zero energy consumption specifically for attics.",
     img: "/netzero/netzerohome.png",
-    iconLists: ["/wordpress.svg", "/ssa.svg", "/elementor.svg"],
+    iconLists: ["/techstack/wordpress.svg", "/techstack/ssa.svg", "/techstack/elementor.svg"],
     link: "Wanna know more?",
   },
   {
@@ -169,7 +169,7 @@ export const projects = [
     title: "Sparrk",
     des: "Book and play! Reserve an sport facility in your area with Sparrk!",
     img: "/sparrk/sparrk.png",
-    iconLists: ["/figma.svg", "/canva.svg", "/adobe.svg"],
+    iconLists: ["/techstack/figma.svg", "/techstack/canva.svg", "/techstack/adobe.svg"],
     link: "Wanna know more?",
   },
   {
@@ -177,7 +177,7 @@ export const projects = [
     title: "Web-based Reservation Management System",
     des: "A centralized platform for making resort reservation, information, and virtual experience.",
     img: "/Natura/home.png",
-    iconLists: ["/html.svg", "/css.svg", "/javascript.svg", "/figma.svg", "/hostinger.svg"],
+    iconLists: ["/techstack/html.svg", "/techstack/css.svg", "/techstack/javascript.svg", "/techstack/figma.svg", "/techstack/hostinger.svg"],
     link: "Wanna know more?",
   },
   {
@@ -185,7 +185,7 @@ export const projects = [
     title: "Netflix Clone",
     des: "A simple demonstration of the Netflix mobile application and it is called 'Jetflix'.",
     img: "/netflix/p1.png",
-    iconLists: ["/figma.svg", "react.svg", "/typescript.svg"],
+    iconLists: ["/techstack/figma.svg", "/techstack/react.svg", "/techstack/typescript.svg"],
     link: "Wanna know more?",
   },
   {
@@ -193,7 +193,7 @@ export const projects = [
     title: " “Where to Look”: Your Health Companion",
     des: "Read, learn, and talk with others about health-related topics. This website will help you become more mindful of your health.",
     img: "/wlook/w2lookhome.png",
-    iconLists: ["/figma.svg", "/wordpress.svg"],
+    iconLists: ["/techstack/figma.svg", "/techstack/wordpress.svg"],
     link: "Wanna know more?",
   },
   {
@@ -201,15 +201,15 @@ export const projects = [
     title: "St. Martha Management System",
     des: "Manage business transaction records and monitor client payments.",
     img: "/stmartha/dashboard.png",
-    iconLists: ["/vbnet.png", "/figma.svg"],
+    iconLists: ["/techstack/vbnet.png", "/techstack/figma.svg"],
     link: "Wanna know more?",
   },
   {
     id: 8,
     title: "3D Modelling",
     des: "The Following are collections of 3D Projects I made during my 4th year.",
-    img: "/3d.png",
-    iconLists: ["/3dsmax.svg"],
+    img: "/house/3d.png",
+    iconLists: ["/techstack/3dsmax.svg"],
     link: "Wanna know more?",
   }
 ];
@@ -397,12 +397,12 @@ export const ProjectRole = [
       {
         quote: "I meticulously crafted the website's interface using Figma, ensuring a seamless and visually appealing experience across all devices. Whether you're browsing on a web browser, tablet, or mobile phone, the design adapts flawlessly to provide an intuitive and engaging user experience.",
         title: "UI/UX Designer",
-        icon: "/ui-designer.svg",
+        icon: "/role/ui-designer.svg",
       },
       {
         quote: "I implemented the design using Next.js, TypeScript, and Tailwind CSS. The result is a website that's not only visually appealing but also fully responsive, ensuring an optimal browsing experience on mobile, web, and tablet devices.",
         title: "Front-end Developer",
-        icon: "/front-end.svg",
+        icon: "/role/front-end.svg",
       },
     ],
   },
@@ -413,7 +413,7 @@ export const ProjectRole = [
       {
         quote: "Focusing on the appointment, using the Simply Schedule Appointment (SSA), I am responsible of implementing of what the appointment should look like and set-up some functions of the appointment.",
         title: "Front-end Developer",
-        icon: "/front-end.svg",
+        icon: "/role/front-end.svg",
       },
     ],
   },
@@ -435,17 +435,17 @@ export const ProjectRole = [
       {
         quote: "Implemented the design using HTML/CSS and functions using JavaScript focusing especially on the reservation management system.",
         title: "Front-end Developer",
-        icon: "/front-end.svg",
+        icon: "/role/front-end.svg",
       },
       {
         quote: "Created the scheme of the database and its implementation to the system using PHP,and I also implemented the payment gateway.",
         title: "Back-end Developer",
-        icon: "/back-end.svg",
+        icon: "/role/back-end.svg",
       },
       {
         quote: "Created and implemented ways in order to improve better user-experience with user-friendly design, ease of transactions, and information access.",
         title: "UX Designer",
-        icon: "/ui-designer.svg",
+        icon: "/role/ui-designer.svg",
       },
     ],
   },
@@ -456,12 +456,12 @@ export const ProjectRole = [
       {
         quote: "Created wireframe and UI design of the Netflix clone app.",
         title: "UI Designer",
-        icon: "/ui-designer.svg",
+        icon: "/role/ui-designer.svg",
       },
       {
         quote: "Integrated the front-end of the Netflix clone for mobile devices.",
         title: "Front-end Developer",
-        icon: "/front-end.svg",
+        icon: "/role/front-end.svg",
       },
     ],
   },
@@ -472,12 +472,12 @@ export const ProjectRole = [
       {
         quote: "Designed User Interface and ensured the design feels intuitive, visually engaging, knowledge accessible.",
         title: "UI/UX Designer",
-        icon: "/ui-designer.svg",
+        icon: "/role/ui-designer.svg",
       },
       {
         quote: "Applied the design through Wordpress for faster implementation and ease of deployment.",
         title: "Front-end Developer",
-        icon: "/front-end.svg",
+        icon: "/role/front-end.svg",
       },
     ],
   },
@@ -488,12 +488,12 @@ export const ProjectRole = [
       {
         quote: "As a front-end developer, I played a key role in building the system, focusing on developing features like the payment section, client information area, dashboard, and reports.",
         title: "Front-end Developer",
-        icon: "/front-end.svg",
+        icon: "/role/front-end.svg",
       },
       {
         quote: "As part of my responsibilities, I designed the database schema and seamlessly integrated it into the system. My work involved managing data structures, implementing payment functionality, and handling price and discount calculations.",
         title: "Back-end Developer",
-        icon: "/back-end.svg",
+        icon: "/role/back-end.svg",
       },
     ],
   },
@@ -517,15 +517,15 @@ export const techImplementation = [
     title: "Travel CN",
     tech: [
       {
-        icon: "/figma.svg",
+        icon: "/techstack/figma.svg",
         title: "Figma",
       },
       {
-        icon: "/nextjs.svg",
+        icon: "/techstack/nextjs.svg",
         title: "NextJS",
       },
       {
-        icon: "/typescript.svg",
+        icon: "/techstack/typescript.svg",
         title: "Typescript",
       }
     ]
@@ -535,15 +535,15 @@ export const techImplementation = [
     title: "NetZeroAttic",
     tech: [ 
       {
-        icon: "/wordpress.svg",
+        icon: "/techstack/wordpress.svg",
         title: "Wordpress",
       },
       {
-        icon: "/ssa.svg",
+        icon: "/techstack/ssa.svg",
         title: "Simple Schedule Appointment",
       },      
       {
-        icon: "/elementor.svg",
+        icon: "/techstack/elementor.svg",
         title: "Elementor",
       },
     ]
@@ -553,15 +553,15 @@ export const techImplementation = [
     title: "Sparrk",
     tech: [ 
       {
-        icon: "/figma.svg",
+        icon: "/techstack/figma.svg",
         title: "Figma",
       },
       {
-        icon: "/canva.svg",
+        icon: "/techstack/canva.svg",
         title: "Canva",
       },
       {
-        icon: "/adobe.svg",
+        icon: "/techstack/adobe.svg",
         title: "3DSMax",
       },
     ]
@@ -571,23 +571,23 @@ export const techImplementation = [
     title: "Web-based Reservation Management System",
     tech: [
       {   
-        icon: "/html.svg",
+        icon: "/techstack/html.svg",
         title: "HTML",
       },
       {
-        icon: "/css.svg",
+        icon: "/techstack/css.svg",
         title: "CSS",
       },
       {
-        icon: "/javascript.svg",
+        icon: "/techstack/javascript.svg",
         title: "JavaScript",
       },
       {
-        icon: "/figma.svg",
+        icon: "/techstack/figma.svg",
         title: "Figma",
       },
       {
-        icon: "/hostinger.svg",
+        icon: "/techstack/hostinger.svg",
         title: "Hostinger",
       },
     ]
@@ -597,11 +597,11 @@ export const techImplementation = [
     title: "Netflix Clone",
     tech: [ 
       {
-        icon: "/figma.svg",
+        icon: "/techstack/figma.svg",
         title: "Figma",
       },
       {
-        icon: "/react.svg",
+        icon: "/techstack/react.svg",
         title: "React Native",
       }
     ]
@@ -611,11 +611,11 @@ export const techImplementation = [
     title: "“Where to Look”: Your Health Companion",
     tech: [ 
       {
-        icon:"/figma.svg",
+        icon:"/techstack/figma.svg",
         title: "Figma",
       },
       {
-        icon:"/wordpress.svg",
+        icon:"/techstack/wordpress.svg",
         title: "Wordpress",
       },
     ]
@@ -625,11 +625,11 @@ export const techImplementation = [
     title: "St. Martha Management System",
     tech: [ 
       {
-        icon: "/vbnet.png",
+        icon: "/techstack/vbnet.png",
         title: "VB.NET",
       },
       {
-        icon: "/figma.svg",
+        icon: "/techstack/figma.svg",
         title: "Figma"
       },
     ]
@@ -639,7 +639,7 @@ export const techImplementation = [
     title: "3D Projects",
     tech: [
       {
-        icon: "/3dsmax.svg",
+        icon: "/techstack/3dsmax.svg",
         title: "3DSMax",
       },
     ]
@@ -656,42 +656,42 @@ export const cards = [
       {
         id: 1,
         className: "md:col-span-2",
-        thumbnail: "/house.jpg",
+        thumbnail: "/house/house.jpg",
       },
       {
         id: 2,
         className: "col-span-1",
-        thumbnail: "/terrace.jpg",
+        thumbnail: "/house/terrace.jpg",
       },
       {
         id: 3,
         className: "col-span-1",
-        thumbnail: "/loob.jpg",
+        thumbnail: "/house/loob.jpg",
       },
       {
         id: 4,
         className: "md:col-span-2",
-        thumbnail: "/cr.jpg",
+        thumbnail: "/house/cr.jpg",
       },
       {
         id: 5,
         className: "md:col-span-2",
-        thumbnail: "/sala2.jpg",
+        thumbnail: "/house/sala2.jpg",
       },
       {
         id: 6,
         className: "col-span-1",
-        thumbnail: "/kusina.jpg",
+        thumbnail: "/house/kusina.jpg",
       },
       {
         id: 7,
         className: "col-span-1",
-        thumbnail: "/secondfloor.jpg",
+        thumbnail: "/house/secondfloor.jpg",
       },
       {
         id: 8,
         className: "md:col-span-2",
-        thumbnail: "/secondfloorterrace.jpg",
+        thumbnail: "/house/secondfloorterrace.jpg",
       },
     ]
   },

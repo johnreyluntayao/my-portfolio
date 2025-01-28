@@ -12,13 +12,10 @@ const ImageGrid = ({ id }: { id: number }) => {
         const ref = React.useRef(null); 
         const inView = useInView(ref, { }); 
 
-
-       
         const variants = {
           hidden: { opacity: 0, y: 20 }, 
           visible: { opacity: 1, y: 0 }, 
         };
-
 
         return (
           <motion.div
