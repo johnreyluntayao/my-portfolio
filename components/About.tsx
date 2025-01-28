@@ -3,24 +3,30 @@
 import React from 'react';
 import { motion, useInView } from 'framer-motion';
 import { FaArrowRight } from 'react-icons/fa6';
-import { about, GlowingButton } from "@/lib/imports"
+import { about, GlowingButton } from "@/lib/imports";
 
 const About = () => {
   
     const imageRef = React.useRef(null);
     const textRef = React.useRef(null);
     const buttonRef = React.useRef(null);
+    const lineRef = React.useRef(null);
 
     const isImageInView = useInView(imageRef, { amount: 0.3 });
     const isTextInView = useInView(textRef, { amount: 0.3 });
     const isButtonInView = useInView(buttonRef, { amount: 0.3 });
+    const isLineInView = useInView(lineRef, { amount: 0.3 });
 
     const buttonVariants = {
         hidden: { opacity: 0, scale: 0.8 },
         visible: {
           opacity: 1,
           scale: 1,
-          transition: { duration: 0.6, ease: 'easeOut' },
+          transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] },
+        },
+        hover: {
+          scale: 1.05,
+          transition: { duration: 0.2, ease: 'easeOut' },
         },
     };
 
@@ -33,7 +39,7 @@ const About = () => {
       className="order-2 md:order-1 flex justify-center"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: isImageInView ? 1 : 0, y: isImageInView ? 0 : 100 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1] }}
     >
       <img 
         src="/Johnrey2.png" 
@@ -45,19 +51,35 @@ const About = () => {
     
     <motion.div
       ref={textRef}
-      className="order-1 md:order-2 flex flex-col items-center md:items-start text-center md:text-start"
-      initial={{ opacity: 0, y: -75 }}
-      animate={{ opacity: isTextInView ? 1 : 0, y: isTextInView ? 0 : -75 }}
-      transition={{ duration: 0.5 }}
+      className="order-1 md:order-2 flex flex-col items-center md:items-start text-center md:text-start max-w-md"
     >
-      <h1 className="heading font-bold mb-4 text-science-blue-950">
-        About <span className="text-science-blue-600">Me</span>
-      </h1>
-      <p className="text-sm md:text-base lg:text-lg font-normal text-science-blue-950 mb-6">
-        {about.desc}
-      </p>
 
-      
+      <motion.div
+        ref={lineRef}
+        className="w-14 h-2 bg-science-blue-600 mb-4"
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: isLineInView ? 1 : 0, x: isLineInView ? 0 : -50 }}
+        transition={{ delay: 0.2, duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
+      />
+
+      <motion.h1 
+        className="heading font-bold mb-4 text-science-blue-950"
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: isTextInView ? 1 : 0, x: isTextInView ? 0 : -50 }}
+        transition={{ delay: 0.4, duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
+      >
+        About <span className="text-science-blue-600">Me</span>
+      </motion.h1>
+
+      <motion.p 
+        className="text-sm md:text-base lg:text-lg font-normal text-science-blue-950 mb-6"
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: isTextInView ? 1 : 0, x: isTextInView ? 0 : -50 }}
+        transition={{ delay: 0.6, duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
+      >
+        {about.desc}
+      </motion.p>
+
       <motion.a
         href="https://drive.google.com/file/d/1-8q5YKcTNVNhi7hULIVXUh5B00qrBpKQ/view?usp=sharing"
         className="pb-6"
@@ -65,6 +87,8 @@ const About = () => {
         variants={buttonVariants}
         initial="hidden"
         animate={isButtonInView ? "visible" : "hidden"}
+        whileHover="hover"
+        transition={{ delay: 0.8, duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
       >
         <GlowingButton
           title="My resume"
