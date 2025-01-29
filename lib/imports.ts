@@ -24,6 +24,7 @@ export { PinContainer } from '@/components/ui/3d-pin'
 export { LayoutGrid } from '@/components/ui/LayoutGrid';
 export { InfiniteMovingCards, InfiniteMovingCards2 } from '@/components/ui/InfiniteMovingCards';
 export { default as BackToTop } from "@/components/ui/BackToTop"
+export { ImageItem } from '@/components/ui/ImageItem';
 
 
 // Data
