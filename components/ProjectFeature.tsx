@@ -5,7 +5,7 @@ import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import Image from 'next/image';
 
-const ProjectFeature2 = ({ id }: { id: number }) => {
+const ProjectFeature = ({ id }: { id: number }) => {
   const projectDetail = detailedProjects.find((p) => p.id === id);
   const title = id === 2;
 
@@ -42,7 +42,6 @@ const ProjectFeature2 = ({ id }: { id: number }) => {
               </motion.h1>
             )}
 
-            {/* Wrap the Image component in a motion.div */}
             <motion.div
               ref={mouseRef}
               initial={{ opacity: 0, y: 20 }}
@@ -71,4 +70,4 @@ const ProjectFeature2 = ({ id }: { id: number }) => {
   );
 };
 
-export default ProjectFeature2;
+export default ProjectFeature;

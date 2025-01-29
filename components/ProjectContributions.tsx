@@ -3,6 +3,7 @@
 import { ProjectRole } from '@/lib/imports';
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import Image from 'next/image';
 
 const ProjectContributions = ({id} : {id: number}) => {
   const contributions = ProjectRole.find((role) => role.id === id)
@@ -62,10 +63,12 @@ const ProjectContributions = ({id} : {id: number}) => {
           
                 <div className="absolute -top-12 flex items-center justify-center w-20 h-20 bg-science-blue-100 rounded-full">
                 
-                  <img
+                  <Image
                     src={role.icon}
                     alt={role.title}
-                    className="w-12 h-12 text-science-blue-500"
+                    width={48}
+                    height={48}
+                    className=" text-science-blue-500"
                   />
                 </div>
                

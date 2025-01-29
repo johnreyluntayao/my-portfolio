@@ -16,6 +16,7 @@ export const TextGenerateEffect = ({
 }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
+
   useEffect(() => {
     animate(
       "span",
@@ -28,7 +29,7 @@ export const TextGenerateEffect = ({
         delay: stagger(0.2),
       }
     );
-  }, [scope.current]);
+  }, [animate, filter, duration ]); 
 
   const renderWords = () => {
     return (
@@ -61,7 +62,6 @@ export const TextGenerateEffect = ({
   );
 };
 
-
 export const GlobalTextGenerateEffect = ({
   words,
   className,
@@ -77,6 +77,7 @@ export const GlobalTextGenerateEffect = ({
 }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
+
   useEffect(() => {
     animate(
       "span",
@@ -89,7 +90,7 @@ export const GlobalTextGenerateEffect = ({
         delay: stagger(0.2),
       }
     );
-  }, [scope.current]);
+  }, [animate, filter, duration]); 
 
   const renderWords = () => {
     return (

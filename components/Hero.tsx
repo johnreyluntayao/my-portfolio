@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { HiArrowNarrowDown } from "react-icons/hi";
+import Image from "next/image";
 import { Spotlight, TextGenerateEffect, GlowingButton } from "@/lib/imports";
 
 const Hero = () => {
@@ -56,10 +57,12 @@ const Hero = () => {
             className="mb-6"
             variants={fadeInScaleVariants}
           >
-            <img
+            <Image
               src="/Logo.svg"
               alt="Logo"
-              className="h-10 md:h-12 lg:h-16"
+              width={40}
+              height={40}
+              className="md:h-12 md:w-12 lg:h-16 lg:w-16"
             />
           </motion.div>
 

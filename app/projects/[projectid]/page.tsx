@@ -7,7 +7,7 @@ import {
   ProjectHero,
   ProjectImages,
   ImageGrid,
-  ProjectFeature2,
+  ProjectFeature,
   TechImplementation,
   ProjectContributions,
   Contact,
@@ -30,7 +30,7 @@ const page = ({params} : {
          </div>
          <ProjectImages id={id}/> 
          <ImageGrid id={id}/>
-         <ProjectFeature2 id={id}/>
+         <ProjectFeature id={id}/>
          <div className='w-full'>
           <TechImplementation id={id}/>
         </div>
