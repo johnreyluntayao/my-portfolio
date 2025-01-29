@@ -2,6 +2,7 @@
 
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import Image from 'next/image';
 import { mainSkills } from '@/lib/imports';
 
 const Skills = () => {
@@ -54,10 +55,12 @@ const Skills = () => {
             whileHover={{ scale: 1.03, rotate: 1 }}
           >
             <div className="absolute -top-12 flex items-center justify-center w-20 h-20 bg-science-blue-100 rounded-full">
-              <img
+              <Image
                 src={skill.logo}
                 alt={skill.title}
-                className="w-12 h-12 text-science-blue-500"
+                width={48}
+                height={48}
+                className="text-science-blue-500"
               />
             </div>
             

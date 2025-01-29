@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion, useInView } from 'framer-motion';
 import { FaArrowRight } from 'react-icons/fa6';
+import Image from 'next/image';
 import { about, GlowingButton } from "@/lib/imports";
 
 const About = () => {
@@ -41,11 +42,14 @@ const About = () => {
       animate={{ opacity: isImageInView ? 1 : 0, y: isImageInView ? 0 : 100 }}
       transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1] }}
     >
-      <img 
-        src="/Johnrey2.png" 
-        alt="bg-img" 
-        className="w-[300px] md:w-[400px] lg:w-[500px] h-auto" 
+      <Image
+        src="/Johnrey2.png"
+        alt="bg-img"
+        width={300}
+        height={0} 
+        className="md:w-[400px] lg:w-[500px] h-auto"
       />
+
     </motion.div>
 
     

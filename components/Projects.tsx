@@ -4,6 +4,7 @@ import { projects } from '@/lib/imports';
 import React from 'react';
 import { FaLocationArrow } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const Projects = () => {
   return (
@@ -47,10 +48,11 @@ const Projects = () => {
               className="relative h-[240px] md:h-[210px] lg:h-[310px] w-full overflow-hidden bg-science-blue-900 flex items-center justify-center"
               whileHover={{ scale: 1.1, transition: { duration: 0.3, ease: "easeInOut" }}}
             >
-              <img
+              <Image
                 src={img}
                 alt={title}
-                className="h-full w-full pt-4 px-4 rounded-t-lg object-cover"
+                fill
+                className=" pt-4 px-4 rounded-t-lg object-cover"
               />
             </motion.div>
 
@@ -72,7 +74,7 @@ const Projects = () => {
                     initial={{ x: -5 * index * 2 }}
                     whileHover={{ y: -5, transition: { type: "spring", stiffness: 300 } }}
                   >
-                    <img src={icon} alt={icon} className='p-2' />
+                    <Image src={icon} alt={icon} width={40} height={40} className='p-2' />
                   </motion.div>
                   ))}
                 </div>

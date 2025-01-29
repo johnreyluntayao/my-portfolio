@@ -55,7 +55,7 @@ const Contact = () => {
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
         >
-          Reach out to me today! And let's discuss how to make you achieve your goals.
+          Reach out to me today! And let&apos;s discuss how to make you achieve your goals.
         </motion.p>
         <motion.a 
           className='mt-8'

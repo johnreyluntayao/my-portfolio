@@ -2,6 +2,7 @@
 
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import Image from 'next/image';
 import { socialMedia } from '@/lib/imports';
 
 const footerVariants = {
@@ -52,10 +53,12 @@ const Footer = () => {
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
         >
-          <img 
+          <Image 
             src="/Logo.svg" 
             alt="Johnrey Logo" 
-            className="w-12 h-12 md:w-16 md:h-16"
+            width={48}
+            height={48}
+            className="md:w-16 md:h-16"
           />
         </motion.div>
 
@@ -71,7 +74,7 @@ const Footer = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
-              <img src={profile.img} alt={profile.img} width={20} height={20} />
+              <Image src={profile.img} alt={profile.img} width={20} height={20} />
             </motion.a>
           ))}
         </div>

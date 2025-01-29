@@ -6,11 +6,11 @@ export { default as About } from "@/components/About";
 export { default as Contact } from "@/components/Contact";
 export { default as Hero } from "@/components/Hero";
 export { default as MyApproach } from "@/components/MyApproach";
-export { default as Projects2 } from "@/components/Projects2";
+export { default as Projects } from "@/components/Projects";
 export { default as Skills } from "@/components/Skills";
 export { default as ProjectImages } from '@/components/ProjectImages'
 export { default as ProjectHero } from '@/components/ProjectHero'
-export { default as ProjectFeature2 } from '@/components/ProjectFeature2'
+export { default as ProjectFeature } from '@/components/ProjectFeature'
 export { default as ImageGrid } from '@/components/ui/ImageGrid'
 export { default as TechImplementation } from '@/components/TechImplementation'
 export { default as ProjectContributions } from '@/components/ProjectContributions'
