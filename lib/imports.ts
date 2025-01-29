@@ -20,11 +20,11 @@ export { default as TechStack } from '@/components/TechStack';
 export { Spotlight } from '@/components/ui/spotlight';
 export { TextGenerateEffect, GlobalTextGenerateEffect } from '@/components/ui/TextGenerateEffect';
 export { default as GlowingButton } from '@/components/ui/GlowingButton';
-export { PinContainer } from '@/components/ui/3d-pin'
 export { LayoutGrid } from '@/components/ui/LayoutGrid';
 export { InfiniteMovingCards, InfiniteMovingCards2 } from '@/components/ui/InfiniteMovingCards';
 export { default as BackToTop } from "@/components/ui/BackToTop"
 export { ImageItem } from '@/components/ui/ImageItem';
+export { FeatureItem } from '@/components/ui/FeatureItem';
 
 
 // Data
