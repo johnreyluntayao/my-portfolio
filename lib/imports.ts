@@ -8,7 +8,7 @@ export { default as Hero } from "@/components/Hero";
 export { default as MyApproach } from "@/components/MyApproach";
 export { default as Projects } from "@/components/Projects";
 export { default as Skills } from "@/components/Skills";
-export { default as ProjectImages } from '@/components/ProjectImages'
+export { default as ProjectImages } from '@/components/ProjectImages' 
 export { default as ProjectHero } from '@/components/ProjectHero'
 export { default as ProjectFeature } from '@/components/ProjectFeature'
 export { default as ImageGrid } from '@/components/ui/ImageGrid'
