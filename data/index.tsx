@@ -375,7 +375,7 @@ export const detailedProjects = [
     title: "3D Modelling",
     desc: "The Following are collections of 3D Projects that I made using 3DSMax.",
     srcLink: "",
-    image: "/3d.png",
+    image: "/house/3d.png",
     features: [
       {
         id: 1,
