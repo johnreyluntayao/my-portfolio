@@ -5,7 +5,6 @@ export const navItems = [
   { name: "Skills", link: "#skills" },
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Approach", link: "#myApproach"},
 ];
 
 // Footer Menus
@@ -221,7 +220,8 @@ export const detailedProjects = [
     id: 1,
     title: "Travel CN",
     desc: "Explore the hidden gems of Camarines Norte! Our website is your ultimate guide to discovering the enchanting places, exciting festivals, and breathtaking tourist destinations across the province. Dive into detailed information that will inspire and inform your travels, making each visit a memorable adventure.",
-    srclink: "",
+    webLink: "https://travelcn.vercel.app/",
+    codeLink: "https://github.com/johnreyluntayao/travelcn",
     image: "/travelcn/travelcn.png",
     features: [
       {
@@ -242,7 +242,8 @@ export const detailedProjects = [
     id: 2,
     title: "NetZeroAttic",
     desc: "The website was created to promote the business the Net-Zero-Attic that is focused in Attic insulation that is owned by a Canadian Company. The website promotes informative details about attic insulation and the services that the business offers.",
-    srcLink: "https://net-zero-attic.com/",
+    webLink: "https://net-zero-attic.com/",
+    codeLink: "",
     image: "/netzero/netzerohome.png",
     features: [
       {
@@ -263,7 +264,8 @@ export const detailedProjects = [
     id: 3,
     title: "Sparrk",
     desc: "Sparrk.ph transforms how athletes and sports enthusiasts connect with facilities, making it simple for both facility owners and sports lovers to find, book, and play. The intuitive platform streamlines the process, ensuring a seamless experience for everyone. Whether you need a tennis court or a basketball gym, Sparrk has you covered!",
-    srcLink: "https://www.sparrk.ph",
+    webLink: "https://www.sparrk.ph",
+    codeLink: "",
     image: "/sparrk/sparrk.png",
     features: [
       {
@@ -290,7 +292,8 @@ export const detailedProjects = [
     id: 4,
     title: "Web-based Reservation Management System",
     desc: "The system offers a user-friendly website with resort information, a convenient reservation management system, and a virtual tour. It was developed to modernize the resort's manual reservation process, enhancing service quality and customer satisfaction.",
-    srcLink: "https://github.com/johnreyluntayao/resort-reservation-management-system",
+    webLink: "",
+    codeLink: "https://github.com/johnreyluntayao/resort-reservation-management-system",
     image: "/Natura/home.png",
     features: [
       {
@@ -317,7 +320,8 @@ export const detailedProjects = [
     id: 5,
     title: "Netflix Clone",
     desc: "This prototype of the Netflix mobile app replicates essential interfaces for demonstration. While not fully functional, it showcases data and allows playback of one video. The feedback tab is included but non-operational.",
-    srcLink: "https://github.com/johnreyluntayao/Netflix-Clone",
+    webLink: "",
+    codeLink: "https://github.com/johnreyluntayao/Netflix-Clone",
     image: "/netflix/p1.png",
     features: [
       {
@@ -332,7 +336,8 @@ export const detailedProjects = [
     id: 6,
     title: "“Where to Look”: Your Health Companion",
     desc: "Discover wellness at 'Where to Look'! Our mission is to empower you with knowledge, compassion, and hope. Explore our comprehensive health condition section, chat with experts and fellow warriors, and find prevention tips and motivation. Join our health-conscious community today and let's navigate wellness together!",
-    srcLink: "https://yourw2look.wordpress.com",
+    webLink: "https://yourw2look.wordpress.com",
+    codeLink: "",
     image: "/wlook/w2lookhome.png",
     features: [
       {
@@ -353,7 +358,8 @@ export const detailedProjects = [
     id: 7,
     title: "St. Martha Management System",
     desc: "St. Martha Memorial Homes Inc. in Daet, Camarines Norte, faced challenges with manual record-keeping and contract management. A comprehensive system was developed to organize transactions, manage records efficiently, and monitor client payments, streamlining operations and benefiting both the company and its users.",
-    srcLink: "https://github.com/johnreyluntayao/st-martha-management-system",
+    webLink: "",
+    codeLink: "https://github.com/johnreyluntayao/st-martha-management-system",
     image: "/stmartha/dashboard.png",
     features: [
       {
@@ -374,7 +380,8 @@ export const detailedProjects = [
     id: 8,
     title: "3D Modelling",
     desc: "The Following are collections of 3D Projects that I made using 3DSMax.",
-    srcLink: "",
+    webLink: "",
+    codeLink: "",
     image: "/house/3d.png",
     features: [
       {

@@ -68,12 +68,14 @@ export const GlobalTextGenerateEffect = ({
   filter = true,
   duration = 0.5,
   extraClassName,
+  stag,
 }: {
   words: string;
   className?: string;
   filter?: boolean;
   duration?: number;
   extraClassName?: string;
+  stag?: number;
 }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
@@ -87,7 +89,7 @@ export const GlobalTextGenerateEffect = ({
       },
       {
         duration: duration ? duration : 1,
-        delay: stagger(0.2),
+        delay: stagger(stag),
       }
     );
   }, [animate, filter, duration]); 
@@ -113,8 +115,8 @@ export const GlobalTextGenerateEffect = ({
   };
 
   return (
-    <div className={cn("font-bold", className)}>
-      <div className="my-4">
+    <div className={cn(className)}>
+      <div className={extraClassName}>
         <div className=" dark:text-white text-black leading-snug tracking-wide">
           {renderWords()}
         </div>
