@@ -227,13 +227,13 @@ export const detailedProjects = [
       {
         id: 1,
         title: "Point and Locate",
-        img: "/travelcn/travelcn-f1.svg",
+        img: "/travelcn/feat1.svg",
         desc: "Simply point at the map, and detailed information about each destination will appear. This interactive feature allows visitors to effortlessly learn about the fascinating places they can explore.",
       },
       {
         id: 2,
         title: "Detailed Information",
-        img: "/travelcn/travelcn-f2.svg",
+        img: "/travelcn/feat2.svg",
         desc: "Discover an extensive list of destinations and festivals in Camarines Norte. Our platform provides detailed insights into each destinations and festivals, helping you uncover the beauty and excitement that this province has to offer.",
       },
     ],
