@@ -56,7 +56,7 @@ const ImageGrid: React.FC<ImageGridProps> = ({ id }) => {
 
   return (
     <section className="my-32 max-w-max">
-      <div className="flex flex-col items-center justify-center gap-8 pb-16">
+      <div className={`${id === 5 ? 'flex flex-col items-center justify-center gap-8 pb-16' : 'hidden'}`}>
         <motion.h1
           ref={headerRef}
           className="text-center heading text-science-blue-600 font-semibold"
