@@ -92,7 +92,7 @@ export const GlobalTextGenerateEffect = ({
         delay: stagger(stag),
       }
     );
-  }, [animate, filter, duration]); 
+  }, [animate, filter, duration, stag]); 
 
   const renderWords = () => {
     return (
