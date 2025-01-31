@@ -16,6 +16,7 @@ export const TextGenerateEffect = ({
 }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
+
   useEffect(() => {
     animate(
       "span",
@@ -28,7 +29,7 @@ export const TextGenerateEffect = ({
         delay: stagger(0.2),
       }
     );
-  }, [scope.current]);
+  }, [animate, filter, duration ]); 
 
   const renderWords = () => {
     return (
@@ -61,22 +62,24 @@ export const TextGenerateEffect = ({
   );
 };
 
-
 export const GlobalTextGenerateEffect = ({
   words,
   className,
   filter = true,
   duration = 0.5,
   extraClassName,
+  stag,
 }: {
   words: string;
   className?: string;
   filter?: boolean;
   duration?: number;
   extraClassName?: string;
+  stag?: number;
 }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
+
   useEffect(() => {
     animate(
       "span",
@@ -86,10 +89,10 @@ export const GlobalTextGenerateEffect = ({
       },
       {
         duration: duration ? duration : 1,
-        delay: stagger(0.2),
+        delay: stagger(stag),
       }
     );
-  }, [scope.current]);
+  }, [animate, filter, duration, stag]); 
 
   const renderWords = () => {
     return (
@@ -112,8 +115,8 @@ export const GlobalTextGenerateEffect = ({
   };
 
   return (
-    <div className={cn("font-bold", className)}>
-      <div className="my-4">
+    <div className={cn(className)}>
+      <div className={extraClassName}>
         <div className=" dark:text-white text-black leading-snug tracking-wide">
           {renderWords()}
         </div>

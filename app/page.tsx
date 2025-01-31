@@ -5,7 +5,7 @@ import {
   Hero, 
   Skills, 
   TechStack,  
-  Projects2,
+  Projects,
   MyApproach, 
   Contact, 
   Footer, 
@@ -25,7 +25,7 @@ export default function Home() {
       <div className="w-full">
         <TechStack />
       </div>
-      <Projects2 />
+      <Projects />
       <MyApproach />
       <Contact />
       <Footer />

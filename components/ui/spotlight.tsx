@@ -1,56 +1,77 @@
 import React from "react";
-import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 
 type SpotlightProps = {
-  className?: string;
-  fill?: string;
+  gradientFirst?: string;
+  gradientSecond?: string;
+  gradientThird?: string;
+  duration?: number;
+  xOffset?: number;
 };
 
-export const Spotlight = ({ className, fill }: SpotlightProps) => {
+export const Spotlight = ({
+  gradientFirst = "radial-gradient(68.54% 68.72% at 55.02% 31.46%, hsla(210, 100%, 88%, 0.2) 0%, hsla(210, 100%, 58%, 0.1) 50%, hsla(210, 100%, 45%, 0) 80%)",
+  gradientSecond = "radial-gradient(50% 50% at 50% 50%, hsla(250, 100%, 88%, 0.15) 0%, hsla(250, 100%, 58%, 0.06) 80%, transparent 100%)",
+  gradientThird = "radial-gradient(50% 50% at 50% 50%, hsla(210, 100%, 88%, 0.1) 0%, hsla(210, 100%, 48%, 0.05) 80%, transparent 100%)",
+  duration = 7,
+  xOffset = 100,
+}: SpotlightProps = {}) => {
   return (
-    <svg
-      className={cn(
-        "animate-spotlight pointer-events-none absolute z-[1]  h-[169%] w-[138%] lg:w-[84%] opacity-0",
-        className
-      )}
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 3787 2842"
-      fill="none"
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+      className="pointer-events-none absolute inset-0 h-full w-full"
     >
-      <g filter="url(#filter)">
-        <ellipse
-          cx="1924.71"
-          cy="273.501"
-          rx="1924.71"
-          ry="273.501"
-          transform="matrix(-0.822377 -0.568943 -0.568943 0.822377 3631.88 2291.09)"
-          fill={fill || "white"}
-          fillOpacity="0.21"
-        ></ellipse>
-      </g>
-      <defs>
-        <filter
-          id="filter"
-          x="0.860352"
-          y="0.838989"
-          width="3785.16"
-          height="2840.26"
-          filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB"
-        >
-          <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="BackgroundImageFix"
-            result="shape"
-          ></feBlend>
-          <feGaussianBlur
-            stdDeviation="151"
-            result="effect1_foregroundBlur_1065_8"
-          ></feGaussianBlur>
-        </filter>
-      </defs>
-    </svg>
+      {/* Left Spotlight */}
+      <motion.div
+        animate={{ x: [0, xOffset, 0] }}
+        transition={{
+          duration,
+          repeat: Infinity,
+          repeatType: "reverse",
+          ease: "easeInOut",
+        }}
+        className="absolute top-0 left-0 w-screen h-screen z-40 pointer-events-none"
+      >
+        <div
+          style={{ transform: "rotate(-45deg) translateY(-350px)", background: gradientFirst }}
+          className="absolute top-0 left-0 w-[230px] h-[680px] md:w-[360px] md:h-[780px] lg:w-[560px] lg:h-[1080px]"
+        />
+        <div
+          style={{ transform: "rotate(-45deg) translate(5%, -50%)", background: gradientSecond }}
+          className="absolute top-0 left-0 origin-top-left w-[150px] h-[680px] md:w-[140px] md:h-[780px] lg:w-[240px] lg:h-[1080px]"
+        />
+        <div
+          style={{ transform: "rotate(-45deg) translate(-180%, -70%)", background: gradientThird }}
+          className="absolute top-0 left-0 origin-top-left w-[150px] h-[680px] md:w-[140px] md:h-[780px] lg:w-[240px] lg:h-[1080px]"
+        />
+      </motion.div>
+
+      {/* Right Spotlight */}
+      <motion.div
+        animate={{ x: [0, -xOffset, 0] }}
+        transition={{
+          duration,
+          repeat: Infinity,
+          repeatType: "reverse",
+          ease: "easeInOut",
+        }}
+        className="absolute top-0 right-0 w-screen h-screen z-40 pointer-events-none"
+      >
+        <div
+          style={{ transform: "rotate(45deg) translateY(-350px)", background: gradientFirst }}
+          className="absolute top-0 right-0 w-[230px] h-[680px] md:w-[360px] md:h-[780px] lg:w-[560px] lg:h-[1080px]"
+        />
+        <div
+          style={{ transform: "rotate(45deg) translate(-5%, -50%)", background: gradientSecond }}
+          className="absolute top-0 right-0 origin-top-right w-[150px] h-[680px] md:w-[140px] md:h-[780px] lg:w-[240px] lg:h-[1080px]"
+        />
+        <div
+          style={{ transform: "rotate(45deg) translate(180%, -70%)", background: gradientThird }}
+          className="absolute top-0 right-0 origin-top-right w-[150px] h-[680px] md:w-[140px] md:h-[780px] lg:w-[240px] lg:h-[1080px]"
+        />
+      </motion.div>
+    </motion.div>
   );
 };
