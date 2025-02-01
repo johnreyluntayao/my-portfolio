@@ -9,7 +9,6 @@ const ProjectFeature = ({ id }: { id: number }) => {
   const projectDetail = detailedProjects.find((p) => p.id === id);
   const isContributionsPage = id === 2;
 
-  // Refs and animations
   const headerRef = useRef(null);
   const mouseRef = useRef(null);
   const isHeaderInView = useInView(headerRef, { margin: '0px 0px -100px 0px'});
@@ -17,7 +16,6 @@ const ProjectFeature = ({ id }: { id: number }) => {
   const headerControls = useAnimation();
   const mouseControls = useAnimation();
 
-  // Header animation
   useEffect(() => {
     if (isHeaderInView) {
       headerControls.start({
@@ -28,7 +26,6 @@ const ProjectFeature = ({ id }: { id: number }) => {
     }
   }, [isHeaderInView, headerControls]);
 
-  // Mouse animation
   useEffect(() => {
     if (isMouseInView) {
       mouseControls
@@ -59,7 +56,7 @@ const ProjectFeature = ({ id }: { id: number }) => {
       className={`${
         id === 5 || id === 8
           ? 'hidden'
-          : 'relative flex items-center justify-center lg:px-8 my-32 overflow-hidden max-w-max'
+          : 'relative flex items-center justify-center lg:px-8 my-16 md:my-24 lg:my-32 overflow-hidden max-w-max'
       }`}
     >
       <div className="relative z-10 flex flex-col gap-8">

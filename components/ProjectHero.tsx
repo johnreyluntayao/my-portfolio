@@ -100,7 +100,7 @@ const ProjectHero = ({ id }: { id: number }) => {
   );
 
   return (
-    <section className="relative flex justify-center bg-science-blue-900 items-center py-32 mb-32 sm:px-10 px-5 h-screen 2xl:max-h-[75rem] -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin xl:-mx-desktop-margin">
+    <section className="relative flex justify-center bg-science-blue-900 items-center py-32 mb-16 md:mb-24 lg:mb-32 sm:px-10 px-5 h-screen 2xl:max-h-[75rem] -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin xl:-mx-desktop-margin">
       <Spotlight />
 
       <NavigationButton direction="prev" disabled={isFirst} moreClass="hidden lg:flex"/>

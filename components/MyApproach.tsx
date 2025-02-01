@@ -16,7 +16,7 @@ const variants = {
 
 const MyApproach = () => {
   return (
-    <section className="my-32 max-w-max" id="myApproach">
+    <section className="my-16 md:my-24 lg:my-32 max-w-max" id="myApproach">
       <motion.div
         className="flex flex-col justify-center items-center"
         initial="hidden"
