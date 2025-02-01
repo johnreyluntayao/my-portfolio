@@ -17,7 +17,7 @@ const Skills = () => {
       transition: {
         duration: 0.4,
         delay: index * 0.2,
-        ease: "easeInOut", // Smoother easing for fluidity
+        ease: "easeInOut",
       },
     }),
   };
@@ -32,7 +32,7 @@ const Skills = () => {
   };
 
   return (
-    <section className='relative max-w-max my-32' id="skills" ref={ref}>
+    <section className='relative max-w-max my-16 md:my-24 lg:my-32' id="skills" ref={ref}>
       <motion.h1
         className='heading text-science-blue-950'
         variants={headingVariants}

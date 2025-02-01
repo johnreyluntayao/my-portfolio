@@ -8,8 +8,8 @@ import Image from 'next/image';
 const ProjectContributions = ({ id }: { id: number }) => {
   const contributions = ProjectRole.find((role) => role.id === id);
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true }); // For header animation
-  const areCardsInView = useInView(ref); // For card animations
+  const isInView = useInView(ref, { once: true });
+  const areCardsInView = useInView(ref);
 
   const cardVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -33,12 +33,12 @@ const ProjectContributions = ({ id }: { id: number }) => {
     },
   };
 
-  if (id === 8 || id === 3) return null; // Early return for hidden cases
+  if (id === 8 || id === 3) return null;
 
   return (
     <section
       ref={ref}
-      className="flex relative max-w-max pb-32 mt-32 justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5"
+      className="flex relative max-w-max pb-16 md:pb-24 lg:pb-32 mt-16 md:mt-24 lg:mt-32 justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5"
     >
       <motion.h1
         className="heading text-science-blue-950"

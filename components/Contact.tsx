@@ -53,7 +53,7 @@ const Contact = () => {
   return (
     <section
       ref={footerRef}
-      className="relative mb-16 p-[100px] max-w-max mx-auto sm:px-10 px-5 bg-gradient-to-r from-science-blue-500 to-science-blue-800 rounded-tl-[100px] rounded-br-[100px] rounded-bl-[100px] md:rounded-bl-none shadow-lg"
+      className="relative mb-12 md:mb-14 lg:mb-16 p-[100px] max-w-max mx-auto sm:px-10 px-5 bg-gradient-to-r from-science-blue-500 to-science-blue-800 rounded-tl-[100px] rounded-br-[100px] rounded-bl-[100px] md:rounded-bl-none shadow-lg"
       id="contact"
     >
       <motion.div

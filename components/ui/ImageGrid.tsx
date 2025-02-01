@@ -1,29 +1,27 @@
 "use client";
 
-import { phoneImages, ImageItem } from '@/lib/imports';
-import { motion, useInView, useAnimation } from 'framer-motion';
-import Image from 'next/image';
-import React, { useRef, useEffect } from 'react';
+import { phoneImages, ImageItem } from "@/lib/imports";
+import { motion, useInView, useAnimation } from "framer-motion";
+import Image from "next/image";
+import React, { useRef, useEffect } from "react";
 
 interface ImageGridProps {
   id: number;
 }
 
 const ImageGrid: React.FC<ImageGridProps> = ({ id }) => {
-
-  // Refs for animation triggers
+ 
   const headerRef = useRef<HTMLHeadingElement>(null);
   const mouseRef = useRef<HTMLDivElement>(null);
 
-  // Check if elements are in view
-  const isHeaderInView = useInView(headerRef, { margin: '0px 0px -100px 0px' });
-  const isMouseInView = useInView(mouseRef, { margin: '0px 0px -100px 0px' });
+  const isHeaderInView = useInView(headerRef, { margin: "0px 0px -100px 0px" });
+  const isMouseInView = useInView(mouseRef, { margin: "0px 0px -100px 0px" });
 
-  // Animation controls
+ 
   const headerControls = useAnimation();
   const mouseControls = useAnimation();
 
-  // Header animation
+  
   useEffect(() => {
     if (isHeaderInView) {
       headerControls.start({
@@ -34,29 +32,37 @@ const ImageGrid: React.FC<ImageGridProps> = ({ id }) => {
     }
   }, [isHeaderInView, headerControls]);
 
-  // Mouse animation
+  
   useEffect(() => {
     if (isMouseInView) {
-      mouseControls.start({
-        opacity: 1,
-        y: 0,
-        transition: { duration: 0.6, ease: [0.6, 0.01, 0.05, 0.95] },
-      }).then(() => {
-        mouseControls.start({
-          y: [0, -10, 0],
-          transition: {
-            duration: 1.8,
-            repeat: Infinity,
-            ease: "easeInOut",
-          },
+      mouseControls
+        .start({
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.6, ease: [0.6, 0.01, 0.05, 0.95] },
+        })
+        .then(() => {
+          mouseControls.start({
+            y: [0, -10, 0],
+            transition: {
+              duration: 1.8,
+              repeat: Infinity,
+              ease: "easeInOut",
+            },
+          });
         });
-      });
     }
   }, [isMouseInView, mouseControls]);
 
   return (
-    <section className="my-32 max-w-max">
-      <div className={`${id === 5 ? 'flex flex-col items-center justify-center gap-8 pb-16' : 'hidden'}`}>
+    <section className="my-16 md:my-24 lg:my-32 max-w-max">
+      <div
+        className={`${
+          id === 5
+            ? "flex flex-col items-center justify-center gap-8 pb-16"
+            : "hidden"
+        }`}
+      >
         <motion.h1
           ref={headerRef}
           className="text-center heading text-science-blue-600 font-semibold"
@@ -84,8 +90,8 @@ const ImageGrid: React.FC<ImageGridProps> = ({ id }) => {
       <div
         className={`${
           id === 5
-            ? 'grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-6'
-            : 'hidden'
+            ? "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-6"
+            : "hidden"
         }`}
       >
         {phoneImages.map((p, index) => (

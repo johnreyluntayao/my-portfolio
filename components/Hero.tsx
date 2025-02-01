@@ -35,7 +35,7 @@ const Hero = () => {
 
   return (
     <section
-      className="flex justify-center items-center h-screen mb-32 2xl:max-h-[75rem]"
+      className="flex justify-center items-center h-screen mb-16 md:mb-24 lg:mb-32 2xl:max-h-[75rem]"
       id="hero"
     >
       {/* Spotlight Backgrounds */}
