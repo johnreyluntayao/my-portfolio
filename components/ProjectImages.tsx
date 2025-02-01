@@ -62,10 +62,10 @@ const ProjectImages = ({ id }: { id: number }) => {
   }
 
   return (
-    <section className="relative flex justify-center items-center flex-col overflow-hidden mx-auto mt-32 mb-16 max-w-max">
-      <div className="w-full">
+    <section className="relative flex justify-center items-center flex-col overflow-hidden mx-auto my-16 md:my-24 lg:my-32 max-w-max">
+      <div className="w-full space-y-12 md:space-y-14 lg:space-y-16">
         {cards.map((card) => (
-          <div key={card.id} className="w-full mb-16">
+          <div key={card.id} className="w-full">
             <motion.div
               className="relative gap-y-16"
               initial="hidden"

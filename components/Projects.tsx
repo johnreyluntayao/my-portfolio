@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 const Projects = () => {
   return (
-    <section className="my-32 place-items-center" id="projects">
+    <section className="my-16 md:my-24 lg:my-32 place-items-center" id="projects">
       <motion.h1
         className="text-3xl md:text-4xl lg:text-5xl font-bold text-science-blue-950 text-center"
         initial={{ opacity: 0, y: -50 }}
