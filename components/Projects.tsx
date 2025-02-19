@@ -2,7 +2,7 @@
 
 import { projects } from '@/lib/imports';
 import React from 'react';
-import { FaLocationArrow } from 'react-icons/fa';
+import { FaLocationArrow, FaArrowRight } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
@@ -52,7 +52,7 @@ const Projects = () => {
                 src={img}
                 alt={title}
                 fill
-                className=" pt-4 px-4 rounded-t-lg object-cover"
+                className="pt-4 px-4 rounded-t-lg object-cover"
               />
             </motion.div>
 
@@ -89,6 +89,31 @@ const Projects = () => {
             </div>
           </motion.a>
         ))}
+
+        <motion.div
+          className="w-full max-w-[400px] md:max-w-[450px] lg:max-w-[550px] rounded-lg overflow-hidden shadow-[0_8px_16px_rgb(0_0_0/0.2)] hover:shadow-[0_12px_24px_rgb(0_0_0/0.3)] transition-shadow duration-300 mx-auto"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeInOut" }}
+          viewport={{ amount: 0.5 }}
+          whileHover={{ scale: 1.05, transition: { duration: 0.3, ease: "easeInOut" }}}
+        >
+          <motion.div 
+            className="relative h-[240px] md:h-[210px] lg:h-[310px] w-full overflow-hidden bg-science-blue-600 flex items-center justify-start px-12 py-52 lg:py-60"
+            whileHover={{ scale: 1.1, transition: { duration: 0.3, ease: "easeInOut" }}}
+          >
+            <a 
+              href="https://www.behance.net/johnreyluntayao" 
+              className="font-semibold text-5xl lg:text-7xl text-white"
+            >
+              <div className='flex-1 space-y-8'>
+              <h1>My</h1>
+              <h1>Designs</h1>
+              <div><FaArrowRight /></div>
+              </div>
+            </a>
+          </motion.div>
+        </motion.div>
       </motion.div>
     </section>
   );
