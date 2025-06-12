@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const ProjectFeature = ({ id }: { id: number }) => {
   const projectDetail = detailedProjects.find((p) => p.id === id);
-  const isContributionsPage = id === 2;
+  const isContributionsPage = id === 4;
 
   const headerRef = useRef(null);
   const mouseRef = useRef(null);
@@ -54,7 +54,7 @@ const ProjectFeature = ({ id }: { id: number }) => {
   return (
     <section
       className={`${
-        id === 5 || id === 8
+        id === 7 || id === 10
           ? 'hidden'
           : 'relative flex items-center justify-center lg:px-8 my-16 md:my-24 lg:my-32 overflow-hidden max-w-max'
       }`}

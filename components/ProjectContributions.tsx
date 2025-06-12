@@ -33,7 +33,7 @@ const ProjectContributions = ({ id }: { id: number }) => {
     },
   };
 
-  if (id === 8 || id === 3) return null;
+  if (id === 10 || id === 5) return null;
 
   return (
     <section
