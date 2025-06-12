@@ -149,6 +149,22 @@ export const myApproach = [
 export const projects = [
   {
     id: 1,
+    title: "School Information System",
+    des: "Records information of enrollments, users, enrollments, and instructors.",
+    img: "/informationsystem/is.png",
+    iconLists: ["/techstack/figma.svg", "/techstack/vbnet.png", "/techstack/mysql2.png"],
+    link: "Wanna know more?",
+  },
+  {
+    id: 2,
+    title: "E-Pandayalita",
+    des: "An online dictionary dedicated to expanding knowledge of the vocabulary used in traditional foundry.",
+    img: "/epandayalita/epandayalita.png",
+    iconLists: ["/techstack/figma.svg", "/techstack/nextjs.svg", "/techstack/typescript.svg", "/techstack/mongodb.svg"],
+    link: "Wanna know more?",
+  },
+  {
+    id: 3,
     title: "TravelCN",
     des: "Discover tourist spots and festivals inside the Camarines Norte province.",
     img: "/travelcn/travelcn.png",
@@ -156,7 +172,7 @@ export const projects = [
     link: "Wanna know more?",
   },
   {
-    id: 2,
+    id: 4,
     title: "NetZerAttic ",
     des: "A website that specializes in attic insulation and energy efficiency, aiming to create net-zero energy consumption specifically for attics.",
     img: "/netzero/netzerohome.png",
@@ -164,7 +180,7 @@ export const projects = [
     link: "Wanna know more?",
   },
   {
-    id: 3,
+    id: 5,
     title: "Sparrk",
     des: "Book and play! Reserve an sport facility in your area with Sparrk!",
     img: "/sparrk/sparrk.png",
@@ -172,7 +188,7 @@ export const projects = [
     link: "Wanna know more?",
   },
   {
-    id: 4,
+    id: 6,
     title: "Web-based Reservation Management System",
     des: "A centralized platform for making resort reservation, information, and virtual experience.",
     img: "/Natura/home.png",
@@ -180,7 +196,7 @@ export const projects = [
     link: "Wanna know more?",
   },
   {
-    id: 5,
+    id: 7,
     title: "Netflix Clone",
     des: "A simple demonstration of the Netflix mobile application and it is called 'Jetflix'.",
     img: "/netflix/p1.png",
@@ -188,7 +204,7 @@ export const projects = [
     link: "Wanna know more?",
   },
   {
-    id: 6,
+    id: 8,
     title: " “Where to Look”: Your Health Companion",
     des: "Read, learn, and talk with others about health-related topics. This website will help you become more mindful of your health.",
     img: "/wlook/w2lookhome.png",
@@ -196,7 +212,7 @@ export const projects = [
     link: "Wanna know more?",
   },
   {
-    id: 7,
+    id: 9,
     title: "St. Martha Management System",
     des: "Manage business transaction records and monitor client payments.",
     img: "/stmartha/dashboard.png",
@@ -204,7 +220,7 @@ export const projects = [
     link: "Wanna know more?",
   },
   {
-    id: 8,
+    id: 10,
     title: "3D Modelling",
     des: "The Following are collections of 3D Projects I made during my 4th year.",
     img: "/house/3d.png",
@@ -216,8 +232,59 @@ export const projects = [
 
 // Detailed information of each projects
 export const detailedProjects = [
-  {
+    {
     id: 1,
+    title: "School Information System",
+    desc: "The School Information System (SIS) is a comprehensive digital platform designed to streamline school operations, ensuring efficiency and accessibility for students, instructors, and administrators. With a secure login system, each user role has access to a customized dashboard tailored to their specific needs.",
+    webLink: "",
+    codeLink: "https://github.com/johnreyluntayao/SchoolInformationSytem.git",
+    image: "/informationsystem/is.png",
+    features: [      
+      {
+        id: 1,
+        title: "Graphs",
+        img: "/informationsystem/graphs.svg",
+        desc: "Provides graphs specified for students, instructors, and admins.",
+      },
+      {
+        id: 2,
+        title: "Search, Filter, & Print",
+        img: "/informationsystem/searchfilter.svg",
+        desc: "Allows users for flexible search, filter, and print records.",
+      },
+      {
+        id: 3,
+        title: "CRUD",
+        img: "/informationsystem/crud.svg",
+        desc: "Lets users add, update, retrieve, and delete information.",
+      },
+
+    ],
+  },
+  {
+    id: 2,
+    title: "E-Pandayalita",
+    desc: "E-PANDAYALITA is a unique online dictionary dedicated to maintaining and expanding knowledge of the vocabulary used in traditional blacksmithing, especially in the making of itak and other bladed tools. It aims to provide a comprehensive and easy-to-use platform where students, blacksmiths and enthusiasts can explore the rich language associated with metalworking.",
+    webLink: "https://epandayalita.vercel.app/",
+    codeLink: "https://github.com/johnreyluntayao/epandayalita.git",
+    image: "/epandayalita/epandayalita2.png",
+    features: [
+      {
+        id: 1,
+        title: "Voice Pronunciation",
+        img: "/epandayalita/voice.svg",
+        desc: "Dedicated voice feature for word pronunciation.",
+      },
+      {
+        id: 2,
+        title: "Categorized Words",
+        img: "/epandayalita/category.svg",
+        desc: "The words are identified and grouped to know which kind each words are.",
+      },
+    ],
+  },
+  {
+    id: 3,
     title: "Travel CN",
     desc: "Explore the hidden gems of Camarines Norte! Our website is your ultimate guide to discovering the enchanting places, exciting festivals, and breathtaking tourist destinations across the province. Dive into detailed information that will inspire and inform your travels, making each visit a memorable adventure.",
     webLink: "https://travelcn.vercel.app/",
@@ -239,7 +306,7 @@ export const detailedProjects = [
     ],
   },
   {
-    id: 2,
+    id: 4,
     title: "NetZeroAttic",
     desc: "The website was created to promote the business the Net-Zero-Attic that is focused in Attic insulation that is owned by a Canadian Company. The website promotes informative details about attic insulation and the services that the business offers.",
     webLink: "https://net-zero-attic.com/",
@@ -261,7 +328,7 @@ export const detailedProjects = [
     ],
   },
   {
-    id: 3,
+    id: 5,
     title: "Sparrk",
     desc: "Sparrk.ph transforms how athletes and sports enthusiasts connect with facilities, making it simple for both facility owners and sports lovers to find, book, and play. The intuitive platform streamlines the process, ensuring a seamless experience for everyone. Whether you need a tennis court or a basketball gym, Sparrk has you covered!",
     webLink: "https://www.sparrk.ph",
@@ -289,7 +356,7 @@ export const detailedProjects = [
     ],
   },
   {
-    id: 4,
+    id: 6,
     title: "Web-based Reservation Management System",
     desc: "The system offers a user-friendly website with resort information, a convenient reservation management system, and a virtual tour. It was developed to modernize the resort's manual reservation process, enhancing service quality and customer satisfaction.",
     webLink: "",
@@ -317,7 +384,7 @@ export const detailedProjects = [
     ],
   },
   {
-    id: 5,
+    id: 7,
     title: "Netflix Clone",
     desc: "This prototype of the Netflix mobile app replicates essential interfaces for demonstration. While not fully functional, it showcases data and allows playback of one video. The feedback tab is included but non-operational.",
     webLink: "",
@@ -333,7 +400,7 @@ export const detailedProjects = [
     ],
   },
   {
-    id: 6,
+    id: 8,
     title: "“Where to Look”: Your Health Companion",
     desc: "Discover wellness at 'Where to Look'! Our mission is to empower you with knowledge, compassion, and hope. Explore our comprehensive health condition section, chat with experts and fellow warriors, and find prevention tips and motivation. Join our health-conscious community today and let's navigate wellness together!",
     webLink: "https://yourw2look.wordpress.com",
@@ -355,7 +422,7 @@ export const detailedProjects = [
     ],
   },
   {
-    id: 7,
+    id: 9,
     title: "St. Martha Management System",
     desc: "St. Martha Memorial Homes Inc. in Daet, Camarines Norte, faced challenges with manual record-keeping and contract management. A comprehensive system was developed to organize transactions, manage records efficiently, and monitor client payments, streamlining operations and benefiting both the company and its users.",
     webLink: "",
@@ -377,7 +444,7 @@ export const detailedProjects = [
     ],
   },
   {
-    id: 8,
+    id: 10,
     title: "3D Modelling",
     desc: "The Following are collections of 3D Projects that I made using 3DSMax.",
     webLink: "",
@@ -399,6 +466,43 @@ export const detailedProjects = [
 export const ProjectRole = [
   {
     id: 1,
+    title: "School Information System",
+    roles: [
+      {
+        quote: "I designed the School Information System to be intuitive, visually appealing, and user-friendly, ensuring a seamless experience for students, instructors, and administrators while meeting the client's requirements. My focus was on usability, accessibility, and aesthetics, creating a system that is both functional and engaging.",
+        title: "UI/UX Designer",
+        icon: "/role/ui-designer.svg",
+      },
+      {
+        quote: "As a backend developer, I utilized MySQL to manage the database and implementing essential functions like printing, CRUD operations, filters, graphs, and search features. My work ensures efficient data handling, seamless functionality, and a smooth user experience.",
+        title: "Backend Developer",
+        icon: "/role/back-end.svg",
+      }
+    ]
+  },
+  {
+    id: 2,
+    title: "E-Pandayalita",
+    roles: [
+      {
+        quote: "As a UI/UX designer, I meticulously crafted every page of E-Pandayalita, ensuring that it aligns perfectly with client requirements while maintaining a visually appealing and user-friendly interface. My goal was to balance aesthetics and functionality, creating an engaging experience that feels seamless and intuitive.",
+        title: "UI/UX Designer",
+        icon: "/role/ui-designer.svg",
+      },
+      {
+        quote: "As a front-end developer, I brought E-Pandayalita to life by transforming designs into a responsive and intuitive user experience. Using Next.js, TypeScript, and Tailwind CSS, I ensured seamless functionality while maintaining a polished visual appeal.",
+        title: "Front-end Developer",
+        icon: "/role/front-end.svg",
+      },
+      {
+        quote: "I built the core functionality of E-Pandayalita, integrating MongoDB as the database and implementing additional features like a voice-enabled interface.",
+        title: "Backend Developer",
+        icon: "/role/back-end.svg",
+      }
+    ]
+  },
+  {
+    id: 3,
     title: "Travel CN",
     roles: [
       {
@@ -414,7 +518,7 @@ export const ProjectRole = [
     ],
   },
   {
-    id: 2,
+    id: 4,
     title: "NetZeroAttic",
     roles: [
       {
@@ -425,7 +529,7 @@ export const ProjectRole = [
     ],
   },
   {
-    id: 3,
+    id: 5,
     title: "Sparrk",
     roles: [
       {
@@ -436,7 +540,7 @@ export const ProjectRole = [
     ],
   },
   {
-    id: 4,
+    id: 6,
     title: "Web-based Reservation Management System",
     roles: [
       {
@@ -457,7 +561,7 @@ export const ProjectRole = [
     ],
   },
   {
-    id: 5,
+    id: 7,
     title: "Netflix Clone",
     roles: [
       {
@@ -473,7 +577,7 @@ export const ProjectRole = [
     ],
   },
   {
-    id: 6,
+    id: 8,
     title: "“Where to Look”: Your Health Companion",
     roles: [
       {
@@ -489,7 +593,7 @@ export const ProjectRole = [
     ],
   },
   {
-    id: 7,
+    id: 9,
     title: "St. Martha Management System",
     roles: [
       {
@@ -505,7 +609,7 @@ export const ProjectRole = [
     ],
   },
   {
-    id: 8,
+    id: 10,
     title: "3D Projects",
     roles: [
       {
@@ -519,8 +623,48 @@ export const ProjectRole = [
 
 // Tech implemented for each projects
 export const techImplementation = [
-  {
+    {
     id: 1,
+    title: "School Information System",
+    tech: [
+      {
+        icon: "/techstack/figma.svg",
+        title: "Figma",
+      },
+      {
+        icon: "/techstack/vbnet.png",
+        title: "VB.net",
+      },
+      {
+        icon: "/techstack/mysql2.png",
+        title: "MySQL",
+      }
+    ]
+  },
+  {
+    id: 2,
+    title: "E-Pandayalita",
+    tech: [
+      {
+        icon: "/techstack/figma.svg",
+        title: "Figma",
+      },
+      {
+        icon: "/techstack/nextjs.svg",
+        title: "NextJS",
+      },
+      {
+        icon: "/techstack/typescript.svg",
+        title: "Typescript",
+      },
+      {
+        icon: "/techstack/mongodb.svg",
+        title: "MongoDB"
+      },
+    ]
+  },
+  {
+    id: 3,
     title: "Travel CN",
     tech: [
       {
@@ -538,7 +682,7 @@ export const techImplementation = [
     ]
   },
   {
-    id: 2,
+    id: 4,
     title: "NetZeroAttic",
     tech: [ 
       {
@@ -556,7 +700,7 @@ export const techImplementation = [
     ]
   },
   {
-    id: 3,
+    id: 5,
     title: "Sparrk",
     tech: [ 
       {
@@ -574,7 +718,7 @@ export const techImplementation = [
     ]
   },
   {
-    id: 4,
+    id: 6,
     title: "Web-based Reservation Management System",
     tech: [
       {   
@@ -600,7 +744,7 @@ export const techImplementation = [
     ]
   },
   {
-    id: 5,
+    id: 7,
     title: "Netflix Clone",
     tech: [ 
       {
@@ -614,7 +758,7 @@ export const techImplementation = [
     ]
   },
   {
-    id: 6,
+    id: 8,
     title: "“Where to Look”: Your Health Companion",
     tech: [ 
       {
@@ -628,7 +772,7 @@ export const techImplementation = [
     ]
   },
   {
-    id: 7,
+    id: 9,
     title: "St. Martha Management System",
     tech: [ 
       {
@@ -642,7 +786,7 @@ export const techImplementation = [
     ]
   },
   {
-    id: 8,
+    id: 10,
     title: "3D Projects",
     tech: [
       {

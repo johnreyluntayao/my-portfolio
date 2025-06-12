@@ -144,7 +144,7 @@ const ProjectHero = ({ id }: { id: number }) => {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.6 }}
               >
-                {![8, 4, 5, 7].includes(id) && (
+                {![1, 10, 6, 7, 9].includes(id) && (
                   <motion.a 
                     href={project.webLink} 
                     className="flex justify-center lg:justify-start"
@@ -160,7 +160,7 @@ const ProjectHero = ({ id }: { id: number }) => {
                     />
                   </motion.a>
                 )}
-                {![8, 2, 3, 6].includes(id) && (
+                {![10, 4, 5, 8].includes(id) && (
                   <motion.a 
                     href={project.codeLink} 
                     className="flex justify-center lg:justify-start"
@@ -193,10 +193,10 @@ const ProjectHero = ({ id }: { id: number }) => {
                 <Image
                   src={project.image}
                   alt={project.title}
-                  width={id === 5 ? 500 : 800}
-                  height={id === 5 ? 500 : 800}
+                  width={id === 7 ? 500 : 800}
+                  height={id === 7 ? 500 : 800}
                   className={`rounded-lg shadow-2xl ${
-                    id === 5
+                    id === 7
                       ? "w-[32vw] md:w-[20vw] lg:w-[250px] h-auto max-h-[550px]"
                       : "w-[90vw] sm:w-[75vw] md:w-[60vw] lg:w-[40vw] h-auto"
                   }`}
