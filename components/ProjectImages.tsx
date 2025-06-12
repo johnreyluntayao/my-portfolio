@@ -53,7 +53,7 @@ const Description = ({ desc }: { desc: string }) => (
 );
 
 const ProjectImages = ({ id }: { id: number }) => {
-  if (id !== 8) {
+  if (id !== 10) {
     return (
       <section className="hidden">
         <h1>not found</h1>

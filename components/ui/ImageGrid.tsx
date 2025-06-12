@@ -58,7 +58,7 @@ const ImageGrid: React.FC<ImageGridProps> = ({ id }) => {
     <section className="my-16 md:my-24 lg:my-32 max-w-max">
       <div
         className={`${
-          id === 5
+          id === 7
             ? "flex flex-col items-center justify-center gap-8 pb-16"
             : "hidden"
         }`}
@@ -89,7 +89,7 @@ const ImageGrid: React.FC<ImageGridProps> = ({ id }) => {
 
       <div
         className={`${
-          id === 5
+          id === 7
             ? "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-6"
             : "hidden"
         }`}
